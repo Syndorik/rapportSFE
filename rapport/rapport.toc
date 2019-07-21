@@ -1,0 +1,24 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}R\IeC {\'e}sum\IeC {\'e}}{2}{section.1}
+\contentsline {section}{\numberline {2}Summary}{3}{section.2}
+\contentsline {section}{\numberline {3}Introduction}{5}{section.3}
+\contentsline {section}{\numberline {4}Pr\IeC {\'e}sentation de l'entreprise}{6}{section.4}
+\contentsline {section}{\numberline {5}Mission : webscrapping pour Cleep (1 mois)}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Pr\IeC {\'e}sentation de Cleep}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Objectifs et probl\IeC {\'e}matique}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Travail effectu\IeC {\'e}}{8}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Vision critique et apport personnel}{8}{subsection.5.4}
+\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Contexte}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{9}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{9}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{9}{subsection.6.4}
+\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{10}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation du sialab et de la plateforme}{10}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{10}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{10}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{10}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{11}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{12}{section.9}
+\contentsline {section}{\numberline {10}Glossaire}{13}{section.10}

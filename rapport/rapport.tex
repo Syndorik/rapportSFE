@@ -1,0 +1,136 @@
+\documentclass{article} % for short documents
+%\documentclass{report} % for longer documents
+
+
+%% Defining the language for the document
+\usepackage[english]{babel}
+\usepackage[english]{isodate}
+\usepackage{wrapfig}
+\usepackage{imta_core}
+\usepackage{imta_extra}
+
+% !TeX spellcheck = fr_FR
+
+%% Addtionnal packages can be loaded here
+% \usepackage{biblatex} % for a complete and flexible bibliography
+
+
+\cleanlookdateon % formats date according to the loaded language from now on
+
+%% General informations
+\author{Alexandre ALLANI}
+%\imtaAuthorShort{<author's initials>}
+\imtaSuperviser{Encadrant : Jean PRUVOST, consultant en datascience \\
+Conseiller d'étude : Romain BILLOT \\
+Responsable filière : Cécile BOTHOREL}
+
+\date{\noexpand\today} % automatically print today's date, can be redefined using \date{<date>}
+\title{Rapport de stage de fin d'étude}
+\subtitle{Consultant en datascience chez Sia Partners}
+%\imtaVersion{<version>}
+
+%Add extra other companies' logo
+%If needed, options can be passed to the underlying \includegraphics by calling \imtaAddPartnerLogo[<options>]{<path>}
+\imtaAddPartnerLogo{sia_logo.jpg}
+
+
+\imtaSetIMTStyle % Sets font and headers/footers according to the IMT Atlantue style guidelines
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%% BEGINNING %%%%%%%%%% 
+\begin{document}
+
+% front cover
+\imtaMaketitlepage
+
+\section{Résumé}
+\newpage
+
+\section{Summary}
+\newpage
+
+
+
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+\newpage
+
+\section{Présentation de l'entreprise}
+\newpage
+
+\section{Mission : webscrapping pour Cleep (1 mois)}
+Cette partie est consacrée à la première mission que j'ai effectué sur le sujet du webscrapping pour Cleep. Le webscrapping est la collecte de données/informations sur des sites internet via un ou plusieurs scripts. Le but sera alors principalement de "piocher" dans le code source du site internet à webscrapper, ou via les requêtes effetuées par le serveur, les données que l'on souhaite récupérer.\\ \\
+Cette mission mêle à la fois des problématiques de récupérations de données, mais aussi d'automatisation de webscrapping via certains algorithmes que j'ai développé.
+
+\subsection{Présentation de Cleep}
+
+Cleep est une start-up créée en 2017, développant une application éponyme sur le sujet de l'achat en ligne. L'application permet de sauvegarder un produit repéré sur un site marchand quelconque (que ce soit un site généraliste comme Amazon ou un site spécialisé comme Asos). 
+\begin{wrapfigure}[14]{r}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[keepaspectratio = true,scale=0.2]{cleep.jpg}
+	\end{center}
+	\caption{Logo de Cleep}
+\end{wrapfigure}
+Cette application mobile est disponible sur mobile (iOS \& Android) mais aussi via un site Internet \cite{cleep}. Le principe de l'application est de pouvoir enregistrer n'importe quel produit pour ensuite le retrouver dans l'application. Il est alors possible de consulter via cette dernière le prix, la description, le nom, le site d'origine ainsi que les images reliés à ce produit. Le but de l'application est donc de faciliter l'achat de produits en ligne en ne passant que par une seule et unique plateforme. Par ailleurs, il est possible de créer une liste de "Cleep" (ie de produit) et de partager ces listes. Les listes publiques peuvent être trouvées via le moteur de recherche intégré. \\
+Sia Partners a investi 400000€ dans Cleep fin 2018, et travaille en collaboration sur différents sujets, notamment en matière de datascience. En plus du côté simplification du shopping en ligne, Cleep avec ses listes et son moteur de recherche permet de suivre des listes plus ou moins influentes. Ainsi l'application permet de se tenir au courant des modes actuelles et de celles à venir. Cela explique l'investissement de Sia Partners.\\
+Vocabulaire spécifique à Cleep :
+\begin{itemize}
+	\item Cleep : Produit en ligne, enregistré dans la base de donnée. Un cleep est composé d'un prix, des images associés au produit, d'une description, du nom du produit ainsi de du site internet d'origine.
+	\item Liste de Cleep : Liste de Cleep, pouvant être partagé entre plusieurs utilisateurs. Chaque cleep est enregistré dans une liste.
+\end{itemize}
+
+J'ai travaillé pendant près de 3 mois pour Cleep. Je communiquais principalement avec Damien Meurisse côté Cleep et Paul Saffer côté Sia Partners.J'ai travaillé sur deux sujets :
+\begin{itemize}
+	\item Webscrapping : Acquisition et traitement des données. Cela est fondamental pour le fonctionnement de Cleep
+	\item Moteur de recommandation. Avant mon arrivé, aucun moteur de recommandation n'existait. Cette fonctionnalité était de plus en plus nécessaire afin de trouver des listes et des clips autrement que par une recherche via le moteur interne à Cleep. 
+\end{itemize}
+\newpage
+\subsection{Objectifs et problématique}
+
+\subsection{Travail effectué}
+\subsection{Vision critique et apport personnel}
+\newpage
+
+\section{Mission : Moteur de recommandation pour Cleep (2.5 mois)}
+\subsection{Contexte}
+\subsection{Objectifs et problématique}
+\subsection{Travail effectué}
+\subsection{Vision critique et apport personnel}
+\newpage
+
+\section{Mission : Aide à l'amélioration d'une plateforme de déploiement pour Sia Partners}
+\subsection{Présentation du sialab et de la plateforme}
+\subsection{Objectifs et problématique}
+\subsection{Travail effectué}
+\subsection{Vision critique et apport personnel}
+\newpage
+
+
+\section{Conclusion}
+\newpage
+
+\section{Annexes}
+\newpage
+
+\section{Glossaire}
+\begin{thebibliography}{9}
+	\bibitem{cleep} 
+	Site de Cleep : \texttt{https://app.cleep.io/}
+\end{thebibliography}
+\newpage
+
+
+
+
+
+
+% back cover
+\imtaMakeCover
+
+\end{document}
+%%%%%%%%%% END %%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%% 
