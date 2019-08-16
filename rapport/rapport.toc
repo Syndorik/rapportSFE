@@ -7,18 +7,26 @@
 \contentsline {section}{\numberline {5}Mission : webscrapping pour Cleep (1 mois)}{7}{section.5}
 \contentsline {subsection}{\numberline {5.1}Pr\IeC {\'e}sentation de Cleep}{7}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Objectifs et probl\IeC {\'e}matique}{8}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Travail effectu\IeC {\'e}}{8}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Vision critique et apport personnel}{8}{subsection.5.4}
-\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{9}{section.6}
-\contentsline {subsection}{\numberline {6.1}Contexte}{9}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{9}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{9}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{9}{subsection.6.4}
-\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{10}{section.7}
-\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation du sialab et de la plateforme}{10}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{10}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{10}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{10}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{11}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{12}{section.9}
-\contentsline {section}{\numberline {10}Glossaire}{13}{section.10}
+\contentsline {subsection}{\numberline {5.3}Travail effectu\IeC {\'e}}{9}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Contexte\\}{9}{subsubsection.5.3.1}
+\contentsline {paragraph}{M\IeC {\'e}thode automatique:\\}{9}{section*.2}
+\contentsline {paragraph}{M\IeC {\'e}thode spc\IeC {\'e}ifique:\\}{10}{section*.3}
+\contentsline {paragraph}{D\IeC {\'e}marche\\}{11}{section*.4}
+\contentsline {paragraph}{R\IeC {\'e}sultats\\}{12}{section*.5}
+\contentsline {subsection}{\numberline {5.4}Vision critique et apport personnel}{12}{subsection.5.4}
+\contentsline {paragraph}{Scrapper g\IeC {\'e}n\IeC {\'e}rique\\}{12}{section*.6}
+\contentsline {paragraph}{Technologie utilis\IeC {\'e}e\\}{12}{section*.7}
+\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Contexte}{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{13}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{13}{subsection.6.4}
+\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{14}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation du sialab et de la plateforme}{14}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{14}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{14}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{14}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{15}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{16}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{16}{subsection.9.1}
+\contentsline {section}{\numberline {10}Glossaire}{17}{section.10}

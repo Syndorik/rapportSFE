@@ -8,8 +8,37 @@
 \usepackage{wrapfig}
 \usepackage{imta_core}
 \usepackage{imta_extra}
-
+\setcounter{secnumdepth}{3}
 % !TeX spellcheck = fr_FR
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
 
 %% Addtionnal packages can be loaded here
 % \usepackage{biblatex} % for a complete and flexible bibliography
@@ -79,20 +108,126 @@ Cette application mobile est disponible sur mobile (iOS \& Android) mais aussi v
 Sia Partners a investi 400000€ dans Cleep fin 2018, et travaille en collaboration sur différents sujets, notamment en matière de datascience. En plus du côté simplification du shopping en ligne, Cleep avec ses listes et son moteur de recherche permet de suivre des listes plus ou moins influentes. Ainsi l'application permet de se tenir au courant des modes actuelles et de celles à venir. Cela explique l'investissement de Sia Partners.\\
 Vocabulaire spécifique à Cleep :
 \begin{itemize}
-	\item Cleep : Produit en ligne, enregistré dans la base de donnée. Un cleep est composé d'un prix, des images associés au produit, d'une description, du nom du produit ainsi de du site internet d'origine.
-	\item Liste de Cleep : Liste de Cleep, pouvant être partagé entre plusieurs utilisateurs. Chaque cleep est enregistré dans une liste.
+	\item cleep : Produit en ligne, enregistré dans la base de donnée. Un cleep est composé d'un prix, des images associés au produit, d'une description, du nom du produit ainsi de du site internet d'origine.
+	\item liste de Cleep : Liste de Cleep, pouvant être partagé entre plusieurs utilisateurs. Chaque cleep est enregistré dans une liste.
+	\item cleeper : Action d'enregistrer un produit dans l'application
 \end{itemize}
 
 J'ai travaillé pendant près de 3 mois pour Cleep. Je communiquais principalement avec Damien Meurisse côté Cleep et Paul Saffer côté Sia Partners.J'ai travaillé sur deux sujets :
 \begin{itemize}
 	\item Webscrapping : Acquisition et traitement des données. Cela est fondamental pour le fonctionnement de Cleep
-	\item Moteur de recommandation. Avant mon arrivé, aucun moteur de recommandation n'existait. Cette fonctionnalité était de plus en plus nécessaire afin de trouver des listes et des clips autrement que par une recherche via le moteur interne à Cleep. 
+	\item Moteur de recommandation. Avant mon arrivé, aucun moteur de recommandation n'existait. Cette fonctionnalité était de plus en plus nécessaire afin que l'utilisateur puisse chercher de nouveau cleeps autrement que par le moteur de recherche présent dans l'application.
 \end{itemize}
 \newpage
 \subsection{Objectifs et problématique}
+Cleep est une application reposant sur les articles et produits qu'elle permet d'enregistrer, mais aussi sur les méta-données qui leurs sont reliés. En effet, en allant sur Cleep, l'utilisateur doit pouvoir retrouver l'ensemble des informations qu'il recherche, sans pour autant retourner sur le lien de l'article. Il existe deux moyens d'enregistrer un produit :
+\begin{itemize}
+	\item Par capture d'écran du site : l'image est enregistré dans l'application. L'utilisateur peut alors renseigner lui même les informations dont il a besoin (ie le prix, le nom de l'article, etc.). Le cleep créé est composé de la capture d'écran et des informations renseignés.
+	\item Avec le lien du site : Grâce à un procédé, détaillé plus tard, le produit avec ses images et ses méta-données sont cleepés.
+\end{itemize}
+En général l'enregistrement via capture d'écran n'est pas optimal pour l'application. En effet, les utilisateurs prennent rarement le temps d'enregistrer toutes les informations, ce qui les intéresse en priorité est de garder l'image et le nom du produit dans l'application afin d'avoir un souvenir de ce dernier. Le cleep ainsi enregistré n'est pas utile pour Cleep car manquant de beaucoup d'informations.\\
+En effet, Cleep possède une base de donnée dans laquelle les produits sont enregistrés avec leur méta-données. Un produit est composé des éléments suivant :
+\begin{itemize}
+	\itemsep 0em 
+	\item URL du site internet
+	\item Nom
+	\item Prix d'origine
+	\item Prix avec réduction (si disponible)
+	\item Description (si disponible)
+	\item URL des différentes images
+\end{itemize}
+Un cleep et un produit sont deux entités différentes. Un produit est une entité composée des éléments énoncés précédemment, tandis qu'un cleep est une entité pouvant faire référence à un produit créé par un utilisateur et avec lequel l'utilisateur interagit. Par ailleurs le produit est définit de manière unique par son URL. Par exemple, les mêmes chaussures disponibles sur un site A et sur un site B sont considérés comme deux produits différents. Le schéma ci-dessous explique la structure.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.7]{scrapping.png}
+	\caption{Organisation des données de cleep}
+\end{figure}
+\newpage
+
+Relier un cleep à un produit est un défi pour l'application, car les utilisateurs sont plus enclins à rester dans l'environnement Cleep lorsqu'ils ont les informations à leur disposition dans l'application. En effet les cleeps contenant ces information, l'utilisateur est moins tenté de suivre le lien du produit et a plus de chance de rester sur l'application et parcourir les listes de clepp d'autres utilisateurs. \\
+Cependant pour pouvoir faire cela, il faut récupérer les informations des produits au préalables. C'est ici qu'intervient le webscrapping. Les méta-données qui nous intéresse sont récupérées par ce moyen et entré dans la base de donnée. L'objectif de cette mission était donc d'enrichir la base de donnée des produits de manière automatique. 
+
 
 \subsection{Travail effectué}
+Cette sous-section relate le travail effectué sur cette mission.
+\subsubsection{Contexte\\}
+Avant mon arrivé, plusieurs methode de webscrapping étaient déjà utilisées:
+\begin{itemize}
+	\item Méthode automatique
+	\item Méthode spécifique
+\end{itemize}
+\paragraph{Méthode automatique:\\}
+Cette méthode était la plus utilisée pour récupérer les informations des produits. L'utilisateur rentre un lien dans l'application, par la suite ce lien est envoyé au serveur sur lequel la méthode est implémentée. Le serveur génère un navigateur internet sans interface graphique (headless browser) et requête le lien internet rentré par l'utilisateur. Ensuite, en analysant les balises du code HTML chargé, l'algorithme par certaines règles essaie de récupérer les méta-données. Ces informations sont alors transférés à l'utilisateur. Le schéma ci-après décrit le processus.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{browserInject.png}
+	\caption{Méthode automatique}
+\end{figure}
+Bien que cette méthode de scrapping soit indépendant du site internet, elle reste néanmoins assez "précaire", car il est rare d'avoir toutes les informations nécessaires à disposition. Il est fréquent d'avoir certains attributs manquant, car les règles créées pour l'analyse du code HTML n'était pas assez vaste. Prenons les deux sites internet suivant :\\
+\newpage
+Site N°1:
+\lstinputlisting[language=html]{site.html}
+
+Site N°2:
+\lstinputlisting[language=html]{site2.html}
+
+Dans le cas N°1, il est facile de mettre une règle pour récupérer le prix dans le meta tag. Dans le cas N°2 cependant, le prix est "juste" inclut dans une balise <p>, rendant la règle précédente inutile. La méthode automatique implique donc beaucoup d'erreurs et d'approximations. Pour des soucis de mémoire, ces données ne sont pas enregistrées dans la base de donnée des produits, afin de ne pas garder les "fausse" données récupérées.
+Cette méthode pose un autre soucis, c'est son temps de réponse. En effet, afin de scrapper le site, le serveur est obligé de générer un headless browser, de faire la requête, analyser le code HTML pour finalement retourner la réponse. Le temps de réponse doit être relativement bas, car l'utilisateur au moment du cleep doit pouvoir continuer ses activités sur Internet sans être interrompu trop longtemps par le temps que met Cleep à cleeper son produit, et donc eviter toute frustration.
+
+\paragraph{Méthode spcéifique:\\}
+C'est sur ce sujet que s'est concentré mon travail. Le principe de cette méthode est de prendre les sites internet un à un et d'appliquer un script de webscrapping qui leur est propre. Cela permet d'éviter les problèmes rencontrés précédemment.
+La structure du code HTML derrière les pages produits est dans la quasi-totalité des cas la même pour un nom de domaine particulier. Il est possible que selon les sous-domaines d'un site cette page varie, par exemple pour la fnac on a:
+\begin{itemize}
+	\item https://livre.fnac.com/a13195869/Agnes-Martin-Lugand-A-la-lumiere-du-petit-matin
+	\item https://jeux-video.fnac.com/a13608859/LEGEND-OF-ZELDA-LINKS-AWAKENING-FR-SWITCH-Jeu-Nintendo-Switch
+	\item ...
+\end{itemize}
+Dans ce cas, on distingue les différents cas et ensuite on analyse le code HTML de chacune de ces pages. Cette méthode est bien plus fiable et donne de meilleurs résultats sur les méta-données requise.\\
+Par ailleurs, afin de réduire le temps de réponse, une difficulté est rajouté : la génération d'un headless browser est supprimée m'obligeant à travailler avec le code source de la page (ie le résultat d'une requête cURL à la page), et les requêtes API.\\
+En effet la génération d'un navigateur permettait de faciliter la tâche, car le code HTML étant totalement généré, il suffisait de récupérer le contenu des balises afin d'obtenir les informations nécessaires. Cependant via une requête cURL (ie le code source de la page), les script JavaScript ne sont pas déclenchés, il faut donc chercher au travers des differents script et requêtes API les éléments que l'on souhaite récupérer.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{specific.png}
+	\caption{Méthode spécifique}
+\end{figure}
+
+\newpage
+
+\paragraph{Démarche\\}
+Le processus Figure 4 montre les différentes étapes de la méthode spécifique. Mon travail s'est principalement concentré sur l'algorithme analysant un site web en particulier et la gestion des requêtes.\\
+Prenons l'exemple suivant \cite{fnac} :
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.25]{fnac.png}
+	\caption{Exemple fnac}
+\end{figure}
+Les encadrés rouges correspondent aux éléments que l'on doit récupérer. Vous pouvez retrouver en annexe une version allégé du code HTML (Annexe 9.1). Il est alors facile de comprendre que récupérer l'attribut $data-src-zoom$ de la balise <li> nous permet de récupérer l'image et le JSON quant à lui permet de récupérer les autres éléments requis.\\
+La démarche adopter pour scrapper les différents sites à toujours été la même. Tout d'abord on analyse le code source afin de savoir quels éléments sont à récupérer. Ensuite on teste avec plusieurs liens différents afin de tester la robustesse de l'algorithme. Une validation finale était faite côté client, et ensuite l'algorithme était mis en production.\\ \\
+Le dernier point nécessitant du travail : où trouver les liens permettant de scrapper les produits et peupler la base de donnée? L'ensemble des liens déjà cleepés sont enregistrés, et donc peuvent être utilisé pour répondre à cette question. Le client possédait déjà un script permettant de trier les liens par nom de domaines. Ainsi pour chaque nom de domaine que j'ai traité, j'ai du trié les liens pertinents (ie de produits) des liens inutiles (page principal, page de catégories etc). Par exemple, pour la fnac certains utilisateurs ont cleepé des pages présentant plusieurs produit \cite{mve} ce qui ne convient pas au processus détaillé auparavant.
+
+\paragraph{Résultats\\}
+A la fin de cette mission, j'ai développé un script de webscrapping pour plus de 56 sites différents. Cela a permis à Cleep de peupler sa base d'environ 220 000 produits différents.\\
+Sur une vision plus large, les utilisateurs passent en moyenne plus de temps sur l'application (effet recherché), mais aussi ils ont tendance à cleeper plus de produit sur les sites dont le webscrapping a été fait.
+
 \subsection{Vision critique et apport personnel}
+
+La mission de webscrapping était plutôt simple, dans le sens qu'une fois les notions de webscrapping acquise, cette mission consistait à analyser un code HTML et les requêtes faits en javascript, pour trouver les informations nécessaires. Mon apport personnel s'est plus concentrés sur les discussions avec le client au sujet de l'amélioration du scrapper générique et le choix des technologies ainsi que la compréhension de l'infrastructure de Cleep.
+
+\paragraph{Scrapper générique\\}
+Le scrapper générique déjà présent n'était pas assez efficaces pour pouvoir enregistrer les données des produits et il était trop lent pour être utilisé en production indéfiniment (pour l'instant, si un lien n'appartient pas à la liste des 56 domaines scrappés, il passe par le scrapper générique). Comme il n'est pas non plus possible de scrapper l'ensemble des sites commerciaux existants (la base de donées de Cleep compte plus de 8000 nom de domaines différents), j'ai discuté avec le client sur la nécessité d'un scrapper générique plus performant.\\
+Ainsi en parallèle des 
+
+\paragraph{Technologie utilisée\\}
+L'ensemble du travail a été réalisé en NodeJS (interpreteur Javascript). Cette technologie a été utilisé car l'ensemble de l'architecture client était en NodeJS. Il était possible de travailler avec les librairies Python permettant de scrapper et faire des requetes HTML (scrappy, beautifulsoup) car cette partie est plutôt indépendante. Cependant pour éviter l'overhead introduit par un changement de langage, j'ai préféré suivre le langage du client.\\
+Par ailleurs, plusieurs sites internet ont des protections vis à vis du webscrapping. En effet les requêtes fait aux différents serveurs affecte les capacités de ces derniers. Ainsi deux problèmes se sont posés:
+\begin{itemize}
+	\item Ne pas lancer "involontairement" une attaque contre les serveur du site en question: pour cela on a trouvé une certaine limite temporelle avec le client
+	\item Les adresses IP des serveurs de Cleep qui étaient déjà sur liste noire de plusieurs sites.
+\end{itemize}
+Le deuxième problème s'explique par une technologie de protection employé par les site internet contre le webscrapping : Datadome. Datadome detecte si une requête est faite par un utilisateur si le javascript de la page est chargé et executé. Si ce dernier n'est pas executé, il s'agit probablement d'un bot ayant requêté uniquement le code source de la page, ce qui est exactement notre cas. Une fois detecté par Datadome, l'adresse IP qui a servi pour la requête est mise sur liste noire et il n'est plus possible de faire de requête.\\
+La solution trouvé avec le client est de passer par un service de Proxy payant : Luminati, qui permet de changer d'adresse IP à chaque requête
+
 \newpage
 
 \section{Mission : Moteur de recommandation pour Cleep (2.5 mois)}
@@ -114,12 +249,20 @@ J'ai travaillé pendant près de 3 mois pour Cleep. Je communiquais principaleme
 \newpage
 
 \section{Annexes}
+\subsection{Code source allégé du site de la fnac}
+%\lstinputlisting[language=html]{fnac.html}
+
 \newpage
 
 \section{Glossaire}
 \begin{thebibliography}{9}
 	\bibitem{cleep} 
 	Site de Cleep : \texttt{https://app.cleep.io/}
+	\bibitem{fnac} 
+	Exemple de la Fnac : \texttt{https://livre.fnac.com/a13195869/Agnes-Martin-Lugand-A-la-lumiere-du-petit-matin}
+	\bibitem{mve}
+	Exemple site internet avec plusieurs produits : \texttt{https://livre.fnac.com}
+	
 \end{thebibliography}
 \newpage
 
