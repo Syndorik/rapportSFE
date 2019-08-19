@@ -14,18 +14,18 @@
 \contentsline {paragraph}{D\IeC {\'e}marche\\}{11}{section*.4}
 \contentsline {paragraph}{R\IeC {\'e}sultats\\}{12}{section*.5}
 \contentsline {subsection}{\numberline {5.4}Vision critique et apport personnel}{12}{subsection.5.4}
-\contentsline {paragraph}{Scrapper g\IeC {\'e}n\IeC {\'e}rique\\}{12}{section*.6}
-\contentsline {subparagraph}{R\IeC {\'e}cup\IeC {\'e}rations des liens "dynamique" de la page HTML:\\}{12}{section*.7}
-\contentsline {subparagraph}{Clustering des liens}{12}{section*.8}
-\contentsline {subparagraph}{Tests et r\IeC {\'e}sultats}{13}{section*.9}
-\contentsline {paragraph}{Technologie utilis\IeC {\'e}e\\}{13}{section*.10}
+\contentsline {subsubsection}{\numberline {5.4.1}Scrapper g\IeC {\'e}n\IeC {\'e}rique\\}{12}{subsubsection.5.4.1}
+\contentsline {paragraph}{R\IeC {\'e}cup\IeC {\'e}rations des liens "dynamique" de la page HTML:\\}{12}{section*.6}
+\contentsline {paragraph}{Clustering des liens\\}{12}{section*.7}
+\contentsline {paragraph}{Tests et r\IeC {\'e}sultats\\}{13}{section*.8}
+\contentsline {subsubsection}{\numberline {5.4.2}Technologie utilis\IeC {\'e}e\\}{13}{subsubsection.5.4.2}
 \contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{15}{section.6}
 \contentsline {subsection}{\numberline {6.1}Contexte}{15}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{15}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{15}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{15}{subsection.6.4}
 \contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{16}{section.7}
-\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation du sialab et de la plateforme}{16}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{16}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{16}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{16}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{16}{subsection.7.4}

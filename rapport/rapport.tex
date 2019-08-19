@@ -216,7 +216,7 @@ Sur une vision plus large, les utilisateurs passent en moyenne plus de temps sur
 
 La mission de webscrapping était plutôt simple, dans le sens qu'une fois les notions de webscrapping acquises, cette mission consistait à analyser un code HTML et les requêtes faits en javascript, pour trouver les informations nécessaires. Mon apport personnel s'est plus concentrés sur les discussions avec le client au sujet de l'amélioration du scrapper générique et le choix des technologies ainsi que la compréhension de l'infrastructure de Cleep.
 
-\paragraph{Scrapper générique\\}
+\subsubsection{Scrapper générique\\}
 Le scrapper générique déjà présent n'était pas assez efficaces pour pouvoir enregistrer les données des produits et il était trop lent pour être utilisé en production indéfiniment (pour l'instant, si un lien n'appartient pas à la liste des 56 domaines scrappés, il passe par le scrapper générique). Comme il n'est pas non plus possible de scrapper de manière spécifique l'ensemble des sites commerciaux existants (la base de donées de Cleep compte plus de 8000 nom de domaines différents), j'ai discuté avec le client sur la nécessité d'un scrapper générique plus performant.\\
 Ainsi en parallèle, j'ai essayé de developper un scrapper générique plus performant n'utilisant pas un "headless browser". La valeur ajouté de Cleep reposant sur les images du produit enregistré dans l'application, j'ai travaillé sur un scrapper générique permettant de récupérer les images du produit.\\
 Ce scrapper suit les 2 étapes suivantes :
@@ -225,7 +225,7 @@ Ce scrapper suit les 2 étapes suivantes :
 	\item Récupérations des liens "dynamique" de la page HTML
 	\item Clustering des liens
 \end{itemize}
-\subparagraph{Récupérations des liens "dynamique" de la page HTML:\\}
+\paragraph{Récupérations des liens "dynamique" de la page HTML:\\}
 Cette étape consiste à récupérer l'ensemble des liens images de la page n'étant des liens statique. Un lien image est considéré comme statique s'il est présent plusieurs fois sur différentes pages. En générale ces images sont les logos et autre widgets communément présents. L'exemple \textbf{figure 6} ci-après montre les images statiques sur le site de la fnac. Une fois connus, ces liens ne sont pas pris en compte par le scrapper générique.\\ 
 Ainsi, à la fin de l'étape 1 (cf \textbf{figure 7} pour voir le procédé), l'ensemble des liens dynamique (ie liens d'images changeantes) est connu. Cependant, parmis ces images nous avons les images du produits, mais aussi celle fournies par les recommandations. Il faut donc trouver un moyen de séparer ces images .
 
@@ -242,16 +242,16 @@ Ainsi, à la fin de l'étape 1 (cf \textbf{figure 7} pour voir le procédé), l'
 	\caption{Etape 1}
 \end{figure}
 
-\subparagraph{Clustering des liens}
+\paragraph{Clustering des liens\\}
 Le but ici est de regrouper les liens de recommandations entre eux et les liens concernant le produits entre eux aussi. Pour cela j'ai utilisé un algorithme de clustering : dbscan. Le clustering se fait sur la distance en nombre de caractère dans le code HTML par rapport au début du code.\\
 Cela permet donc d'avoir en général 2 cluster distincts. En me basant sur l'ensemble des sites que j'ai scrappé auparavant, le 1er cluster est choisi comme celui contenant les images que l'on souhaite. Ainsi à la fin de cette étape on est sensé avoir l'ensemble des images du produit. Afin de vérifier si les liens sont bien ceux recherchés, on compare les liens entre eux en utilisant la distance de Levenshtein \cite{levenshtein}. La distance de Levenshtein entre deux chaînes de caractère $A$ et $B$ est le nombre minimum de transformation (ajout/suppression/changement d'un caractère) pour passer de $A$ à $B$. Ainsi, si dans le cluster, un lien paraît plus éloigné des autres, il est retiré de la liste.\\
 Cette règle se base sur le fait que les images d'un même produits ont souvent des liens très similaires et sont différencié par un identifiant dans l'URL. 
 
-\subparagraph{Tests et résultats}
+\paragraph{Tests et résultats\\}
 Les tests ont été réalisé sur une vingtaine de site que j'avais au préalable scrapper afin de pouvoir évaluer la différence. Il apparaît que ce scrapper générique arrive à récupérer toutes les images d'un produit spécifique. Cependant, il récupère trop d'image dans le sens où il peut récupérer 4 fois la même image mais ayant des tailles différentes. Encore une fois, pour des raisons de capacités mémoire, cette solution n'a pas été retenue par le client en l'état, mais est toujours en cours de développement.
 
 
-\paragraph{Technologie utilisée\\}
+\subsubsection{Technologie utilisée\\}
 L'ensemble du travail a été réalisé en NodeJS (interpreteur Javascript). Cette technologie a été utilisé car l'ensemble de l'architecture client était en NodeJS. Il était possible de travailler avec les librairies Python permettant de scrapper et faire des requetes HTML (scrappy, beautifulsoup) car cette partie est plutôt indépendante. Cependant pour éviter l'overhead introduit par un changement de langage, j'ai préféré suivre le langage du client.\\
 Par ailleurs, plusieurs sites internet ont des protections vis à vis du webscrapping. En effet les requêtes fait aux différents serveurs affecte les capacités de ces derniers. Ainsi deux problèmes se sont posés:
 \begin{itemize}
@@ -259,20 +259,28 @@ Par ailleurs, plusieurs sites internet ont des protections vis à vis du webscra
 	\item Ne pas lancer "involontairement" une attaque contre les serveur du site en question: pour cela on a trouvé une certaine limite temporelle avec le client
 	\item Les adresses IP des serveurs de Cleep qui étaient déjà sur liste noire de plusieurs sites.
 \end{itemize}
+
 Le deuxième problème s'explique par une technologie de protection employé par les site internet contre le webscrapping : Datadome. Datadome detecte si une requête est faite par un utilisateur ou un robot en regardant si le javascript de la page est chargé et executé. Si ce dernier n'est pas executé, il s'agit probablement d'un bot ayant requêté uniquement le code source de la page, ce qui est exactement notre cas. Une fois detecté par Datadome, l'adresse IP qui a servi pour la requête est mise sur liste noire et il n'est plus possible de faire de requête.\\
+
 La solution trouvé avec le client est de passer par un service de Proxy payant : Luminati, qui permet de changer d'adresse IP à chaque requête et donc de pouvoir utiliser les scripts de scrapping. Il est a noté que ce service facture à la requête, ainsi seul les sites ayant une protections datadome ou similaire passent par ce proxy.
 
 \newpage
 
 \section{Mission : Moteur de recommandation pour Cleep (2.5 mois)}
+Cette partie est consacrée au développement d'un moteur de recommandation pour la start-up Cleep. Cette mission fait directement suite à celle de webscrapping et reste dans l'esprit de développer des fonctions nécessaires à la croissance de l'application. Lors de cette mission, j'ai profité d'une grande autonomie car aucune solutions antérieures n'existaient auparavant. J'étais cependant en contact avec Damien Meurisse, co-fondateur de Cleep, et Paul Saffers, consultant datascientist à Sia Partners, afin de critiquer et valider mon avancement 
+
 \subsection{Contexte}
+Le but de cette mission est de développer un moteur de recommandation : à partir d'un élément et des données qui lui sont liées, le moteur doit retourner un ou plusieurs éléments similaires. Cette pratique est vastement répandue parmi les sites marchands/ sites de services (Amazon, Netflix, Pinterest ...).\\
+Avant le début de cette mission, Cleep n'avait pas de moteur de recommandation à proprement dit, certaines ébauches de moteur avait été faites, mais rien de concret. Pour une application comme Cleep dont le principe est de rendre l'utilisateur indépendant des sites marchands et de lui offrir une alternative au shopping basique sur Internet, la création d'un moteur de recommandation devenait nécessaire. En effet, il est possible de partager au travers de l'application les produits cleepés ainsi que les listes de cleeps. Un utilisateur peut voir les cleeps d'autres utilisateurs et en particuliers de ceux ayant les mêmes centres d'intérêts. Les interactions entre utilisateurs sont donc important, plus un utilisateur navigue sur Cleep, plus il passe de temps sur l'application ce qui le fidélise. Cependant sans moteur de recommandation, la navigation et la découverte de nouveaux cleeps n'était pas facilitée pour l'utilisateur. Celle-ci passait soit par la bar de recherche pour les cleeps spécifiques, soit par les pages catégories (triant les cleeps des utilisateurs par catégorie).\\
+C'est donc dans l'optique de créer un moteur de recommandation fonctionnel et adapté à l'architecture déjà présente de Cleep que la mission m'a été confiée.
+
 \subsection{Objectifs et problématique}
 \subsection{Travail effectué}
 \subsection{Vision critique et apport personnel}
 \newpage
 
 \section{Mission : Aide à l'amélioration d'une plateforme de déploiement pour Sia Partners}
-\subsection{Présentation du sialab et de la plateforme}
+\subsection{Présentation de la plateforme sialab}
 \subsection{Objectifs et problématique}
 \subsection{Travail effectué}
 \subsection{Vision critique et apport personnel}
