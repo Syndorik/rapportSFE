@@ -18,16 +18,25 @@
 \BOOKMARK [5][-]{section*.8}{Tests et r\351sultats}{section*.6}% 18
 \BOOKMARK [3][-]{subsubsection.5.4.2}{Technologie utilis\351e}{subsection.5.4}% 19
 \BOOKMARK [1][-]{section.6}{Mission : Moteur de recommandation pour Cleep \(2.5 mois\)}{}% 20
-\BOOKMARK [2][-]{subsection.6.1}{Contexte}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.2}{Objectifs et probl\351matique}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.3}{Travail effectu\351}{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.4}{Vision critique et apport personnel}{section.6}% 24
-\BOOKMARK [1][-]{section.7}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners}{}% 25
-\BOOKMARK [2][-]{subsection.7.1}{Pr\351sentation de la plateforme sialab}{section.7}% 26
-\BOOKMARK [2][-]{subsection.7.2}{Objectifs et probl\351matique}{section.7}% 27
-\BOOKMARK [2][-]{subsection.7.3}{Travail effectu\351}{section.7}% 28
-\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 29
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 30
-\BOOKMARK [1][-]{section.9}{Annexes}{}% 31
-\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 32
-\BOOKMARK [1][-]{section.10}{Glossaire}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{Contexte et probl\351matique}{section.6}% 21
+\BOOKMARK [3][-]{section*.9}{Objectif\(s\)}{subsection.6.1}% 22
+\BOOKMARK [4][-]{section*.10}{\311tat initial}{section*.9}% 23
+\BOOKMARK [5][-]{section*.11}{\311cosyst\350me de Cleep}{section*.10}% 24
+\BOOKMARK [2][-]{subsection.6.2}{Travail effectu\351}{section.6}% 25
+\BOOKMARK [3][-]{subsubsection.6.2.1}{\311tude des moteur de recommandations similaires}{subsection.6.2}% 26
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Article de recherche : moteur de recommandation de Pinterest}{subsection.6.2}% 27
+\BOOKMARK [4][-]{section*.12}{Inter\352t des bases de donn\351es en graphe}{subsubsection.6.2.2}% 28
+\BOOKMARK [5][-]{section*.13}{Comparatif ArangoDB / Neo4j}{section*.12}% 29
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Impl\351mentation}{subsection.6.2}% 30
+\BOOKMARK [2][-]{subsection.6.3}{Vision critique et apport personnel}{section.6}% 31
+\BOOKMARK [3][-]{section*.14}{Tests sur ArangoDB}{subsection.6.3}% 32
+\BOOKMARK [4][-]{section*.15}{Tests sur Neo4j}{section*.14}% 33
+\BOOKMARK [1][-]{section.7}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners}{}% 34
+\BOOKMARK [2][-]{subsection.7.1}{Pr\351sentation de la plateforme sialab}{section.7}% 35
+\BOOKMARK [2][-]{subsection.7.2}{Objectifs et probl\351matique}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.3}{Travail effectu\351}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 38
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 39
+\BOOKMARK [1][-]{section.9}{Annexes}{}% 40
+\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 41
+\BOOKMARK [1][-]{section.10}{Glossaire}{}% 42

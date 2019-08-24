@@ -2,34 +2,43 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}R\IeC {\'e}sum\IeC {\'e}}{2}{section.1}
 \contentsline {section}{\numberline {2}Summary}{3}{section.2}
-\contentsline {section}{\numberline {3}Introduction}{5}{section.3}
-\contentsline {section}{\numberline {4}Pr\IeC {\'e}sentation de l'entreprise}{6}{section.4}
-\contentsline {section}{\numberline {5}Mission : webscrapping pour Cleep (1 mois)}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pr\IeC {\'e}sentation de Cleep}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Objectifs et probl\IeC {\'e}matique}{8}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Travail effectu\IeC {\'e}}{9}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Contexte\\}{9}{subsubsection.5.3.1}
-\contentsline {paragraph}{M\IeC {\'e}thode automatique:\\}{9}{section*.2}
-\contentsline {paragraph}{M\IeC {\'e}thode spc\IeC {\'e}ifique:\\}{10}{section*.3}
-\contentsline {paragraph}{D\IeC {\'e}marche\\}{11}{section*.4}
-\contentsline {paragraph}{R\IeC {\'e}sultats\\}{12}{section*.5}
-\contentsline {subsection}{\numberline {5.4}Vision critique et apport personnel}{12}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Scrapper g\IeC {\'e}n\IeC {\'e}rique\\}{12}{subsubsection.5.4.1}
-\contentsline {paragraph}{R\IeC {\'e}cup\IeC {\'e}rations des liens "dynamique" de la page HTML:\\}{12}{section*.6}
-\contentsline {paragraph}{Clustering des liens\\}{12}{section*.7}
-\contentsline {paragraph}{Tests et r\IeC {\'e}sultats\\}{13}{section*.8}
-\contentsline {subsubsection}{\numberline {5.4.2}Technologie utilis\IeC {\'e}e\\}{13}{subsubsection.5.4.2}
-\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{15}{section.6}
-\contentsline {subsection}{\numberline {6.1}Contexte}{15}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{15}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{15}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{15}{subsection.6.4}
-\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{16}{section.7}
-\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{16}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{16}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{16}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{16}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{17}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{18}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{18}{subsection.9.1}
-\contentsline {section}{\numberline {10}Glossaire}{19}{section.10}
+\contentsline {section}{\numberline {3}Introduction}{6}{section.3}
+\contentsline {section}{\numberline {4}Pr\IeC {\'e}sentation de l'entreprise}{7}{section.4}
+\contentsline {section}{\numberline {5}Mission : webscrapping pour Cleep (1 mois)}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Pr\IeC {\'e}sentation de Cleep}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Objectifs et probl\IeC {\'e}matique}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Travail effectu\IeC {\'e}}{10}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Contexte\\}{10}{subsubsection.5.3.1}
+\contentsline {paragraph}{M\IeC {\'e}thode automatique:\\}{10}{section*.2}
+\contentsline {paragraph}{M\IeC {\'e}thode spc\IeC {\'e}ifique:\\}{11}{section*.3}
+\contentsline {paragraph}{D\IeC {\'e}marche\\}{12}{section*.4}
+\contentsline {paragraph}{R\IeC {\'e}sultats\\}{13}{section*.5}
+\contentsline {subsection}{\numberline {5.4}Vision critique et apport personnel}{13}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Scrapper g\IeC {\'e}n\IeC {\'e}rique\\}{13}{subsubsection.5.4.1}
+\contentsline {paragraph}{R\IeC {\'e}cup\IeC {\'e}rations des liens "dynamique" de la page HTML:\\}{13}{section*.6}
+\contentsline {paragraph}{Clustering des liens\\}{13}{section*.7}
+\contentsline {paragraph}{Tests et r\IeC {\'e}sultats\\}{14}{section*.8}
+\contentsline {subsubsection}{\numberline {5.4.2}Technologie utilis\IeC {\'e}e\\}{14}{subsubsection.5.4.2}
+\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}Contexte et probl\IeC {\'e}matique}{16}{subsection.6.1}
+\contentsline {paragraph}{Objectif(s)\\}{16}{section*.9}
+\contentsline {paragraph}{\IeC {\'E}tat initial}{17}{section*.10}
+\contentsline {paragraph}{\IeC {\'E}cosyst\IeC {\`e}me de Cleep\\}{17}{section*.11}
+\contentsline {subsection}{\numberline {6.2}Travail effectu\IeC {\'e}}{18}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}\IeC {\'E}tude des moteur de recommandations similaires}{18}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Article de recherche : moteur de recommandation de Pinterest\\}{19}{subsubsection.6.2.2}
+\contentsline {paragraph}{Inter\IeC {\^e}t des bases de donn\IeC {\'e}es en graphe\\}{20}{section*.12}
+\contentsline {paragraph}{Comparatif ArangoDB / Neo4j\\}{20}{section*.13}
+\contentsline {subsubsection}{\numberline {6.2.3}Impl\IeC {\'e}mentation}{20}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Vision critique et apport personnel}{20}{subsection.6.3}
+\contentsline {paragraph}{Tests sur ArangoDB\\}{20}{section*.14}
+\contentsline {paragraph}{Tests sur Neo4j\\}{20}{section*.15}
+\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{21}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{21}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{21}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{21}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{21}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{22}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{23}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{23}{subsection.9.1}
+\contentsline {section}{\numberline {10}Glossaire}{24}{section.10}

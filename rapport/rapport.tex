@@ -12,6 +12,7 @@
 % !TeX spellcheck = fr_FR
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{amsfonts} 
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -192,12 +193,13 @@ En effet la génération d'un navigateur permettait de faciliter la tâche, car 
 	\centering
 	\includegraphics[keepaspectratio = true,scale=0.6]{specific.png}
 	\caption{Méthode spécifique}
+	\label{fig:methspec}
 \end{figure}
 
 \newpage
 
 \paragraph{Démarche\\}
-Le processus Figure 4 montre les différentes étapes de la méthode spécifique. Mon travail s'est principalement concentré sur l'algorithme analysant un site web en particulier et la gestion des requêtes.\\
+Le processus \textbf{figure \ref{fig:methspec}} montre les différentes étapes de la méthode spécifique. Mon travail s'est principalement concentré sur l'algorithme analysant un site web en particulier et la gestion des requêtes.\\
 Prenons l'exemple suivant \cite{fnac} :
 \begin{figure}[!h]
 	\centering
@@ -226,13 +228,14 @@ Ce scrapper suit les 2 étapes suivantes :
 	\item Clustering des liens
 \end{itemize}
 \paragraph{Récupérations des liens "dynamique" de la page HTML:\\}
-Cette étape consiste à récupérer l'ensemble des liens images de la page n'étant des liens statique. Un lien image est considéré comme statique s'il est présent plusieurs fois sur différentes pages. En générale ces images sont les logos et autre widgets communément présents. L'exemple \textbf{figure 6} ci-après montre les images statiques sur le site de la fnac. Une fois connus, ces liens ne sont pas pris en compte par le scrapper générique.\\ 
-Ainsi, à la fin de l'étape 1 (cf \textbf{figure 7} pour voir le procédé), l'ensemble des liens dynamique (ie liens d'images changeantes) est connu. Cependant, parmis ces images nous avons les images du produits, mais aussi celle fournies par les recommandations. Il faut donc trouver un moyen de séparer ces images .
+Cette étape consiste à récupérer l'ensemble des liens images de la page n'étant des liens statique. Un lien image est considéré comme statique s'il est présent plusieurs fois sur différentes pages. En générale ces images sont les logos et autre widgets communément présents. L'exemple \textbf{figure \ref{fig:stats}} ci-après montre les images statiques sur le site de la fnac. Une fois connus, ces liens ne sont pas pris en compte par le scrapper générique.\\ 
+Ainsi, à la fin de l'étape 1 (cf \textbf{figure \ref{fig:step1}} pour voir le procédé), l'ensemble des liens dynamique (ie liens d'images changeantes) est connu. Cependant, parmis ces images nous avons les images du produits, mais aussi celle fournies par les recommandations. Il faut donc trouver un moyen de séparer ces images .
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[keepaspectratio = true,scale=0.25]{static.png}
-	\caption{Images statiques}
+	\caption{Exemple d'images statiques}
+	\label{fig:stats}
 \end{figure}
 
  
@@ -240,6 +243,7 @@ Ainsi, à la fin de l'étape 1 (cf \textbf{figure 7} pour voir le procédé), l'
 	\centering
 	\includegraphics[keepaspectratio = true,scale=0.4]{step1.png}
 	\caption{Etape 1}
+	\label{fig:step1}
 \end{figure}
 
 \paragraph{Clustering des liens\\}
@@ -267,16 +271,130 @@ La solution trouvé avec le client est de passer par un service de Proxy payant 
 \newpage
 
 \section{Mission : Moteur de recommandation pour Cleep (2.5 mois)}
+
 Cette partie est consacrée au développement d'un moteur de recommandation pour la start-up Cleep. Cette mission fait directement suite à celle de webscrapping et reste dans l'esprit de développer des fonctions nécessaires à la croissance de l'application. Lors de cette mission, j'ai profité d'une grande autonomie car aucune solutions antérieures n'existaient auparavant. J'étais cependant en contact avec Damien Meurisse, co-fondateur de Cleep, et Paul Saffers, consultant datascientist à Sia Partners, afin de critiquer et valider mon avancement 
 
-\subsection{Contexte}
+\subsection{Contexte et problématique}
+
 Le but de cette mission est de développer un moteur de recommandation : à partir d'un élément et des données qui lui sont liées, le moteur doit retourner un ou plusieurs éléments similaires. Cette pratique est vastement répandue parmi les sites marchands/ sites de services (Amazon, Netflix, Pinterest ...).\\
-Avant le début de cette mission, Cleep n'avait pas de moteur de recommandation à proprement dit, certaines ébauches de moteur avait été faites, mais rien de concret. Pour une application comme Cleep dont le principe est de rendre l'utilisateur indépendant des sites marchands et de lui offrir une alternative au shopping basique sur Internet, la création d'un moteur de recommandation devenait nécessaire. En effet, il est possible de partager au travers de l'application les produits cleepés ainsi que les listes de cleeps. Un utilisateur peut voir les cleeps d'autres utilisateurs et en particuliers de ceux ayant les mêmes centres d'intérêts. Les interactions entre utilisateurs sont donc important, plus un utilisateur navigue sur Cleep, plus il passe de temps sur l'application ce qui le fidélise. Cependant sans moteur de recommandation, la navigation et la découverte de nouveaux cleeps n'était pas facilitée pour l'utilisateur. Celle-ci passait soit par la bar de recherche pour les cleeps spécifiques, soit par les pages catégories (triant les cleeps des utilisateurs par catégorie).\\
+
+Avant le début de cette mission, Cleep n'avait pas de moteur de recommandation à proprement dit, certaines ébauches de moteur avait été faites, mais rien de concret. Pour une application comme Cleep dont le principe est de rendre l'utilisateur indépendant des sites marchands et de lui offrir une alternative au shopping basique sur Internet, la création d'un moteur de recommandation devenait nécessaire.\\
+En effet, il est possible de partager au travers de l'application les produits cleepés ainsi que les listes de cleeps. Un utilisateur peut donc voir les cleeps d'autres utilisateurs et en particulier ceux correspondants à ses centres d'intérêts. Les interactions avec les cleeps déjà disponibles sur la plateforme sont donc importantes, plus un utilisateur navigue sur Cleep, plus il passe de temps sur l'application ce qui le fidélise. Cependant sans moteur de recommandation, la navigation et la découverte de nouveaux cleeps est assez difficile pour l'utilisateur. Celle-ci passe soit par la bar de recherche pour la recherche de cleep(s) spécifique(s), soit par les pages catégories (triant les cleeps des utilisateurs par catégorie).\\
 C'est donc dans l'optique de créer un moteur de recommandation fonctionnel et adapté à l'architecture déjà présente de Cleep que la mission m'a été confiée.
 
-\subsection{Objectifs et problématique}
+\paragraph{Objectif(s)\\}
+
+L'objectif premier de cette mission qui a durée 2.5 mois était de créer un moteur de recommandation à partir des données de Cleep. Cette mission s'est divisée en deux grandes étapes:
+\begin{itemize}
+	\itemsep 0em
+	\item Etudes des différents moteur de recommandations existant et études des bases de données en graphe
+	\item Implémentation sur la technologie choisie d'un moteur de recommandation pour Cleep
+\end{itemize}
+La deuxième étape inclue l'ensemble des discussions avec le client au sujet des caractéristiques du moteur de recommandation, comment il est sensé se comporter, les améliorations possibles par rapport au cas de Cleep, ainsi que les manières de tester et valider la solution apportée.\\
+Dans le cas précis de Cleep, un moteur de recommandation consiste à fournir à partir d'un cleep un certains nombre de cleep pouvant être utile à l'utilisateur (cf schéma \textbf{figure \ref{fig:reco}}). 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{reco.png}
+	\caption{Etape 1}
+	\label{fig:reco}
+\end{figure}
+
+La boite noire qu'est pour l'instant le moteur de recommandation reposera sur l'ensemble des éléments présents dans la base de donnée de Cleep afin d'avoir des recommandations précises et pertinentes. En effet, plus l'analyse des données et de leurs relations est poussée, plus le moteur retournera des cleeps pertinents. Tout du moins pertinent par rapport aux tendances évoquées par les données.
+
+\paragraph{État initial}
+Avant le début de ma mission, il y avait déjà eu quelques idée pour la création et le développement d'un moteur de recommandation.\\
+Cleep est une application qui repose beaucoup sur le visuel, et donc sur les images des produits. Cette image permet à l'utilisateur de reconnaître la nature du produit et donc de savoir ce qu'il a cleepé. Ainsi une idée envisagée était de baser le moteur de recommandation uniquement sur l'analyse des images. Pour cela il existe une API developpé par Google qui permet de fournir des "tags images" ainsi qu'une pourcentage de confiance associé. Dans la \textbf{figure \ref{fig:ggviz}}, on peut voir l'application de l'algorithme derrière cette API sur un pull.\\
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{ggvision.jpg}
+	\caption{Etape 1}
+	\label{fig:ggviz}
+\end{figure}
+
+Dans cette ébauche de moteur de recommandation, l'idée était donc de tagger toutes les images de la base de donnée en premier lieu. Ensuite, pour un cleep dont on veut les recommandations, on fait passer ses images par le même algorithme, et on récupère ses tags. La dernière étape du processus envisagé est de retourner les images ayant le plus de tags en commun avec ceux du cleep original, tout en prenant en compte le pourcentage de confiance.\\
+Cette idée, bien que fonctionnelle, ne prend en compte qu'une infime partie de la base de donnée de Cleep (ie les images). Ainsi, il est très peu personnalisé et retourne des recommandations génériques. Le but premier de cette mission est donc d'utiliser au mieux l'ensemble des informations afin de fournir des recommandations personnalisées.
+
+\paragraph{Écosystème de Cleep\\}
+Il est nécessaire pour comprendre le travail que j'ai effectué de connaître l'ensemble des éléments à disposition dans la base de donnée Cleep. Je reviendrais plus en profondeur par la suite, en détaillant précisément le type de base ainsi que la structure choisie pour faire fonctionner ce moteur de recommandation.\\
+\newpage
+
+La base de donnée est composé de:
+\begin{itemize}
+	\item Informations de l'utilisateur anonymisées : son âge, son sexe, ses interêts ses interactions avec les sites internet marchands etc.
+	\item Informations sur les cleeps : la liste à laquelle il est associé, ses tags provenant de google vision, sa date de créations, l'utilisateur qui l'a créé, et son statut (s'il est toujours en ligne ou s'il a été supprimé par son propriétaire)
+	\item Information sur les listes de cleeps: son statut, son propriétaire et l'ensemble des personnes ayant accédé/partagé cette liste
+\end{itemize}
+Par ailleurs, les activités des utilisateurs sont enregistrées, ce qui donne des informations en plus, notamment sur les interactions entre les trois entités : cleeps, utilisateurs, listes. Sont a disposition les activités sur les relations suivantes:
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=1]{relations.png}
+	\caption{Etape 1}
+	\label{fig:rel}
+\end{figure}
+
+
+
 \subsection{Travail effectué}
+Dans cette partie je vais décrire le travail effecuté pour la création du moteur de recommandation et revenir sur les principales étapes de ce processus. Comme dit précédemment, cette mission s'est d'abord axée sur l'étude des système de recommandations déjà existant ainsi que les technologies qui leurs sont associées. Ensuite, il a fallu designer et implémenter le moteur de recommandation en se basant sur les conclusions de la première partie. 
+
+\subsubsection{Étude des moteur de recommandations similaires}
+
+Le cas de Cleep n'est pas du tout unique, il y a plusieurs exemples d'application similaires sur le marchés utilisant des moteurs de recommandations. On peut penser notamment à l'ensemble des sites marchands que j'ai scrappés en première partie. Chacun d'entre eux possède un système leur permettant de recommander des produits à partir d'un article.\\
+Il y a donc autant de manière de faire un système de recommandation qu'il y a de site en proposant. Cependant il y a des objectifs clairs vis à vis de ce dernier :
+\begin{itemize}
+	\itemsep 0em
+	\item A partir d'un articles, plusieurs articles doivent en ressortir
+	\item La recommandations doit être personnalisée
+	\item La recommandation doit être rapide
+	\item La mise en place du système ne doit pas être chère
+\end{itemize}
+C'est donc avec ces objectifs que j'ai commencé les recherches.
+
+\subsubsection{Article de recherche : moteur de recommandation de Pinterest\\}
+Après quelques recherches, ma culture personnelle  ainsi que sur les conseils de Damien et Paul j'ai orienté mes recherches sur les moteurs de recommandations ayant une solution basé sur le parcours de graphe. Damien m'a alors recommandé la lecture de l'article de recherche sur le moteur de recommandation de Pinterest : Pixie \cite{pixie}.\\
+Pinterest \cite{Pinterest}, est un réseau social, dont le principe est de partager de l'information via des photos, vidéos, GIFs. Chaque élément partagé peut avoir une description un titre et des tags au choix de l'utilisateur. Ce réseau est en général utilisé pour partager autour de certains centres d'intérêts comme par exemple la photographie, le sport, la cuisine etc. Le moteur de recommandation de Pinterest est donc une bonne source d'inspiration pour Cleep. Le parallèle se faisant sur le côté très graphique de l'application. Ce sont les images qui attirent l'œil avant tout, mais aussi sur le but du moteur qui est d'identifier les pins (entité regroupant l'ensemble des informations liés aux images sur Pinterest)/cleeps répondant au mieux à l'envie de l'utilisateur. Ainsi, pour les deux application ce n'est pas nécessairement de pousser à l'achat, mais de faire rester sur l'application qui est important.\\
+
+Pixie est un moteur de recommandation basé sur le parcours d'un graphe en marche aléatoire. Le graphe créé pour Pixie se base sur l'ensemble des entités présentes dans l'écosystème Pinterest. Pour résumer, les noeuds du graphe sont les pins et les utilisateurs. Les arrêtes sont les relations : pins $\leftrightarrow$ pins, pins $\leftrightarrow$ utilisateurs, utilisateurs $\leftrightarrow$ pins. Chacune des entités (arrêtes et nœuds) contiennent de l'information.\\
+Le graphe établit, il est alors possible d'établir une distance entre les pins. Cette distance est très importante car c'est elle qui va déterminer la qualité du moteur de recommandation. Le calcul de cette distance est spécifique à Pinterest, je ne vais donc pas la décrire. Cependant il est à noter que Pinterest utilise la quasi-totalité de l'information qu'il possède afin de calculer cette distance.\\
+Il est possible de penser que le travail est fait et qu'il suffit uniquement de récupérer pour un pin les pins les plus proche de ce dernier sur le graphe. Cependant, comme le titre du papier de recherche l'indique, il y a plus de 3 milliards de pins et plus de 200 millions d'utilisateurs. Ainsi, pour chaque nœud il faudrait calculer la distance avec l'ensemble des autres nœuds, ce qui est très long voir impossible. Mais aussi il faudrait stocker cette donnée ce qui est aussi compliqué vu la taille des données. En effet, en supposant que le résultat soit un entier codé sur un 4 octets mais aussi que la distance pour aller d'un pin A à un pin B soit indépendant du chemin, il faudrait pour un nœud 12 gigaoctets. Soit pour l'ensemble de la base de donnée 36 exaoctets ($36.10^9$ $Go$). De plus, à chaque ajout de nœuds, il faudrait tout recalculer, car les relations peuvent changer.\\
+Les problèmes de stockage, de calculs mais aussi de mise à jour en temps réel rendent la solution évoquée précédemment irréalisable. De plus vu que les arrêtes du graphe portent de l'information, la distance dépend bien du chemin parcouru ainsi les calculs ont été (volontairement) vu à la baisse.\\
+
+Le papier répond à ces problèmes avec l'heuristique suivante :
+\begin{itemize}
+	\itemsep 0em
+	\item Étape 1 : Récolte des informations sur le premier Pin
+	\item Étape 2 : N marches aléatoires sur le graphe ($N \in \mathbb{N}$ )
+	\item Étape 3 : Calcul du score (distance) pour chaque marche aléatoire avec le dernier pin disponible sur la marche.
+	\item Étape 4 : Parmis les N scores, seul les pins recommandés ayant un socre supérieur à un seuil déterminé au préalable sont gardés
+	\item Étape 5 : S'il n'y a pas assez de pins pour la recommandation, le processus est relancé 
+	\item Étape 6 : Les recommandations sont poussées sur l'application et montrées à l'utilisateur
+\end{itemize}
+A partir de maintenant, le terme score désigne la distance calculé avec les informations et le terme distance la distance nœuds à nœuds.\\
+Cette heuristique permet donc d'outrepasser l'ensemble des problèmes liés à la mémoire car les scores ne sont jamais sauvegardées. De plus le calcul du score dépend bien du chemin parcouru : il est possible d'avoir la situation où le même pin est retourné deux fois, sans pour autant avoir le même score car la traversée du graphe était différente. Comme c'est une heuristique, le résultat fournit n'est bien évidement pas la solution optimale, mais elle s'en rapproche pour un temps réalisable.\\
+La critique qui peut être émise vis à vis cette heuristique est le côté marche aléatoire. Il va être fréquent de tomber sur les mêmes nœuds / les nœuds les plus proches (en terme de distance nœuds à nœuds). Au vu du nombre de noeuds existant dans la base de Pinterest (et existant aussi dans la base de Cleep), il est assez rare de tomber plusieurs fois sur le même chemin. Ensuite pour la deuxième critique, c'est le but même de l'heuristique, rester assez proche du nœud original. Plus on va loin dans la propagation dans le graphe, plus le nœud original est le voisin d'un voisin d'un voisin ... du nœud actuel. Il y a donc de base peu de relations entre les deux nœuds ce qui va en général retourner un mauvais score.\\
+
+C'est à partir de cette heuristique que j'ai alors implémenté le moteur de recommandation pour Cleep. Cependant, je ne pouvais pas suivre l'ensemble de papier de Pinterest car il y avait quelques limitations en matière de ressources exigées.\\
+Pinterest crée son graphe avec une partie de sa base de donnée. Ce sont les pins étant les plus tendances, et les plus vues pendant une période donnée qui y sont inclus, mais aussi les utilisateurs ayant le plus d'interactions avec les autres/ les pins. Le graphe est créé en C++ de manière dynamique. Ainsi le graphe est stocké en mémoire RAM des serveurs, l'heuristique lui est ensuite appliquée. Le graphe est régénérée fréquemment afin d'avoir des recommandations à jour. Ce mode de fonctionnement est un problème car les serveurs de Pinterest coûtent assez cher, ce qui leur permet de faire tenir en RAM des graphes ayant une taille avoisinant le Téraoctet. Cleep ne peut raisonner de la même manière, créer un graphe compilé est donc compliqué. \\
+Par ailleurs la création d'un graphe optimisé avec requêtes optimisés prend beaucoup de temps. Cleep avait besoin d'un moteur de recommandation assez rapidement. Pour ces raisons, il a été choisi de ne pas utiliser un graphe précompilé. C'est ainsi que je me suis tourné vers une solution plus viable : les bases de données en graphe.
+
+\paragraph{Interêt des bases de données en graphe\\}
+
+Par la suite, il fallait donc trouver et étudier le fonctionnement des différentes base de données graphe existantes sur le marché. Selon les recommandations du client, j'ai commencé par étudier la faisabilité du projet sur la base de donnée graphe ArangoDB. En approfondissant mes recherches, et en expérimentant les limites d'ArangoDB, je me suis tourné vers la base graphe la plus utilisée sur le marché : Neo4j.
+
+\paragraph{Comparatif ArangoDB / Neo4j\\}
+
+\subsubsection{Implémentation}
+
+
 \subsection{Vision critique et apport personnel}
+
+\paragraph{Tests sur ArangoDB\\}
+
+\paragraph{Tests sur Neo4j\\}
+
+
 \newpage
 
 \section{Mission : Aide à l'amélioration d'une plateforme de déploiement pour Sia Partners}
@@ -305,7 +423,15 @@ C'est donc dans l'optique de créer un moteur de recommandation fonctionnel et a
 	\bibitem{mve}
 	Exemple site internet avec plusieurs produits : \texttt{https://livre.fnac.com}
 	\bibitem{levenshtein}
-	Approfondissement sur la distance de Levenshtein : \texttt{https://en.wikipedia.org/wiki/Levenshtein\_distance}
+	Approfondissement sur la \\
+	 de Levenshtein : \texttt{https://en.wikipedia.org/wiki/Levenshtein\_distance}
+	\bibitem{pixie}
+	Pixie: A System for Recommending 3+ Billion Items to 200+ Million Users in Real-Time :
+	\textit{https://labs.pinterest.com/user/themes/pin\_labs/assets/paper/paper-pixie.pdf}\\
+	Auteurs : Chantat Eksombatchai, Pranav Jindal, Jerry Zitao Liu, Yuchen Liu,
+	Rahul Sharma, Charles Sugnet, Mark Ulrich, Jure Leskovec
+	\bibitem{Pinterest}
+	Site Internet de Pinterest: \textit{https://www.pinterest.com/}
 	
 \end{thebibliography}
 \newpage
