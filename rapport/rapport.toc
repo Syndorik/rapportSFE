@@ -27,18 +27,19 @@
 \contentsline {subsection}{\numberline {6.2}Travail effectu\IeC {\'e}}{18}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}\IeC {\'E}tude des moteur de recommandations similaires}{18}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}Article de recherche : moteur de recommandation de Pinterest\\}{19}{subsubsection.6.2.2}
-\contentsline {paragraph}{Inter\IeC {\^e}t des bases de donn\IeC {\'e}es en graphe\\}{20}{section*.12}
-\contentsline {paragraph}{Comparatif ArangoDB / Neo4j\\}{20}{section*.13}
-\contentsline {subsubsection}{\numberline {6.2.3}Impl\IeC {\'e}mentation}{20}{subsubsection.6.2.3}
-\contentsline {subsection}{\numberline {6.3}Vision critique et apport personnel}{20}{subsection.6.3}
-\contentsline {paragraph}{Tests sur ArangoDB\\}{20}{section*.14}
-\contentsline {paragraph}{Tests sur Neo4j\\}{20}{section*.15}
-\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{21}{section.7}
-\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{21}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{21}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{21}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{21}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{22}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{23}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{23}{subsection.9.1}
-\contentsline {section}{\numberline {10}Glossaire}{24}{section.10}
+\contentsline {paragraph}{Inter\IeC {\^e}t des bases de donn\IeC {\'e}es en graphe\\}{21}{section*.12}
+\contentsline {paragraph}{Les d\IeC {\'e}savantages}{21}{section*.13}
+\contentsline {paragraph}{Comparatif ArangoDB / Neo4j\\}{22}{section*.14}
+\contentsline {subsubsection}{\numberline {6.2.3}Impl\IeC {\'e}mentation}{22}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Vision critique et apport personnel}{22}{subsection.6.3}
+\contentsline {paragraph}{Tests sur ArangoDB\\}{22}{section*.15}
+\contentsline {paragraph}{Tests sur Neo4j\\}{22}{section*.16}
+\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{23}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{23}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{23}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{23}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{23}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{24}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{25}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{25}{subsection.9.1}
+\contentsline {section}{\numberline {10}Glossaire}{26}{section.10}

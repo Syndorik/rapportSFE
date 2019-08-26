@@ -3,18 +3,23 @@ Image de comment est l'application clip et les différents éléments.
 FAIRE ANNEXE SUR LE WEBSCRAPPING
 FAIRE ANNEXE PRESENTATION DE CLEEP ET DE L'APP
 
-Pas parti de rien, basé sur le truc de Pinterest etc
 Rappel des éléments de Cleep
 
 Les produits -18 enlever (amélioration)
 
 
-faisabilité du projet:
-etre rapide
-pas trop lourd en mémoire
-pouvoir faire des requêtes 
-
 pb de ram
 pb d'infrastructure comme pinterest blablabla	
+
+
+
+Partie critique avec les schémas et explications (comparaison arango / Neo4j)
+Partie critique pb de chemin parcouru optimisation si on repasse via un chemin déjà pris, on redémarre à partir de ce chemin
+Partie critique amélioration de la marche aléatoire dans le code pour être en propagation et pas retourner sur lui même (avant le faisait et beaucoup de score bof)
+
+
+
+
+
 
 
