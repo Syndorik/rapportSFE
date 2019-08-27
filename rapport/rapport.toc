@@ -36,16 +36,16 @@
 \contentsline {paragraph}{\numberline {6.2.3.3}Fonction de scoring\\}{24}{paragraph.6.2.3.3}
 \contentsline {subparagraph}{\numberline {6.2.3.3.1}1\IeC {\`e}re version\\}{24}{subparagraph.6.2.3.3.1}
 \contentsline {subparagraph}{\numberline {6.2.3.3.2}2\IeC {\`e}me version\\}{26}{subparagraph.6.2.3.3.2}
-\contentsline {paragraph}{\numberline {6.2.3.4}Tests du moteur}{26}{paragraph.6.2.3.4}
+\contentsline {paragraph}{\numberline {6.2.3.4}Tests du moteur\\}{26}{paragraph.6.2.3.4}
 \contentsline {subsection}{\numberline {6.3}Vision critique et apport personnel}{26}{subsection.6.3}
-\contentsline {paragraph}{\numberline {6.3.0.1}Tests sur ArangoDB\\}{26}{paragraph.6.3.0.1}
-\contentsline {paragraph}{\numberline {6.3.0.2}Tests sur Neo4j\\}{26}{paragraph.6.3.0.2}
-\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{27}{section.7}
-\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{27}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{27}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{27}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{27}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{28}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{29}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{29}{subsection.9.1}
-\contentsline {section}{\numberline {10}Glossaire}{30}{section.10}
+\contentsline {paragraph}{\numberline {6.3.0.1}Tests sur ArangoDB et Neo4j\\}{26}{paragraph.6.3.0.1}
+\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{28}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{28}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{28}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{28}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{28}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{29}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{30}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{30}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{30}{subsection.9.2}
+\contentsline {section}{\numberline {10}Glossaire}{31}{section.10}

@@ -570,7 +570,30 @@ Dans cette partie, je reviens sur quelques éléments apparus au cours du dével
 
 \paragraph{Tests sur ArangoDB et Neo4j\\}
 Afin de comparer les deux bases de donnée, j'ai effectué plusieurs tests comparatifs sur les bases de données notamment en terme de temps d'exécution d'une marche aléatoire. L'étude a été réalisé en local, et donc avec une RAM limité.\\
-Ainsi les tests ont été réalisé sur une base de donnée contenant 500 utilisateurs, 10.000 cleeps et 1.4 millions de connexions. J'ai délibérément ignorer les listes pour rendre les tests plus léger et moins compliquer à mettre en place. En effet pour avoir une idée du temps d'exécution et du temps de requête assez proche de ce qu'on allait avoir en production, des bases avec des données factices ont été générée. Le but étant d'avoir des noeuds et des arrêtes contenant des données comme pour le cas de cl	
+Ainsi les tests ont été réalisé sur une base de donnée contenant 500 utilisateurs, 10.000 cleeps et 1.4 millions de connexions. J'ai délibérément ignorer les listes pour rendre les tests plus léger et moins compliquer à mettre en place. En effet pour avoir une idée du temps d'exécution et du temps de requête assez proche de ce qu'on allait avoir en production, des bases avec des données factices ont été générée. Le but étant d'avoir des nœuds et des arrêtes contenant des données comme c'est le cas pour Cleep.\\
+L'étude étant réalisée sur la marche aléatoire, il y a trois paramètres sur chaque graphe: 
+\begin{itemize}
+	\item Number walker : Nombre de marche aléatoire faites
+	\item Depth : La profondeur de la marche aléatoire (ie le nombre d'étape faite pendant la marche)
+	\item Time : Le temps médian d’execution. Pour chaque couple (number walker, depth) 100 réalisations ont été effectuées et la médiane est prise comme référence
+\end{itemize} 
+Les figures suivantes montrent la comparaison entre les deux solutions. Des graphes supplémentaires sont disponibles en \textbf{Annexes 9.2}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.7]{comparison_depth_time.png}
+	\caption{Comparaison des bases en fonction de la profondeur et du temps médian}
+	\label{fig:depth_time}
+\end{figure}
+
+Les figures suivantes montrent la comparaison entre les deux solutions. Des graphes supplémentaires sont disponibles en \textbf{Annexes 9.2}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.7]{comparison_nbWalker_time.png}
+	\caption{Comparaison des bases en fonction du nombres de chemin aléatoire et du temps médian}
+	\label{fig:walker}
+\end{figure}
 
 
 \newpage
@@ -589,6 +612,7 @@ Ainsi les tests ont été réalisé sur une base de donnée contenant 500 utilis
 \section{Annexes}
 \subsection{Code source allégé du site de la fnac}
 %\lstinputlisting[language=html]{fnac.html}
+\subsection{Graphe tests ArangoDB / Neo4j}
 
 \newpage
 

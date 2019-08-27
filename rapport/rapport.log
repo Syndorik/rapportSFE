@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  27 AUG 2019 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  27 AUG 2019 19:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1703,7 +1703,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 \c@imta@idx=\count344
 \imta@oldlinewidth=\skip138
 \imta@oldtextwidth=\skip139
-<sia_logo.jpg, id=195, 6849.59pt x 2582.64874pt>
+<sia_logo.jpg, id=203, 6849.59pt x 2582.64874pt>
 File: sia_logo.jpg Graphic file (type jpg)
 <use sia_logo.jpg>
 Package pdftex.def Info: sia_logo.jpg  used on input line 75.
@@ -1739,7 +1739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 99.
-<cleep.jpg, id=299, 1204.5pt x 501.875pt>
+<cleep.jpg, id=310, 1204.5pt x 501.875pt>
 File: cleep.jpg Graphic file (type jpg)
 <use cleep.jpg>
 Package pdftex.def Info: cleep.jpg  used on input line 104.
@@ -1760,7 +1760,7 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
                                                   \fi \fi 
 l.122 \newpage
                <./cleep.jpg>]
-<scrapping.png, id=308, 477.4638pt x 388.5717pt>
+<scrapping.png, id=320, 477.4638pt x 388.5717pt>
 File: scrapping.png Graphic file (type png)
 <use scrapping.png>
 Package pdftex.def Info: scrapping.png  used on input line 143.
@@ -1788,7 +1788,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 162.
 
-<browserInject.png, id=316, 793.16325pt x 401.0985pt>
+<browserInject.png, id=327, 793.16325pt x 401.0985pt>
 File: browserInject.png Graphic file (type png)
 <use browserInject.png>
 Package pdftex.def Info: browserInject.png  used on input line 165.
@@ -1830,7 +1830,7 @@ Overfull \hbox (30.17772pt too wide) in paragraph at lines 185--186
 AKENING-FR-SWITCH-Jeu-Nintendo-
  []
 
-<specific.png, id=323, 612.03656pt x 401.0985pt>
+<specific.png, id=334, 612.03656pt x 401.0985pt>
 File: specific.png Graphic file (type png)
 <use specific.png>
 Package pdftex.def Info: specific.png  used on input line 194.
@@ -1843,7 +1843,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 202.
 
-<fnac.png, id=350, 1861.95625pt x 875.27pt>
+<fnac.png, id=361, 1861.95625pt x 875.27pt>
 File: fnac.png Graphic file (type png)
 <use fnac.png>
 Package pdftex.def Info: fnac.png  used on input line 206.
@@ -1887,7 +1887,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 231.
 
-<static.png, id=366, 1831.84375pt x 761.84625pt>
+<static.png, id=377, 1831.84375pt x 761.84625pt>
 File: static.png Graphic file (type png)
 <use static.png>
 Package pdftex.def Info: static.png  used on input line 236.
@@ -1895,7 +1895,7 @@ Package pdftex.def Info: static.png  used on input line 236.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<step1.png, id=367, 713.66624pt x 379.4175pt>
+<step1.png, id=378, 713.66624pt x 379.4175pt>
 File: step1.png Graphic file (type png)
 <use step1.png>
 Package pdftex.def Info: step1.png  used on input line 244.
@@ -1953,7 +1953,7 @@ Package hyperref Warning: Difference (3) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 287.
 
-<reco.png, id=388, 596.2275pt x 361.35pt>
+<reco.png, id=399, 596.2275pt x 361.35pt>
 File: reco.png Graphic file (type png)
 <use reco.png>
 Package pdftex.def Info: reco.png  used on input line 298.
@@ -1974,7 +1974,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
-<ggvision.jpg, id=395, 1007.765pt x 559.08875pt>
+<ggvision.jpg, id=406, 1007.765pt x 559.08875pt>
 File: ggvision.jpg Graphic file (type jpg)
 <use ggvision.jpg>
 Package pdftex.def Info: ggvision.jpg  used on input line 311.
@@ -1995,7 +1995,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--321
                                                   \fi \fi 
 l.321 \newpage
                <./ggvision.jpg>]
-<relations.png, id=401, 361.35pt x 157.3077pt>
+<relations.png, id=412, 361.35pt x 157.3077pt>
 File: relations.png Graphic file (type png)
 <use relations.png>
 Package pdftex.def Info: relations.png  used on input line 332.
@@ -2031,7 +2031,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--377
  []
 
 [19]
-<procpint.png, id=421, 659.5842pt x 325.215pt>
+<procpint.png, id=432, 659.5842pt x 325.215pt>
 File: procpint.png Graphic file (type png)
 <use procpint.png>
 Package pdftex.def Info: procpint.png  used on input line 380.
@@ -2041,7 +2041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
-<pintfunc.png, id=422, 650.43pt x 189.8292pt>
+<pintfunc.png, id=433, 650.43pt x 189.8292pt>
 File: pintfunc.png Graphic file (type png)
 <use pintfunc.png>
 Package pdftex.def Info: pintfunc.png  used on input line 390.
@@ -2071,7 +2071,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--413
 
  []
 
-<indfree.png, id=429, 1366.10374pt x 302.12875pt>
+<indfree.png, id=441, 1366.10374pt x 302.12875pt>
 File: indfree.png Graphic file (type png)
 <use indfree.png>
 Package pdftex.def Info: indfree.png  used on input line 416.
@@ -2121,7 +2121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 483--484
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 495.
 
-<proccleep.png, id=451, 776.9025pt x 298.2342pt>
+<proccleep.png, id=462, 776.9025pt x 298.2342pt>
 File: proccleep.png Graphic file (type png)
 <use proccleep.png>
 Package pdftex.def Info: proccleep.png  used on input line 499.
@@ -2163,7 +2163,7 @@ sy/m/n/10 ^^B [] [][]
                                                   \fi \fi 
 l.520 \end{equation}
                      <./proccleep.png>]
-<atan.png, id=461, 1370.11874pt x 700.6175pt>
+<atan.png, id=472, 1370.11874pt x 700.6175pt>
 File: atan.png Graphic file (type png)
 <use atan.png>
 Package pdftex.def Info: atan.png  used on input line 524.
@@ -2211,37 +2211,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
  []
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 563.
+
+
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 571.
+(hyperref)                than one, level fixed on input line 572.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 571.
+(hyperref)                removing `\\' on input line 572.
+
+[26]
+<comparison_depth_time.png, id=492, 505.89pt x 505.89pt>
+File: comparison_depth_time.png Graphic file (type png)
+<use comparison_depth_time.png>
+Package pdftex.def Info: comparison_depth_time.png  used on input line 584.
+(pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
+<comparison_nbWalker_time.png, id=493, 505.89pt x 505.89pt>
+File: comparison_nbWalker_time.png Graphic file (type png)
+<use comparison_nbWalker_time.png>
+Package pdftex.def Info: comparison_nbWalker_time.png  used on input line 593.
+(pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 574.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 574.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.599 \newpage
+               <./comparison_depth_time.png>] [28pdfTeX warning (ext4): destina
+tion with the same identifier (name{figure.17}) has been already used, duplicat
+e ignored
 
-[26] [27] [28] [29]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.606 \newpage
+               <./comparison_nbWalker_time.png>] [29] [30]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 596.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 622.
 
-Underfull \hbox (badness 3029) in paragraph at lines 605--609
+Underfull \hbox (badness 3029) in paragraph at lines 631--635
 []\T1/phv/m/n/10 Pixie: A Sys-tem for Rec-om-mend-ing 3+ Bil-lion Items to 200+
  Mil-lion Users in Real-Time :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--619
+Underfull \hbox (badness 10000) in paragraph at lines 643--645
 \T1/phv/m/sl/10 https://neo4j.com/docs/java-reference/current/extending-neo4j/p
 rocedures-and-functions/aggregation-
  []
 
-[30]
+[31]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2274,34 +2298,28 @@ rocedures-and-functions/aggregation-
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [31
+ [32
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 631.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 631.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 631.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 631.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 657.
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: 3342CFD5BA289B4F63CA99365A0465BB;3913.
 
-
-Package rerunfilecheck Warning: File `rapport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `rapport.out':
-(rerunfilecheck)             Before: E0DEBC926351C2A13D97A5D0AF88F2ED;3744
-(rerunfilecheck)             After:  E5A2AB09FB6CB621E013EFC592B7746F;3901.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 631.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
  ) 
 Here is how much of TeX's memory you used:
- 32177 strings out of 494923
- 604030 string characters out of 6180742
- 757934 words of memory out of 5000000
- 34848 multiletter control sequences out of 15000+600000
+ 32194 strings out of 494923
+ 604423 string characters out of 6180742
+ 758163 words of memory out of 5000000
+ 34860 multiletter control sequences out of 15000+600000
  578031 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,12n,75p,10420b,1360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2318,10 +2336,10 @@ mbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (31 pages, 1985216 bytes).
+Output written on rapport.pdf (32 pages, 2075503 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 131 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 495 words of extra memory for PDF output out of 10000 (max. 10000000)
 
