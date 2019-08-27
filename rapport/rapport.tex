@@ -583,10 +583,15 @@ Les figures suivantes montrent la comparaison entre les deux solutions. Des grap
 	\centering
 	\includegraphics[keepaspectratio = true,scale=0.7]{comparison_depth_time.png}
 	\caption{Comparaison des bases en fonction de la profondeur et du temps médian}
-	\label{fig:depth_time}
+	\label{fig:depthtime}
 \end{figure}
 
 Les figures suivantes montrent la comparaison entre les deux solutions. Des graphes supplémentaires sont disponibles en \textbf{Annexes 9.2}.
+De ces deux graphes (\textbf{figure \ref[fig:depthtime]} \& \ref{fig:walker}), deux conclusions peuvent être tirées:
+\begin{itemize}
+	\item Le temps d’exécution pour arangoDB de la marche aléatoire est plus lente dès qu’on augmente le nombre de walkers ou la profondeur.
+	\item Le temps d’exécution pour Neo4j de la marche aléatoire semble être constant. La moyenne de 500 ms qu’on peut voir sur tout les graphes (ceux en Annexes inclus) est peut être biaisé par la puissance de la machine sur laquelle j'ai effectué le test. Il est possible que sur un serveur le temps de traitement soit moins long. Cela indiquerait donc que Neo4j est plus gourmand en ressources.
+\end{itemize}
 
 \begin{figure}[!h]
 	\centering
@@ -595,6 +600,10 @@ Les figures suivantes montrent la comparaison entre les deux solutions. Des grap
 	\label{fig:walker}
 \end{figure}
 
+Par ailleurs ces tests ne prennent pas en compte la latence dû à la connexion au serveur. Ici le travail a été fait en local, cette latence est nulle. Cependant, dans le cas de Neo4j, l’ensemble de la marche aléatoire est effectuée en une requête. Dans le cas d’ArangoDB, le nombre de requête est de l’ordre de $O((2\times depth)\times(number of walker))$, ce qui peut être problématique en terme de latence.\\
+Cette différence s'explique par le fait que j'ai du créer moi même l'algorithme de marche aléatoire pour ArangoDB. J'ai été en contact avec les développeurs derrière ArangoDB. Ces derniers m'ont confirmé que l'algorithme que j'avais développé était la seule manière de faire pour le moment car ArangoDB gère très mal la sélection aléatoire de nœuds. Pour toute ces raisons Neo4j a été choisi par rapport à ArangoDB.
+
+EXPLICITER LES AUTRES SCHEMAS UN PEU
 
 \newpage
 

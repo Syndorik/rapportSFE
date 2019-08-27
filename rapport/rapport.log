@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  27 AUG 2019 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  27 AUG 2019 19:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2228,12 +2228,15 @@ File: comparison_depth_time.png Graphic file (type png)
 <use comparison_depth_time.png>
 Package pdftex.def Info: comparison_depth_time.png  used on input line 584.
 (pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
-<comparison_nbWalker_time.png, id=493, 505.89pt x 505.89pt>
+
+
+LaTeX Warning: Reference `[' on page 27 undefined on input line 590.
+
+<comparison_nbWalker_time.png, id=494, 505.89pt x 505.89pt>
 File: comparison_nbWalker_time.png Graphic file (type png)
 <use comparison_nbWalker_time.png>
-Package pdftex.def Info: comparison_nbWalker_time.png  used on input line 593.
+Package pdftex.def Info: comparison_nbWalker_time.png  used on input line 598.
 (pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2242,30 +2245,30 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.599 \newpage
+l.605 \newpage
                <./comparison_depth_time.png>] [28pdfTeX warning (ext4): destina
 tion with the same identifier (name{figure.17}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.606 \newpage
-               <./comparison_nbWalker_time.png>] [29] [30]
+l.605 \newpage
+               <./comparison_nbWalker_time.png>] [29] [30] [31]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 622.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 628.
 
-Underfull \hbox (badness 3029) in paragraph at lines 631--635
+Underfull \hbox (badness 3029) in paragraph at lines 637--641
 []\T1/phv/m/n/10 Pixie: A Sys-tem for Rec-om-mend-ing 3+ Bil-lion Items to 200+
  Mil-lion Users in Real-Time :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 643--645
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
 \T1/phv/m/sl/10 https://neo4j.com/docs/java-reference/current/extending-neo4j/p
 rocedures-and-functions/aggregation-
  []
 
-[31]
+[32]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2298,28 +2301,31 @@ rocedures-and-functions/aggregation-
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [32
+ [33
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 663.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 663.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 657.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 663.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 663.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 3342CFD5BA289B4F63CA99365A0465BB;3913.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 663.
  ) 
 Here is how much of TeX's memory you used:
- 32194 strings out of 494923
- 604423 string characters out of 6180742
+ 32196 strings out of 494923
+ 604432 string characters out of 6180742
  758163 words of memory out of 5000000
- 34860 multiletter control sequences out of 15000+600000
+ 34861 multiletter control sequences out of 15000+600000
  578031 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,12n,75p,10420b,1360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2336,10 +2342,10 @@ mbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (32 pages, 2075503 bytes).
+Output written on rapport.pdf (33 pages, 2078321 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 522 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 645 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
  495 words of extra memory for PDF output out of 10000 (max. 10000000)
 
