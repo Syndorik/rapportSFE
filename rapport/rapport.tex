@@ -506,16 +506,17 @@ Le processus étant défini, il reste la fonction de scoring à décrire.
 \paragraph{Fonction de scoring\\}
 \subparagraph{1ère version\\}
 La première version de la fonction de scoring était assez sommaire, dans le sens que mon but était de montrer que j'avais mis l'architecture en place et qu'il est possible de faire un scoring complexe utilisant toutes les données.\\
-Tout d'abord le score est normalisé entre 0 et 1. Plus le score est proche de 1, plus le cleep est à recommander, et inversement quand le score est proche de 0.\\
+Tout d'abord le score est normalisé entre 0 et 1. Plus le score est proche de 1, plus le cleep est à recommander, et inversement quand le score est proche de 0. Ce qui suit présente les différents calculs effectué à chaque étape de la fonction de scoring. Cette fonction prend donc en entrée, le cleep original, le nœud sur lequel vient de s'arrêter la marche aléatoire et le nœud le précédent ainsi que les relations qui en découlent. Pour rappel, la fonction de scoring est une fonction d'agrégation qui calcul un score pour chaque nœud de la marche\\
+
 Pour les relations contenant des activités (ie cleep $\leftrightarrow$ user), et les activités utilisateur : un coefficient est associé. Ce dernier est plus ou moins grand en fonction de l'activité. Par ailleurs une deuxième donnée est disponibles pour les activités : le nombre d'interaction avec l'activité. Ce nombre d'interaction est normalisé avec la fonction (\ref{eq:1}) et multiplié au coefficient :
 \begin{equation}
 \label{eq:1}
-f(x) = \frac{atan(1/factor \times x)}{\pi/2} \hspace{1cm} \mbox{ où $x$ est le nombre d'interacitons et $factor$ est le facteur de normalisation }
+f(x) = \frac{atan(1/factor \times x)}{\pi/2} \hspace{1cm} \mbox{ \vbox{\noindent où $x$ est le nombre d'interacitons \\$factor$ est le facteur de normalisation }}
 \end{equation}
 Ainsi pour chaque activité la formule suivante est utilisée:
 \begin{equation}
 \label{eq:2}
-s_{act} = coefficient\times\frac{atan(1/factor \times x)}{\pi/2} \hspace{1cm} \mbox{\vbox{\noindent où $x$ est le nombre d'interacitons, $factor$ est le facteur de \\ normalisation et $coefficient$ le coefficient relié à l'activité}} 
+s_{act} = coefficient\times\frac{atan(1/factor \times x)}{\pi/2} \hspace{1cm} \mbox{\vbox{\noindent $x$ est le nombre d'interacitons, \\$factor$ est le facteur de  normalisation \\ $coefficient$ le coefficient relié à l'activité}} 
 \end{equation}
 C'est cette formule que j'ai décidé de garder car elle permet de prendre en compte les différences entre les activités et d'adapter le poids de ces dernières dans le score. J'ai utilisé cette fonction de normalisation car j'avais besoin d'une injection $\mathbb{N} \rightarrow [0;1]$ (\textbf{\ref{fig:atan}}). 
 \begin{figure}[!h]
@@ -527,13 +528,49 @@ C'est cette formule que j'ai décidé de garder car elle permet de prendre en co
 
 De plus il est possible de contrôler la mi-valeur de cette fonction avec $factor$. Les deux inconnus à déterminer pour chaque activités sont donc $coefficient$ et $factor$. $factor$ est une variable assez facile à déterminer, le but est de savoir à partir de quelle valeur, on considère nous sommes dans la moyenne d'interaction. Ainsi j'ai calculé via des requêtes Cypher la moyenne pour chaque activité ce qui m'a donné les valeurs de $factor$. La manière de trouver les valeurs de $coefficient$ est empirique et sera décrit dans la partie test. Ainsi pour chaque activité est retournée une valeur $s_act$.\\
 
-Concernant les données utilisateurs, seul 
+Concernant les données utilisateurs, si l'utilisateur a eu des interactions avec le cleep original, alors un bonus de 10\% est donné au score.\\
+
+Concernant les données de cleep, c'est la différence de prix entre le cleep original et le cleep actuel qui va jouer avec cette formule (\ref{eq:3}):
+\begin{equation}
+\label{eq:3}
+s_{price} = coefficient\times\frac{atan(1/factor \times |price_{cur} - price_{original}| )}{\pi/2} \hspace{1cm} \mbox{\vbox{\noindent $price_{cur}$ est prix du cleep actuel,\\ $price_{original}$ le prix du cleep original \\ $factor$ est le facteur de normalisation \\ $coefficient$ le coefficient relié à l'activité}}
+\end{equation}
+De plus si les deux cleeps proviennent du même domaine, alors un bonus de 10\% est donné au score. Finalement les tags google vision sont pris en compte selon la formule suivante:
+\begin{equation}
+\label{eq:4}
+s_{vision} = coefficient\times \frac{\sum_{t \in tags}c_{t}}{n_{t}}
+\hspace{1cm} \mbox{\vbox{\noindent $coefficient$ le coefficient relié au google tag vision\\
+$tags$ est l'ensemble des tags communs au cleep orignal et actuel\\
+$c_{t}$ est le taux de confiance par rapport au tag\\
+$n_{t}$ est le cardinal de $tags$ (ie le nombre de tags en commun)}}
+\end{equation}
+\newpage
+Une fois ces scores intermédiaire calculés, une moyenne pondéré par les coefficient est calculée que l'on nomme $s_{mean}$, ce qui nous donne un résultat entre 0 et 1. Le score final pour cette étape du chemin aléatoire est alors donnée par la formule suivante :
+\begin{equation}
+\label{eq:4}
+score = \frac{s_{mean} + score}{2}
+\hspace{1cm} \mbox{\vbox{\noindent $score$ est le score calculé à l'étape précédente}}
+\end{equation}
+
+Cette première version de la fonction de scoring a permis de fournir une première version fonctionnelle du moteur de recommandation. Plusieurs améliorations ont par la suite été apporté, cependant la base restera la même, notamment en matière de calcul des scores intermédiaires.
+
+\subparagraph{2ème version\\}
+La deuxième version moteur de recommandation inclut un troisième type de noeud : les listes de cleep. Jusqu'à présent je travaillais uniquement avec les nœuds cleep et utilisateurs afin de produire rapidement un moteur de recommandation. Pareillement, les activité liés aux listes seront calculé de la même manière. De plus si le cleep orignal appartient à la liste étudiée et si la liste étudiée n'appartient pas à l'utilisateur qui demande la recommandation,  alors un bonus de 10\% est donné au score. De même si le cleep original et un cleep étudié lors de la marche aléatoire sont dans la même liste, un bonus de 10\% est donné au score. Ces bonus sont attribué, car les listes créées par les utilisateurs sont sensées regrouper des cleeps de même catégorie, donc des cleeps qui ont de forte chance d'être recommandable.\\
+
+J'ai intentionnellement homis plusieurs détails dans le développement du moteur de recommandation afin de ne pas alourdir la lecture du rapport. Notamment les erreurs de conceptions vis à vis du scoring, mais aussi vis à vis du fonctionnement de la base de donnée.
+
+\paragraph{Tests du moteur\\}
+Le moteur de recommandation est passé par plusieurs phase de tests. Tout d'abord la phase préliminaire de tests entre le client et moi même. Pour chaque modification effectué sur le moteur de recommandation, nous testions le moteur de recommandation avec des tests unitaire développé pour. Ces derniers testait le fonctionnement attendu selon les différents cas possible. Par exemple, un chemin $cleep \leftrightarrow cleep$ n'est pas possible et donc doit retourner une erreur. Un chemin $cleep \leftrightarrow utilisateur \leftrightarrow cleep$ doit ou les deux cleeps sont le cleep original doit retourner une "NaN" value, vu que le chemin ne donne aucune recommandation possible. L'ensemble de ces tests permettent de vérifier si le moteur de recommandation fonctionne comme il a été pensé.\\
+Au sujet des coefficients, leur valeurs ont d'abord été évalué par moi en essayant de ne pas être aberrant. Par exemple le coefficient lié à la vue d'un cleep est bien moins grand que le coefficient lié au partage d'un cleep vu que l'action de partager est plus rare et engage plus l'utilisateur. Par la suite afin de raffiner la valeur de ces coefficients, une réunion interne à Sia Partners et Cleep a été organisée.\\
+Finalement une phase d'A\&B testing a été lancé pour voir si le moteur de recommandation est efficace. Le principe est de proposer à une base d'utilisateur l'application avec le moteur de recommandation et une autre base d'utilisateur l'application sans moteur de recommandation (ie avec des recommandations proposé au hasard). Si les utilisateurs avec le moteur de recommandation suivent plus les recommandations, alors le moteur est efficace sinon il ne l'est pas. Durant le développement du moteur, j'ai aussi intégré une interface de log, permettant de comprendre pourquoi certaines recommandations ne marchent pas et pourquoi d'autres fonctionnent. Je ne suis pas resté assez longtemps pour avoir les résultats de l'A\&B testing, cependant à la suite de ce dernier, les coefficients auraient une nouvelle fois changé pour être plus adapté aux actions de la population de Cleep.
 
 \subsection{Vision critique et apport personnel}
+Dans cette partie, je reviens sur quelques éléments apparus au cours du développement du moteur de recommandation qui demandent un peu plus d'approfondissement.
 
-\paragraph{Tests sur ArangoDB\\}
 
-\paragraph{Tests sur Neo4j\\}
+\paragraph{Tests sur ArangoDB et Neo4j\\}
+Afin de comparer les deux bases de donnée, j'ai effectué plusieurs tests comparatifs sur les bases de données notamment en terme de temps d'exécution d'une marche aléatoire. L'étude a été réalisé en local, et donc avec une RAM limité.\\
+Ainsi les tests ont été réalisé sur une base de donnée contenant 500 utilisateurs, 10.000 cleeps et 1.4 millions de connexions. J'ai délibérément ignorer les listes pour rendre les tests plus léger et moins compliquer à mettre en place. En effet pour avoir une idée du temps d'exécution et du temps de requête assez proche de ce qu'on allait avoir en production, des bases avec des données factices ont été générée. Le but étant d'avoir des noeuds et des arrêtes contenant des données comme pour le cas de cl	
 
 
 \newpage
