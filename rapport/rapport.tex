@@ -8,7 +8,7 @@
 \usepackage{wrapfig}
 \usepackage{imta_core}
 \usepackage{imta_extra}
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{5}
 % !TeX spellcheck = fr_FR
 \usepackage{listings}
 \usepackage{xcolor}
@@ -418,7 +418,7 @@ Finalement, l'un des derniers problèmes que résolvent les bases de données en
 	\label{fig:indfree}
 \end{figure}
 
-\paragraph{Les désavantages}
+\paragraph{Les désavantages\\}
 Les bases de données graphe ont plusieurs défauts qui ont la même origine : la technologie n'est pas encore assez mature:
 \begin{itemize}
 	\item La plupart des bases de données ont un souci de management de la mémoire. Les très grosses requêtes ont tendance remplir la RAM, et peu de base de données disposent de "spill sur disk" (utiliser la mémoire SDD ou HDD qui possède des cycles bien plus long). Cependant la marche aléatoire chargera très peu de donnée en mémoire RAM par rapport à au seuil critique de "requête lourde". 
@@ -430,10 +430,104 @@ Les bases de données graphe ont plusieurs défauts qui ont la même origine : l
 Les bases de données en graphe ont qualités et défauts. J'ai jugé que les défauts était négligeable pour le moment par rapport au gain de temps et la "facilité" de developpement qu'offre ce modèle. Par la suite, il fallait donc trouver et étudier le fonctionnement des différentes base de données graphe existantes sur le marché. Selon les recommandations du client, j'ai commencé par étudier la faisabilité du projet sur la base de donnée graphe ArangoDB. En approfondissant mes recherches, et en expérimentant les limites d'ArangoDB, je me suis tourné vers la base graphe la plus utilisée sur le marché : Neo4j.
 
 \paragraph{Comparatif ArangoDB / Neo4j\\}
-Pour arangoDB donnée au format JSON sous des Collection, très ressamblant à l'organisation de mongoDB. Se rapprochant d'un noSQL un peu plus classique et perdant l'avantage d'un graphe full, car indexation en plus par rapport à la collection.
+J'ai réalisé plusieurs tests comparatifs entre ArangoDB et Neo4j. Je présenterai ici que les résultats. J'approfondirai cette partie dans la prochaine sous-section. ArangoDB et Neo4j sont assez différentes dans leur manière d'envisager les bases de données en graphe.\\
+ArangoDB est une base de donnée qui reprend beaucoup d'élément de mongoDB, en organisant ses données selon des collections et des documents. Ainsi ArangoDB propose une indexation qui permet de récupérer les éléments de manière plus rapide (identifié par leur collection. Le modèle graphe n'est donc pas le seul que propose ArangoDB (le modèle key-value et document sont aussi présents). A l'inverse, Neo4j ne propose qu'un seul type de modèle, celui en graphe, mais le moteur derrière se retrouve plus optimisé que celui d'ArangoDB.\\
+
+L'un des grands avantages de Neo4j est sa documentation (bien qu'encore assez sommaire) vis à vis des algorithmes développés pour la traversée de graphe \cite{neo4j}. Cette base de donnée possède certains algorithmes de traversée qu'il est possible d'appeler directement via son langage de requête (Cypher). En particulier, il y a une version optimisé pour neo4j de la marche aléatoire. A l'inverse, ArangoDB ne possède pas d'algorithmes de traversé inclus originellement, ce qui nous oblige à les créer par nous même. Les tests comparatifs que j'ai effectué montre justement que les performances de la marche aléatoire d'ArangoDB développé par moi même sont inférieurs par rapport à celle de Neo4j en terme de temps d'execution et de mémoire RAM consommé.\\
+Après discussion avec le client sur la marche à suivre et l'ensemble du travail réalisé jusque là, nous nous sommes mis d'accord sur l'utilisation de l'heuristique de Pinterest avec Neo4j comme support pour le graphe.
 
 \subsubsection{Implémentation}
+L'implémentation de l'heuristique de Pinterest adapté au problème de Cleep a pris du temps, notamment pour des raisons techniques (manque de documentation sur l'utilisation de Neo4j, les API/wrappers dans les autres langages ne fonctionnant pas ...), mais aussi pour des raisons de conceptions. L'implémentation s'est divisée en trois étapes :
+\begin{itemize}
+	\item Adaptation sur Neo4J, instanciation des serveurs, création des plu-gins adaptés et première version simple d'un moteur de recommandation
+	\item Études des améliorations en particulier au niveau de la fonction de scoring (qui permet d'évaluer la qualité d'une recommandation)
+	\item Tests de la première version du moteur
+\end{itemize}
 
+\paragraph{Première version du moteur de recommandation\\}
+Tout d'abord, l'ensemble des données que possède Cleep est stocké dans une base mongoDB. Le problème est qu'il n'est pas possible de réaliser un simple dump de base. En effet, seule les informations concernant les cleeps, les utilisateurs, les listes de cleeps et les relations nous intéresse. Donc la première étape a été d'établir les données utiles qui allaient composer la base de donnée de Neo4j.\\
+Par ailleurs, pour créer et tester un moteur de recommandation fonctionnel, je ne nécessitais la base en entière. En effet je pouvais commencer à développer en local avec une base de donnée factice afin d'expérimenter. Ainsi, avec le client nous nous sommes mis d'accord sur le format des données à utiliser (ie comment ils seront enregistrés dans la base) et j'ai commencer l'implémentation.\\
+En premier lieu j'ai créé un script permettant de générer les données nécessaires et de commencer l'implémentation du moteur de recommandation. Le paragraphe suivant permet de comprendre ce que contient la base de donnée ce qui va être utile pour l'étude de la fonction de scoring. Le format des données est le suivant:\\
+Noeud cleep :
+\begin{itemize}
+	\item Nom de domaine du Cleep
+	\item Devise du produit
+	\item Prix du produit
+	\item Tags fournis par google vision
+	\item Date de création
+	\item Statut du cleep : actif ou archivé par l'utilisateur
+\end{itemize}
+
+Noeud utilisateur:
+\begin{itemize}
+	\item Genre de la personne
+	\item Âge de la personne
+	\item Nombre d'activités vis à vis d'un domaine et date de la dernière activité. Les activités peuvent être : la création d'un cleep, la vue d'un cleep, l'ajout d'un like à un cleep, la copie d'un cleep où l'action d'aller sur le site original du cleep. 
+\end{itemize}
+
+Noeud Listing:
+\begin{itemize}
+	\item Statut de la liste : active ou archivée par l'utilisateur
+	
+\end{itemize}
+Relation utilisateur $\leftrightarrow$ cleep:
+\begin{itemize}
+	\item Nombre d'activité d'un utilisateur sur le cleep relié et la date de dernière activité. Les activités peuvent être : la création d'un cleep, la vue d'un cleep, l'ajout d'un like à un cleep, la copie d'un cleep où l'action d'aller sur le site original du cleep.
+\end{itemize}
+
+Relation utilisateur $\leftrightarrow$ listing:
+\begin{itemize}
+	\item Nombre d'activité d'un utilisateur sur la liste reliée et la date de dernière activité. Les activités peuvent être : la vue d'une liste ou l'action de suivre la liste.	
+\end{itemize}
+
+Relation cleep $\leftrightarrow$ listing: il n'y pas de donnée particulière sur cette relation.\\
+
+Pendant la première partie de l'implémentation, j'ai donc travaillé avec une base factice composé de ces éléments. Comme énoncé précédemment, Neo4j possède un algorithme de marche aléatoire qui peut être appelé directement par son langage de requête : Cypher \cite{cypher}. Cette algorithme permet donc de retourner à partir d'un cleep, un chemin aléatoire. Il prend plusieurs paramètres en entré dont deux primordiaux : le nombre de marches aléatoire à faire et la profondeur de la marche aléatoire.\\
+Le problème est que le dernier nœud d'une marche aléatoire n'est pas toujours un cleep. De plus, la requête retourne uniquement les ID des nœuds et pas le chemin en entier avec les données associés. Une autre requête est donc nécessaire pour avoir les chemins en entiers.\\
+Cependant Neo4j offre la possibilité de développer des plu-gins Java qui peuvent être aussi appeler pendant une requête. Ainsi deux solutions étaient possibles :
+\begin{itemize}
+	\item Effectuer deux requêtes pour récupérer les chemins en entiers et ensuite traiter les chemins pour avoir une score.
+	\item Effectuer une seule requête retournant les cleeps recommandé via le développement d'un plu-gin.
+\end{itemize}
+J'ai choisi la deuxième solution, car cela permettait d'éliminer une requête dans le processus et ainsi réduire le temps total d'exécution. 
+\newpage
+\paragraph{Description du processus\\}
+Le but maintenant de savoir comment créer le plu-gin afin de pouvoir appliquer un score sur le chemin. Il existe différents type de plu-gin Java pouvant être créé sur Neo4j. Ce qui nous intéresse sont les plu-gins d'agrégation \cite{aggrg}. La marche aléatoire sous Neo4j fonctionne de manière séquentielle, elle ne ressort pas directement un chemin mais les nœuds un par un. La fonction de score doit donc être capable de garder en mémoire un certain nombre de paramètre et d'appliquer un score à chaque étape de la marche aléatoire. C'est pourquoi les plu-gins d'agrégation sont adaptés à ce problème.\\
+La figure suivante (\textbf{\ref{fig:algo}}) décrit le processus global pour appliquer un score et avoir une recommandation.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.7]{proccleep.png}
+	\caption{Processus pour appliquer un score}
+	\label{fig:algo}
+\end{figure}
+
+Le processus étant défini, il reste la fonction de scoring à décrire. 
+
+\paragraph{Fonction de scoring\\}
+\subparagraph{1ère version\\}
+La première version de la fonction de scoring était assez sommaire, dans le sens que mon but était de montrer que j'avais mis l'architecture en place et qu'il est possible de faire un scoring complexe utilisant toutes les données.\\
+Tout d'abord le score est normalisé entre 0 et 1. Plus le score est proche de 1, plus le cleep est à recommander, et inversement quand le score est proche de 0.\\
+Pour les relations contenant des activités (ie cleep $\leftrightarrow$ user), et les activités utilisateur : un coefficient est associé. Ce dernier est plus ou moins grand en fonction de l'activité. Par ailleurs une deuxième donnée est disponibles pour les activités : le nombre d'interaction avec l'activité. Ce nombre d'interaction est normalisé avec la fonction (\ref{eq:1}) et multiplié au coefficient :
+\begin{equation}
+\label{eq:1}
+f(x) = \frac{atan(1/factor \times x)}{\pi/2} \hspace{1cm} \mbox{ où $x$ est le nombre d'interacitons et $factor$ est le facteur de normalisation }
+\end{equation}
+Ainsi pour chaque activité la formule suivante est utilisée:
+\begin{equation}
+\label{eq:2}
+s_{act} = coefficient\times\frac{atan(1/factor \times x)}{\pi/2} \hspace{1cm} \mbox{\vbox{\noindent où $x$ est le nombre d'interacitons, $factor$ est le facteur de \\ normalisation et $coefficient$ le coefficient relié à l'activité}} 
+\end{equation}
+C'est cette formule que j'ai décidé de garder car elle permet de prendre en compte les différences entre les activités et d'adapter le poids de ces dernières dans le score. J'ai utilisé cette fonction de normalisation car j'avais besoin d'une injection $\mathbb{N} \rightarrow [0;1]$ (\textbf{\ref{fig:atan}}). 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.3]{atan.png}
+	\caption{Fonction de normalisation}
+	\label{fig:atan}
+\end{figure}
+
+De plus il est possible de contrôler la mi-valeur de cette fonction avec $factor$. Les deux inconnus à déterminer pour chaque activités sont donc $coefficient$ et $factor$. $factor$ est une variable assez facile à déterminer, le but est de savoir à partir de quelle valeur, on considère nous sommes dans la moyenne d'interaction. Ainsi j'ai calculé via des requêtes Cypher la moyenne pour chaque activité ce qui m'a donné les valeurs de $factor$. La manière de trouver les valeurs de $coefficient$ est empirique et sera décrit dans la partie test. Ainsi pour chaque activité est retournée une valeur $s_act$.\\
+
+Concernant les données utilisateurs, seul 
 
 \subsection{Vision critique et apport personnel}
 
@@ -464,14 +558,14 @@ Pour arangoDB donnée au format JSON sous des Collection, très ressamblant à l
 \section{Glossaire}
 \begin{thebibliography}{9}
 	\bibitem{cleep} 
-	Site de Cleep : \texttt{https://app.cleep.io/}
+	Site de Cleep : \textit{https://app.cleep.io/}
 	\bibitem{fnac} 
-	Exemple de la Fnac : \texttt{https://livre.fnac.com/a13195869/Agnes-Martin-Lugand-A-la-lumiere-du-petit-matin}
+	Exemple de la Fnac : \textit{https://livre.fnac.com/a13195869/Agnes-Martin-Lugand-A-la-lumiere-du-petit-matin}
 	\bibitem{mve}
-	Exemple site internet avec plusieurs produits : \texttt{https://livre.fnac.com}
+	Exemple site internet avec plusieurs produits : \textit{https://livre.fnac.com}
 	\bibitem{levenshtein}
 	Approfondissement sur la \\
-	 de Levenshtein : \texttt{https://en.wikipedia.org/wiki/Levenshtein\_distance}
+	 de Levenshtein : \textit{https://en.wikipedia.org/wiki/Levenshtein\_distance}
 	\bibitem{pixie}
 	Pixie: A System for Recommending 3+ Billion Items to 200+ Million Users in Real-Time :
 	\textit{https://labs.pinterest.com/user/themes/pin\_labs/assets/paper/paper-pixie.pdf}\\
@@ -479,6 +573,14 @@ Pour arangoDB donnée au format JSON sous des Collection, très ressamblant à l
 	Rahul Sharma, Charles Sugnet, Mark Ulrich, Jure Leskovec
 	\bibitem{Pinterest}
 	Site Internet de Pinterest: \textit{https://www.pinterest.com/}
+	\bibitem{neo4j}
+	Documentation sur les algorithmes de neo4j: \\ \textit{https://neo4j.com/docs/graph-algorithms/current/experimental-algorithms/}
+	\bibitem{cypher}
+	Documentation sur Cypher :\\
+	\textit{https://neo4j.com/docs/cypher-manual/current/introduction/\#cypher-introduction}
+	\bibitem{aggrg}
+	Fonction d'aggregation sur Cypher:\\
+	\textit{https://neo4j.com/docs/java-reference/current/extending-neo4j/procedures-and-functions/aggregation-functions/}
 	
 \end{thebibliography}
 \newpage
