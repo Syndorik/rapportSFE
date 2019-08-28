@@ -673,21 +673,53 @@ Ainsi l'ensemble bots et plateformes est ce que l'on appelle le sialab.
 \subsection{Objectifs et problématique}
 Avant mon arrivé, le sialab dans sa première version posait plusieurs problèmes du fait du développement anarchiques des bots et des plateformes.
 
-\paragraph{Bots\\}
-Les développeurs de bots à l'époque étaient obligé de travailler en local, ce qui les obligeaient à installer toutes les librairies qu'ils utilisaient pour ensuite déployer l'application sur un serveur appartenant à Sia Partners ou sur machine virtuel OVH/Amazon etc. Plusieurs problèmes découle alors de ce mode de fonctionnement:
+\subsubsection{Bots\\}
+Les développeurs de bots à l'époque étaient obligés de travailler en local, ce qui les obligeaient à installer toutes les librairies qu'ils utilisaient pour ensuite déployer l'application sur un serveur appartenant à Sia Partners ou sur machine virtuel OVH/Amazon etc. Plusieurs problèmes découle alors de ce mode de fonctionnement:
 
-\subparagraph{Backups}
-Il n'y pas de backups. Les serveurs sur lesquels étaient déployés les bots n'avaient pas de structure permettant de répliquer les applications et avoir un service qui tourne en permanence. Ainsi les application étaient "copiées" sur les serveurs et accessible via l'adresse : "IP du serveur (ou nom de domaine Sia Partners) " + "nom de l'application". Par exemple : 
+\paragraph{Backups}
+Il n'y pas de backups. Les serveurs sur lesquels étaient déployés les bots n'avaient pas de structure permettant de répliquer les applications et avoir un service qui tourne en permanence. Les serveurs étaient donc des points individuels de défaillances (single point of failures). Ainsi les application étaient copiées via une connexion SSH sur les serveurs et accessible via l'adresse : "IP du serveur (ou nom de domaine Sia Partners) " + "nom de l'application". Par exemple : 
 \begin{itemize}
 	\item Bot KYC Adverse News disponible sur \textit{http://192.95.33.110/shiny/adb1w1b/}.
 	\item Bot Reg Review disponible sur \textit{http://regwatch.sia-partners.com/demo}
-\end{itemize} 
+\end{itemize}
 
-\subparagraph{Contrôle de Version}
-Les consultants développant en local, et déployant par leurs propres moyens les bots,  utilisaient rarement le logiciel de version de contrôle décentralisé autrement connu sous le nom de git à leur disposition. Ainsi il n'y avait ni backup, ni contrôle de version en cas de problèmes.
 
+\paragraph{Contrôle de Version}
+Les consultants développant en local, et déployant par leurs propres moyens les bots,  utilisaient rarement le logiciel de version de contrôle décentralisé autrement connu sous le nom de git à leur disposition.
+Le manque d'utilisation de cet outil entraîne plusieurs autres problèmes qui pour certains projets peuvent faire perdre beaucoup de temps :
+\begin{itemize}
+	\item Manque de versions fonctionnels du bot (v1, v2 etc)
+	\item Pas d'information sur les patchs fait au bots. Donc impossible de restaurer le bot dans un état précédent si la modification ne marche pas sur le serveur.
+	\item Pas de backup de code. Donc si le code est perdu sur le serveur et en local, le bot est perdu
+\end{itemize}
+Cette pratique est très importante, mais du fait des conditions de développements chaotiques, l'habitude n'est pas prise.
+
+\paragraph{La stabilité}
+Comme les bots sont éparpillés sur plusieurs serveurs, environ une trentaines différents, chaque serveur avait sa propre configuration. Ainsi pour chaque bot qui venait s'ajouter à un serveur, ajoutait ses dépendances (en terme de librairies mais aussi en termes de services). Il était donc possible de se retrouver avec 2 bots différents sur un serveur, utilisant des librairies qui entrent en conflits.\\
+La stabilité n'est donc pas assurée, et les serveurs étaient souvent polluées par plusieurs librairies inutilisées.
+
+\paragraph{L'administration}
+Avec autant de serveurs à administrer, il y a autant problèmes possibles, que ce soit en terme de stabilité, d'installation ou tout simplement de problèmes internes aux serveurs (image à mettre à jour etc.).\\
+Par ailleurs, il peut y avoir un long moment entre l'apparition d"un bug et la découverte de celui-ci, car aucun serveur n'avait ses logs centralisés. Ainsi, le seul moyen de "trouver" un bug était d'expérimenter le bug ou d'en avoir les retours par les utilisateurs. L'administration devient d'autant plus problématique à chaque ajout de bots. Cette tâche là était donc pénible et faisait perdre beaucoup de temps.
+
+\subsubsection{Plateforme}
+
+\paragraph{Contrôle de Version et Backups}
+Comme plusieurs consultants peuvent développer sur la plateforme, le contrôle de version était utilisé. Ainsi le code en lui même de la plateforme était versionné. Ainsi contrairement aux bots, les plateformes possèdaient des backups. De plus la base de donnée reliée avait aussi des backups.\\
+Cependant les scripts de déploiement des plateformes n'étaient présents que sur les serveurs et n'étaient pas inclus dans le contrôle de version. Ainsi si un serveur avec une plateforme perdait ses données, le déploiement de cette dernière s'en retrouvait affecté. \\
+
+\paragraph{Stabilité et administration}
+Par ailleurs, comme pour les bots, les plateformes étaient aussi éparpillés sur plusieurs serveurs. Ainsi, les même problèmes étaient présents, et la même pénibilité d'administration qui en découle. Cela était d'autant plus problématique que ces plateformes étaient destiné aux clients, donc avec une exigence plus grande concernant la résolution des bugs.
+
+\subsubsection{Objectifs}
+Une deuxième version du sialab était en cours de création lorsque j'ai rejoint l'équipe pour participer à son developpement. L'objectif principale de cette mission est de répondre à l'ensemble des problèmes cités précédemment, en particulier avoir une interface d'administration globale permettant d'avoir connaissance rapidement des bugs sur la plateforme.\\
+
+Cela implique aussi de centraliser l'ensemble des projets existants et d'avoir une méthode automatique de déploiement des bots/plateformes. Le but étant de se rapprocher au maximum du déploiement en un clique.\\
+
+Pendant cette mission j'ai travaillé en méthode Agile avec l'équipe sur le projet (Gabriel Creti et Matthieu Thiboust). Chaque semaine il y avait une réunion hebdomadaire avec une liste de tâche à faire et la présentation des avancements qui ont été fait. Cela a permis d'avancer rapidement sur le projet et d'avoir une version stable en Septembre.
 
 \subsection{Travail effectué}
+Dans cette section je vais décrire l'ensemble des fonctionnalités nouvelles et du travail qui a été fait sur la version 2 du sialab. J'ai participé à toutes les étapes du développement, que ce soit au niveau de l'infrastructure, au niveau du déploiement ou au niveau du développement (frontend et backend) de la plateforme.
 
 \subsection{Vision critique et apport personnel}
 \newpage

@@ -44,14 +44,20 @@
 \contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners (2 mois)}{31}{section.7}
 \contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation du sialab}{31}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{32}{subsection.7.2}
-\contentsline {paragraph}{\numberline {7.2.0.1}Bots\\}{32}{paragraph.7.2.0.1}
-\contentsline {subparagraph}{\numberline {7.2.0.1.1}Backups}{32}{subparagraph.7.2.0.1.1}
-\contentsline {subparagraph}{\numberline {7.2.0.1.2}Contr\IeC {\^o}le de Version}{32}{subparagraph.7.2.0.1.2}
-\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{32}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{32}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{33}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{34}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{34}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{34}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{36}{subsection.9.3}
-\contentsline {section}{\numberline {10}Glossaire}{38}{section.10}
+\contentsline {subsubsection}{\numberline {7.2.1}Bots\\}{32}{subsubsection.7.2.1}
+\contentsline {paragraph}{\numberline {7.2.1.1}Backups}{32}{paragraph.7.2.1.1}
+\contentsline {paragraph}{\numberline {7.2.1.2}Contr\IeC {\^o}le de Version}{32}{paragraph.7.2.1.2}
+\contentsline {paragraph}{\numberline {7.2.1.3}La stabilit\IeC {\'e}}{32}{paragraph.7.2.1.3}
+\contentsline {paragraph}{\numberline {7.2.1.4}L'administration}{32}{paragraph.7.2.1.4}
+\contentsline {subsubsection}{\numberline {7.2.2}Plateforme}{32}{subsubsection.7.2.2}
+\contentsline {paragraph}{\numberline {7.2.2.1}Contr\IeC {\^o}le de Version et Backups}{32}{paragraph.7.2.2.1}
+\contentsline {paragraph}{\numberline {7.2.2.2}Stabilit\IeC {\'e} et administration}{33}{paragraph.7.2.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Objectifs}{33}{subsubsection.7.2.3}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{33}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{33}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{34}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{35}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{35}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{35}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{37}{subsection.9.3}
+\contentsline {section}{\numberline {10}Glossaire}{39}{section.10}
