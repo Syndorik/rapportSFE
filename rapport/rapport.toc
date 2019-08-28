@@ -19,7 +19,7 @@
 \contentsline {paragraph}{\numberline {5.4.1.2}Clustering des liens\\}{13}{paragraph.5.4.1.2}
 \contentsline {paragraph}{\numberline {5.4.1.3}Tests et r\IeC {\'e}sultats\\}{14}{paragraph.5.4.1.3}
 \contentsline {subsubsection}{\numberline {5.4.2}Technologie utilis\IeC {\'e}e\\}{14}{subsubsection.5.4.2}
-\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (2.5 mois)}{16}{section.6}
+\contentsline {section}{\numberline {6}Mission : Moteur de recommandation pour Cleep (3 mois)}{16}{section.6}
 \contentsline {subsection}{\numberline {6.1}Contexte et probl\IeC {\'e}matique}{16}{subsection.6.1}
 \contentsline {paragraph}{\numberline {6.1.0.1}Objectif(s)\\}{16}{paragraph.6.1.0.1}
 \contentsline {paragraph}{\numberline {6.1.0.2}\IeC {\'E}tat initial}{17}{paragraph.6.1.0.2}
@@ -39,13 +39,19 @@
 \contentsline {paragraph}{\numberline {6.2.3.4}Tests du moteur\\}{26}{paragraph.6.2.3.4}
 \contentsline {subsection}{\numberline {6.3}Vision critique et apport personnel}{26}{subsection.6.3}
 \contentsline {paragraph}{\numberline {6.3.0.1}Tests sur ArangoDB et Neo4j\\}{26}{paragraph.6.3.0.1}
-\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners}{29}{section.7}
-\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation de la plateforme sialab}{29}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{29}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{29}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{29}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{30}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{31}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{31}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{31}{subsection.9.2}
-\contentsline {section}{\numberline {10}Glossaire}{32}{section.10}
+\contentsline {paragraph}{\numberline {6.3.0.2}Am\IeC {\'e}lioration de la marche al\IeC {\'e}atoire de Neo4j\\}{29}{paragraph.6.3.0.2}
+\contentsline {paragraph}{\numberline {6.3.0.3}Optimisation du calcul de score\\}{29}{paragraph.6.3.0.3}
+\contentsline {section}{\numberline {7}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners (2 mois)}{31}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pr\IeC {\'e}sentation du sialab}{31}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Objectifs et probl\IeC {\'e}matique}{32}{subsection.7.2}
+\contentsline {paragraph}{\numberline {7.2.0.1}Bots\\}{32}{paragraph.7.2.0.1}
+\contentsline {subparagraph}{\numberline {7.2.0.1.1}Backups}{32}{subparagraph.7.2.0.1.1}
+\contentsline {subparagraph}{\numberline {7.2.0.1.2}Contr\IeC {\^o}le de Version}{32}{subparagraph.7.2.0.1.2}
+\contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{32}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{32}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{33}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{34}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{34}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{34}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{36}{subsection.9.3}
+\contentsline {section}{\numberline {10}Glossaire}{38}{section.10}

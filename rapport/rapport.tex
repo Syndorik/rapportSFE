@@ -270,7 +270,7 @@ La solution trouvé avec le client est de passer par un service de Proxy payant 
 
 \newpage
 
-\section{Mission : Moteur de recommandation pour Cleep (2.5 mois)}
+\section{Mission : Moteur de recommandation pour Cleep (3 mois)}
 
 Cette partie est consacrée au développement d'un moteur de recommandation pour la start-up Cleep. Cette mission fait directement suite à celle de webscrapping et reste dans l'esprit de développer des fonctions nécessaires à la croissance de l'application. Lors de cette mission, j'ai profité d'une grande autonomie car aucune solutions antérieures n'existaient auparavant. J'étais cependant en contact avec Damien Meurisse, co-fondateur de Cleep, et Paul Saffers, consultant datascientist à Sia Partners, afin de critiquer et valider mon avancement 
 
@@ -444,6 +444,8 @@ L'implémentation de l'heuristique de Pinterest adapté au problème de Cleep a 
 	\item Tests de la première version du moteur
 \end{itemize}
 
+Avant de commencer cette partie, vous pouvez retrouver en \textbf{Annexe 9.3} de l'heuristique que j'ai implémenté par la suite. 
+
 \paragraph{Première version du moteur de recommandation\\}
 Tout d'abord, l'ensemble des données que possède Cleep est stocké dans une base mongoDB. Le problème est qu'il n'est pas possible de réaliser un simple dump de base. En effet, seule les informations concernant les cleeps, les utilisateurs, les listes de cleeps et les relations nous intéresse. Donc la première étape a été d'établir les données utiles qui allaient composer la base de donnée de Neo4j.\\
 Par ailleurs, pour créer et tester un moteur de recommandation fonctionnel, je ne nécessitais la base en entière. En effet je pouvais commencer à développer en local avec une base de donnée factice afin d'expérimenter. Ainsi, avec le client nous nous sommes mis d'accord sur le format des données à utiliser (ie comment ils seront enregistrés dans la base) et j'ai commencer l'implémentation.\\
@@ -586,7 +588,7 @@ Les figures suivantes montrent la comparaison entre les deux solutions. Des grap
 	\label{fig:depthtime}
 \end{figure}
 
-Les figures suivantes montrent la comparaison entre les deux solutions. Des graphes supplémentaires sont disponibles en \textbf{Annexes 9.2}.
+Les figures suivantes montrent la comparaison entre les deux solutions. Des graphes supplémentaires sont disponibles en \textbf{Annexes 9.2}. Ces graphes représentent les même résultat mais de manière séparé (et un peu plus lisible) pour chaque base de donnée.
 De ces deux graphes (\textbf{figure \ref[fig:depthtime]} \& \ref{fig:walker}), deux conclusions peuvent être tirées:
 \begin{itemize}
 	\item Le temps d’exécution pour arangoDB de la marche aléatoire est plus lente dès qu’on augmente le nombre de walkers ou la profondeur.
@@ -600,17 +602,93 @@ De ces deux graphes (\textbf{figure \ref[fig:depthtime]} \& \ref{fig:walker}), d
 	\label{fig:walker}
 \end{figure}
 
-Par ailleurs ces tests ne prennent pas en compte la latence dû à la connexion au serveur. Ici le travail a été fait en local, cette latence est nulle. Cependant, dans le cas de Neo4j, l’ensemble de la marche aléatoire est effectuée en une requête. Dans le cas d’ArangoDB, le nombre de requête est de l’ordre de $O((2\times depth)\times(number of walker))$, ce qui peut être problématique en terme de latence.\\
-Cette différence s'explique par le fait que j'ai du créer moi même l'algorithme de marche aléatoire pour ArangoDB. J'ai été en contact avec les développeurs derrière ArangoDB. Ces derniers m'ont confirmé que l'algorithme que j'avais développé était la seule manière de faire pour le moment car ArangoDB gère très mal la sélection aléatoire de nœuds. Pour toute ces raisons Neo4j a été choisi par rapport à ArangoDB.
+Par ailleurs ces tests ne prennent pas en compte la latence dû à la connexion au serveur. Ici le travail a été fait en local, cette latence est nulle. Cependant, dans le cas de Neo4j, l’ensemble de la marche aléatoire est effectuée en une requête. Dans le cas d’ArangoDB, le nombre de requête est de l’ordre de $O(depth\times number of walker)$, ce qui peut être problématique en terme de latence.\\
+Cette différence s'explique par le fait que j'ai du créer moi même l'algorithme de marche aléatoire pour ArangoDB. Avec ce dernier, le passage au noeud suivant dans la marche aléatoire implique à chaque fois une nouvelle requête.  J'ai été en contact avec les développeurs travaillant sur ArangoDB. Ces derniers m'ont confirmé que l'algorithme que j'avais développé était la seule manière de faire pour le moment car ArangoDB gère très mal la sélection aléatoire de nœuds.\\
 
-EXPLICITER LES AUTRES SCHEMAS UN PEU
+Sachant que dans le cas de Cleep, le nombre de marche faite pour recommander un nœud sera important (vu que nous faisons des marches aléatoires jusqu'à l'obtention d'un assez grand nombre de cleep recommandés). De même la profondeur est un paramètre qui peut aussi devenir grand en fonction de la qualité des cleeps que ressort le moteur de recommandation. Si les cleep proches sont de "bonnes qualité", alors il n'est pas nécessaire d'aller en profondeur, cependant si cela n'est pas le cas, le paramètre peut augmenter. Pour toute ces raisons Neo4j a été choisi par rapport à ArangoDB.
+
+\newpage
+\paragraph{Amélioration de la marche aléatoire de Neo4j\\}
+Contrairement à ArangoDB, la marche de Neo4j est efficace en terme de temps d'exécution. Ce dernier provient d'une procédure développé par l'équipe de Neo4j, dont le code est disponible en open-source.\\
+En réalisant les tests sur les dernières version du moteur de recommandation, je me suis rendu compte que la marche aléatoire suivait bien un mouvement Brownien (ce qui en soit est le principe de la marche aléatoire) car le moteur de recommandation retournait souvent les mêmes cleeps. Et en regardant les chemins dans l'interface de debug, j'ai remarqué que les cleeps recommandés étaient les cleeps voisins du cleep original. Cela pose problème car nous n'avons plus la diversité dans nos recommandations car nous sommes limités à une échantillon des possibles.\\
+Afin de résoudre ce problème, j'ai modifier la procédure qu'utilisait Neo4j pour faire la marche aléatoire. J'ai fait en sorte que cette marche pseudo-aléatoire ait plus de chance de s'éloigner du cleep d'origine, que de s'en approcher. Les tests après implémentations de cette nouvelle caractéristique montrent bien l'éloignement des marches aléatoires, et il est plus rare de retomber plusieurs fois sur le même cleep.
+
+\paragraph{Optimisation du calcul de score\\}
+Le calcul de score dépend grandement du chemin parcouru. En effet, selon le chemin, les cleeps, listes et utilisateurs qui le composent peuvent être différents et donc fournir des résultats différents. Cependant avec la marche aléatoire il arrive souvent de faire une boucle (\textbf{firgure \ref{fig:boucle}}). Le problème dans cet exemple est que la boucle va impacter le score (que ce soit négativement ou positivement). Le score du chemin 1 $\rightarrow$ 2 $\rightarrow$ 3 $\rightarrow$ 4 impacte le score du chemin 5 $\rightarrow$ 6. Ce qui nous intéresse c'est le chemin du cleep \#1 au cleep \#3 sans revenir sur son chemin car ca n'a pas grand interêt pour la recommandation.\\
+En effet, avec une boucle il est possible de recommander n'importe quel cleep, en faisant une boucle qui ait un impact très positif. Par ailleurs, on s'éloigne aussi de la notion de proximité et de distance dans le graphe : dans l'exemple, le cleep \#2 a autant d'influence sur le score que le cleep \#3.\\
+La solution adaptée est la suivante:
+\begin{itemize}
+	\item L'état des variables nécessaire au fonctionnement de l'algorithme est enregistré à chaque étape
+	\item Au début de la boucle un état $E_{1}$ est enregistré
+	\item A la fin de le boucle cet l'état $E_{1}$ devient l'état actuel de l'algorithme
+\end{itemize}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.7]{boucle}
+	\caption{Boucle chemin aléatoire}
+	\label{fig:boucle}
+\end{figure}
+\newpage
+Ainsi les boucles n'ont pas d'impact sur la procédure adapté. Plusieurs cas particuliers de relations se sont aussi imposés comme des boucles (la \textbf{figure \ref{fig:bbb}} explicite le terme de boucle conditionné par une relation):
+\begin{itemize}
+	\item cleep $\rightarrow$ user : où l'utilisateur est le propriétaire du cleep. A l'inverse la relation user $\rightarrow$ cleep où l'utilisateur est le propriétaire du cleep n'est pas considéré comme une boucle. Dans le premier cas on considère que le chemin aléatoire n'avance pas car il retourne vers le propriétaire d'un cleep et le but du moteur est de recommander des cleeps et non des utilisateurs. C'est pourquoi le second cas n'est pas considéré comme une boucle.
+	\item cleep $\rightarrow$ liste : où la liste possède le cleep. (même justification que pour cleep $\rightarrow$ user)
+	\item User  $\rightarrow$  liste et liste  $\rightarrow$  User
+\end{itemize}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{bbb}
+	\caption{Boucle conditionné par la relation cleep $\leftrightarrow$ user}
+	\label{fig:bbb}
+\end{figure}
+
+La suppression des boucles est une petite optimisation par rapport au reste du travail qui a été fait. Cependant, cela reste dans le but d'avoir des chemins qui avancent en profondeur dans le graphe s'éloignant un maximum du point d'origine. Cela permet aussi d'avoir une certaine uniformité, évitant plusieurs chemins donnant des scores très différents.\\
+Ce dernier point est l'une des forces, mais aussi faiblesse de ce moteur de recommandation. C'est la force principale dans le sens où l'utilisation des données intermédiaires permet de comprendre la connexion entre les cleeps. C'est une faiblesse pour les chemins très longs revenant proche du cleep original, l'information sur ce chemin n'est plus assez pertinente par rapport à la proximité.
 
 \newpage
 
-\section{Mission : Aide à l'amélioration d'une plateforme de déploiement pour Sia Partners}
-\subsection{Présentation de la plateforme sialab}
+\section{Mission : Aide à l'amélioration d'une plateforme de déploiement pour Sia Partners (2 mois)}
+Cette mission est orientée data engineer, développeur backend / frontend et donc est moins orienté dans le traitement et l'analyse de la donnée, mais plus sur l'infrastructure permettant d'utiliser et de présenter au mieux la donnée. Pendant cette mission, la personne référente était Gabriel Creti et Mathieu Thiboust qui ont grandement participé au développement de cette plateforme.
+ 
+\subsection{Présentation du sialab}
+La plateforme sialab est composée de deux parties distinctes :
+\begin{itemize}
+	\item Les bots : l'ensemble des bots developpé par l'équipe datascience en fait partie. Un bot est en général une solution technique developpé par l'équipe datascience de Sia Partners répondant à un problème spécifique. Le bot est utilisable via une interface graphique, le but étant d'avoir un produit fini et pas seulement un algorithme de machine learning. La \textbf{Figure \ref{fig:bot}} est un exemple de bot disponible via la plateforme \cite{bot}.
+	\item Les plateformes sialab : Plateformes développées pour les clients. Contrairement aux bots qui sont plus pour un usage démo, les plateformes sialabs sont pour un usage opérationnel. Elles permettent de lancer et programmer des \textbf{tâches}. Les tâches sont des scripts qui ont vocations à être lancer de manière régulières : par exemple, une tâche qui va rechercher des données de manière régulières au travers d'API publiques comme la météo ou le trafic routier. Elles permettent aussi la création de Restful API et d'interfaces personnalisées.
+\end{itemize}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.25]{bot.png}
+	\caption{Exemple de bot}
+	\label{fig:bot}
+\end{figure}
+
+La première version des plateformes sialabs est née d'un besoin client il y a un peu plus de 2 ans. Le client voulait au départ une plateforme mettant à disposition des API à travers lesquels ils pouvaient récupérer ses données de prédiction stockées en base. Ensuite un autre ajout a été très rapidement demandé, celui de pouvoir lancer et programmer des scripts permettant d'avoir ces prédictions. Par la suite, cette plateforme est devenu un argument de vente et plusieurs autres plateformes de ce type ont été créé pour les clients dont un pour Sia Partners permettant de lancer des process internes.\\
+
+Ainsi l'ensemble bots et plateformes est ce que l'on appelle le sialab. 
+
 \subsection{Objectifs et problématique}
+Avant mon arrivé, le sialab dans sa première version posait plusieurs problèmes du fait du développement anarchiques des bots et des plateformes.
+
+\paragraph{Bots\\}
+Les développeurs de bots à l'époque étaient obligé de travailler en local, ce qui les obligeaient à installer toutes les librairies qu'ils utilisaient pour ensuite déployer l'application sur un serveur appartenant à Sia Partners ou sur machine virtuel OVH/Amazon etc. Plusieurs problèmes découle alors de ce mode de fonctionnement:
+
+\subparagraph{Backups}
+Il n'y pas de backups. Les serveurs sur lesquels étaient déployés les bots n'avaient pas de structure permettant de répliquer les applications et avoir un service qui tourne en permanence. Ainsi les application étaient "copiées" sur les serveurs et accessible via l'adresse : "IP du serveur (ou nom de domaine Sia Partners) " + "nom de l'application". Par exemple : 
+\begin{itemize}
+	\item Bot KYC Adverse News disponible sur \textit{http://192.95.33.110/shiny/adb1w1b/}.
+	\item Bot Reg Review disponible sur \textit{http://regwatch.sia-partners.com/demo}
+\end{itemize} 
+
+\subparagraph{Contrôle de Version}
+Les consultants développant en local, et déployant par leurs propres moyens les bots,  utilisaient rarement le logiciel de version de contrôle décentralisé autrement connu sous le nom de git à leur disposition. Ainsi il n'y avait ni backup, ni contrôle de version en cas de problèmes.
+
+
 \subsection{Travail effectué}
+
 \subsection{Vision critique et apport personnel}
 \newpage
 
@@ -622,6 +700,79 @@ EXPLICITER LES AUTRES SCHEMAS UN PEU
 \subsection{Code source allégé du site de la fnac}
 %\lstinputlisting[language=html]{fnac.html}
 \subsection{Graphe tests ArangoDB / Neo4j}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{arangoDB_nbwalker_time.png}
+	\caption{Performances d'ArangoDB sur marche aléatoire en fonction du nombre de chemin aléatoire}
+	\label{fig:arwalk}
+\end{figure}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{arangoDB_depth_time.png}
+	\caption{Performances d'ArangoDB sur marche aléatoire en fonction de la profondeur}
+	\label{fig:ardepth}
+\end{figure}
+\newpage
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{neo4j_nbwalker_time.png}
+	\caption{Performances d'ArangoDB sur marche aléatoire en fonction du nombre de chemin aléatoire}
+	\label{fig:newalk}
+\end{figure}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{neo4j_depth_time.png}
+	\caption{Performances d'ArangoDB sur marche aléatoire en fonction de la profondeur}
+	\label{fig:nedepth}
+\end{figure}
+\newpage
+\subsection{Exemple : Heuristique de Pinterest appliqué au cas de Cleep}
+
+Le graphe \textbf{figure \ref{fig:ex1}} sert d'exemple pour cette partie. Le cleep en rose est le cleep à recommander. Les cleeps violets sont les autres cleeps du graphe et ceux en gris sont les utilisateurs. Pour des raisons de simplicités, je n'ai pas inclus les listes.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{ex1}
+	\caption{Graphe de départ}
+	\label{fig:ex1}
+\end{figure}
+
+Les \textbf{figures \ref{fig:ex2}, \ref{fig:ex3}, \ref{fig:ex4}} décrivent le processus de chemin aléatoire. Dans cet exemple, il y a 3 marches aléatoire effectuées (désignées par les chemins vert) donc 3 cleeps possiblement recommandés : les cleeps \#8, \#10 et \#11.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{ex2}
+	\caption{Chemin aléatoire n°1}
+	\label{fig:ex2}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{ex3}
+	\caption{Chemin aléatoire n°2}
+	\label{fig:ex3}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{ex4}
+	\caption{Chemin aléatoire n°3}
+	\label{fig:ex4}
+\end{figure}
+
+La \textbf{figure \ref{fig:ex5}} décrit le processus de selection des meilleurs cleeps. Les cleeps se voient d'abord appliquer un score. Si ce score dépasse un certain seuil comme c'est le cas pour les cleeps \#10 et \#11, alors ces cleeps peuvent être poussés comme recommandations.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{ex5}
+	\caption{}
+	\label{fig:ex5}
+\end{figure}
+
 
 \newpage
 
@@ -651,6 +802,9 @@ EXPLICITER LES AUTRES SCHEMAS UN PEU
 	\bibitem{aggrg}
 	Fonction d'aggregation sur Cypher:\\
 	\textit{https://neo4j.com/docs/java-reference/current/extending-neo4j/procedures-and-functions/aggregation-functions/}
+	\bibitem{bot}
+	Bot détection de fraude:\\
+	\textit{https://lab.sia-partners.ai/showroom/fraud-detection/}
 	
 \end{thebibliography}
 \newpage

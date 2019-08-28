@@ -17,7 +17,7 @@
 \BOOKMARK [5][-]{paragraph.5.4.1.2}{Clustering des liens}{paragraph.5.4.1.1}% 17
 \BOOKMARK [5][-]{paragraph.5.4.1.3}{Tests et r\351sultats}{paragraph.5.4.1.1}% 18
 \BOOKMARK [3][-]{subsubsection.5.4.2}{Technologie utilis\351e}{subsection.5.4}% 19
-\BOOKMARK [1][-]{section.6}{Mission : Moteur de recommandation pour Cleep \(2.5 mois\)}{}% 20
+\BOOKMARK [1][-]{section.6}{Mission : Moteur de recommandation pour Cleep \(3 mois\)}{}% 20
 \BOOKMARK [2][-]{subsection.6.1}{Contexte et probl\351matique}{section.6}% 21
 \BOOKMARK [3][-]{paragraph.6.1.0.1}{Objectif\(s\)}{subsection.6.1}% 22
 \BOOKMARK [4][-]{paragraph.6.1.0.2}{\311tat initial}{paragraph.6.1.0.1}% 23
@@ -37,13 +37,19 @@
 \BOOKMARK [5][-]{paragraph.6.2.3.4}{Tests du moteur}{paragraph.6.2.3.1}% 37
 \BOOKMARK [2][-]{subsection.6.3}{Vision critique et apport personnel}{section.6}% 38
 \BOOKMARK [3][-]{paragraph.6.3.0.1}{Tests sur ArangoDB et Neo4j}{subsection.6.3}% 39
-\BOOKMARK [1][-]{section.7}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners}{}% 40
-\BOOKMARK [2][-]{subsection.7.1}{Pr\351sentation de la plateforme sialab}{section.7}% 41
-\BOOKMARK [2][-]{subsection.7.2}{Objectifs et probl\351matique}{section.7}% 42
-\BOOKMARK [2][-]{subsection.7.3}{Travail effectu\351}{section.7}% 43
-\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 44
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 45
-\BOOKMARK [1][-]{section.9}{Annexes}{}% 46
-\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 47
-\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 48
-\BOOKMARK [1][-]{section.10}{Glossaire}{}% 49
+\BOOKMARK [4][-]{paragraph.6.3.0.2}{Am\351lioration de la marche al\351atoire de Neo4j}{paragraph.6.3.0.1}% 40
+\BOOKMARK [5][-]{paragraph.6.3.0.3}{Optimisation du calcul de score}{paragraph.6.3.0.2}% 41
+\BOOKMARK [1][-]{section.7}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners \(2 mois\)}{}% 42
+\BOOKMARK [2][-]{subsection.7.1}{Pr\351sentation du sialab}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.2}{Objectifs et probl\351matique}{section.7}% 44
+\BOOKMARK [3][-]{paragraph.7.2.0.1}{Bots}{subsection.7.2}% 45
+\BOOKMARK [4][-]{subparagraph.7.2.0.1.1}{Backups}{paragraph.7.2.0.1}% 46
+\BOOKMARK [5][-]{subparagraph.7.2.0.1.2}{Contr\364le de Version}{subparagraph.7.2.0.1.1}% 47
+\BOOKMARK [2][-]{subsection.7.3}{Travail effectu\351}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 49
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 50
+\BOOKMARK [1][-]{section.9}{Annexes}{}% 51
+\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 52
+\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 53
+\BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 54
+\BOOKMARK [1][-]{section.10}{Glossaire}{}% 55
