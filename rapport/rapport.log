@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  28 AUG 2019 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  29 AUG 2019 14:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1655,7 +1655,7 @@ LaTeX Info: Redefining \nameref on input line 72.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]\T1/phv/m/n/12 28 Au-gust 2019 
+[]\T1/phv/m/n/12 29 Au-gust 2019 
  []
 
 
@@ -2352,38 +2352,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 717--718
  []
 
 [33] [34]
-<arangoDB_nbwalker_time.png, id=611, 1084.05pt x 505.89pt>
+<arangoDB_nbwalker_time.png, id=612, 1084.05pt x 505.89pt>
 File: arangoDB_nbwalker_time.png Graphic file (type png)
 <use arangoDB_nbwalker_time.png>
-Package pdftex.def Info: arangoDB_nbwalker_time.png  used on input line 738.
+Package pdftex.def Info: arangoDB_nbwalker_time.png  used on input line 751.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
-<arangoDB_depth_time.png, id=612, 1084.05pt x 505.89pt>
+<arangoDB_depth_time.png, id=613, 1084.05pt x 505.89pt>
 File: arangoDB_depth_time.png Graphic file (type png)
 <use arangoDB_depth_time.png>
-Package pdftex.def Info: arangoDB_depth_time.png  used on input line 746.
+Package pdftex.def Info: arangoDB_depth_time.png  used on input line 759.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
  [35pdfTeX warning (ext4): destination with the same identifier (name{figure.21
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.750 \newpage
+l.763 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.750 \newpage
+l.763 \newpage
                <./arangoDB_nbwalker_time.png> <./arangoDB_depth_time.png>]
-<neo4j_nbwalker_time.png, id=621, 1084.05pt x 505.89pt>
+<neo4j_nbwalker_time.png, id=622, 1084.05pt x 505.89pt>
 File: neo4j_nbwalker_time.png Graphic file (type png)
 <use neo4j_nbwalker_time.png>
-Package pdftex.def Info: neo4j_nbwalker_time.png  used on input line 754.
+Package pdftex.def Info: neo4j_nbwalker_time.png  used on input line 767.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
-<neo4j_depth_time.png, id=622, 1084.05pt x 505.89pt>
+<neo4j_depth_time.png, id=623, 1084.05pt x 505.89pt>
 File: neo4j_depth_time.png Graphic file (type png)
 <use neo4j_depth_time.png>
-Package pdftex.def Info: neo4j_depth_time.png  used on input line 762.
+Package pdftex.def Info: neo4j_depth_time.png  used on input line 775.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
 
 [36pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
@@ -2391,45 +2391,45 @@ Package pdftex.def Info: neo4j_depth_time.png  used on input line 762.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.766 \newpage
+l.779 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.766 \newpage
+l.779 \newpage
                <./neo4j_nbwalker_time.png> <./neo4j_depth_time.png>]
-<ex1.png, id=632, 667.49374pt x 335.2525pt>
+<ex1.png, id=633, 667.49374pt x 335.2525pt>
 File: ex1.png Graphic file (type png)
 <use ex1.png>
-Package pdftex.def Info: ex1.png  used on input line 772.
+Package pdftex.def Info: ex1.png  used on input line 785.
 (pdftex.def)             Requested size: 400.49934pt x 201.15305pt.
-<ex2.png, id=636, 670.505pt x 335.2525pt>
+<ex2.png, id=637, 670.505pt x 335.2525pt>
 File: ex2.png Graphic file (type png)
 <use ex2.png>
-Package pdftex.def Info: ex2.png  used on input line 780.
+Package pdftex.def Info: ex2.png  used on input line 793.
 (pdftex.def)             Requested size: 402.3061pt x 201.15305pt.
-<ex3.png, id=637, 695.59875pt x 344.28625pt>
+<ex3.png, id=638, 695.59875pt x 344.28625pt>
 File: ex3.png Graphic file (type png)
 <use ex3.png>
-Package pdftex.def Info: ex3.png  used on input line 787.
+Package pdftex.def Info: ex3.png  used on input line 800.
 (pdftex.def)             Requested size: 417.36247pt x 206.57333pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ex4.png, id=638, 639.38875pt x 340.27126pt>
+<ex4.png, id=639, 639.38875pt x 340.27126pt>
 File: ex4.png Graphic file (type png)
 <use ex4.png>
-Package pdftex.def Info: ex4.png  used on input line 794.
+Package pdftex.def Info: ex4.png  used on input line 807.
 (pdftex.def)             Requested size: 383.6362pt x 204.16432pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ex5.png, id=640, 749.80125pt x 275.0275pt>
+<ex5.png, id=641, 749.80125pt x 275.0275pt>
 File: ex5.png Graphic file (type png)
 <use ex5.png>
-Package pdftex.def Info: ex5.png  used on input line 803.
+Package pdftex.def Info: ex5.png  used on input line 816.
 (pdftex.def)             Requested size: 449.88422pt x 165.01776pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2439,13 +2439,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.809 \newpage
+l.822 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.809 \newpage
+l.822 \newpage
                <./ex1.png> <./ex2.png>]
 
 LaTeX Warning: Text page 38 contains only floats.
@@ -2455,27 +2455,27 @@ LaTeX Warning: Text page 38 contains only floats.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.809 \newpage
+l.822 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.809 \newpage
+l.822 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.29}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.809 \newpage
+l.822 \newpage
                <./ex3.png> <./ex4.png> <./ex5.png>]
-Underfull \hbox (badness 3029) in paragraph at lines 823--827
+Underfull \hbox (badness 3029) in paragraph at lines 836--840
 []\T1/phv/m/n/10 Pixie: A Sys-tem for Rec-om-mend-ing 3+ Bil-lion Items to 200+
  Mil-lion Users in Real-Time :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 835--837
+Underfull \hbox (badness 10000) in paragraph at lines 848--850
 \T1/phv/m/sl/10 https://neo4j.com/docs/java-reference/current/extending-neo4j/p
 rocedures-and-functions/aggregation-
  []
@@ -2517,25 +2517,31 @@ rocedures-and-functions/aggregation-
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 852.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 852.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 865.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 865.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 852.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 852.
-Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 2377E3593ED70C8F3C3667A4A32D4906;4919.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 865.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 865.
 
+
+Package rerunfilecheck Warning: File `rapport.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `rapport.out':
+(rerunfilecheck)             Before: 2377E3593ED70C8F3C3667A4A32D4906;4919
+(rerunfilecheck)             After:  73AE92473DC5B18DE284AF74D8CCB610;5006.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 852.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 865.
  ) 
 Here is how much of TeX's memory you used:
- 32312 strings out of 494923
- 606145 string characters out of 6180742
+ 32313 strings out of 494923
+ 606164 string characters out of 6180742
  759093 words of memory out of 5000000
  34934 multiletter control sequences out of 15000+600000
  578031 words of font info for 77 fonts, out of 8000000 for 9000
@@ -2554,10 +2560,10 @@ mbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (40 pages, 2653616 bytes).
+Output written on rapport.pdf (40 pages, 2654065 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 641 compressed objects within 7 object streams
- 167 named destinations out of 1000 (max. 500000)
+ 793 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 168 named destinations out of 1000 (max. 500000)
  651 words of extra memory for PDF output out of 10000 (max. 10000000)
 
