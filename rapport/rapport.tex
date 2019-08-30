@@ -845,15 +845,55 @@ Ce qui est d'autant plus intéressant est que la partie orchestration des ressou
 Mon travail sur cette partie déploiement a surtout été de faire, en collaboration avec Gabriel Creti, toutes les configurations nécessaire pour l'établissement de Kubernetes. Par la suite, j'ai adapté ces configuration aux projets déjà existants (bots et plateformes) mais aussi aux projets futurs. M'étant formé sur le sujet, j'ai aidé les autres consultants à prendre en main la plateforme, mais aussi à résoudre les bugs reliés à cette dernière quand ils étaient de l'ordre du déploiement (gitlab ou GCP). 
 
 \subsubsection{Plateforme Sialab}
-Le travail que j'ai effectué pour le sialab ne se résume pas uniquement à l'établissement du processus de développement, j'ai aussi participé au développement de la plateforme sialab pour Sia Partners et l'infrastructure qu'il y a derrière l'ensemble des ces plateformes (template sialab).
+Le travail que j'ai effectué pour le sialab ne se résume pas uniquement à l'établissement du processus de développement, j'ai aussi participé au développement de la plateforme sialab pour Sia Partners ainsi que l'infrastructure qu'il y a derrière l'ensemble des ces plateformes (template sialab).\\
+
+Les plateformes sialab, suivent le même processus de développement qu'expliqué précédemment. Ils sont formés de 5 différentes micro-services:
+\begin{itemize}
+	\item Custom Endpoints : API créées par les développeurs du projet. Ces API sont reliés au besoin métier qui nécessitaient la plateforme
+	\item Authentication : Module qui gère l'authentification des utilisateurs sur la plateforme, mais aussi les droits des utilisateurs (Admin, lecture, écriture).
+	\item Launcher : Service qui permet de lancer des scripts (Python, NodeJs, Java ...). Ces scripts sont créés par les développeurs sur le projet. De même que pour custom endpoints, l'exécution de ces scripts relèvent d'un besoin métier
+	\item Scheduler : Ce service permet de programmer à une fréquence précise l'exécution d'un script.
+	\item Frontend : L'interface graphique de la plateforme. Elle sert en général à avoir une interface utilisateur afin d'utiliser les API ou montrer les résultats des scripts lancés.
+\end{itemize}
+
+Les plateformes sialab sont toutes basées sur un même template, et chacun des micro-services sont codés en python Flask. Le frontend possède évidement une composante en javascript, mais les serveurs en eux même sont des serveurs Flask orchestrés par Gunicorn.\\
+
+J'ai travaillé de manière assez transverse sur ce sujet. J'ai réalisé la partie front en entière avec tout les enjeux de connexions et d'interface utilisateurs. J'ai aussi développer en partie le launcher de tâche (scripts). Gabriel Creti a développé le reste des micro-services.
 
 \subsection{Vision critique et apport personnel}
+Dans cette partie je vais revenir sur l'ensemble des changements majeurs qu'ont connu les plateformes sialab. En effet l'infrastructure derrière ces plateformes a bien changé en trois mois, pour arriver à une infrastructure composé de 5 micro-services.
 
-Création des templates Flask 
+\subsubsection{Images des plateformes sialab}
+Dans l'idée de faciliter le développement des consultant sur les plateformes sialab, l'image docker des plateforme est divisé en deux parties:
+\begin{itemize}
+	\item le sialab-core : c'est une version générique d'une plateforme sialab.
+	\item le sialab utilisateur : la version du sialab sur laquelle développe les consultants
+\end{itemize}
+
+La \textbf{figure \ref{fig:siasia}} décrit la création de l'image d'une plateforme sialab. L'image finale d'une plateforme se construit sur l'image du sialab-core. Ensuite, vient s'ajouter comme une brique l'image du sialab utilisateur. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{sia-core.png}
+	\caption{Construction de l'image d'une plateforme sialab}
+	\label{fig:siasia}
+\end{figure}
+
+Les principales fonctionnalité des plateformes sialab sont développées dans le core, car commune à toute. Ainsi le scheduler, et l'authentification sont uniquement présent dans le core. Les customs endpoints quant à eux sont uniquement dans la partie utilisateurs car seul les consultants vont développer dedans. Le problème réside dans le Launcher et le frontend. En effet la partie permettant dans lancer des scripts est codé dans le sialab core, cependant les consultants doivent pouvoir coder les scripts qui vont être lancés. De même, plusieurs fonctionnalités du frontend sont codés dans le core comme par exemple la gestion de l'authentification des utilisateurs, les interfaces graphiques permettant de lancer un script etc.\\
+
+La solution pour pallier à ce problème a été de créer nous même des dockerfile assez restrictifs afin de permettre cette division. Cependant le désavantage est que cela force des configurations que les consultants peuvent ne pas comprendre sans aller dans le core. Par exemple, les pages internet sont rendu en python Flask via des templates HTML-Jinja2. La fonction de copier en Docker est prioritaire sur ce qui existe déjà dans le container, ainsi un dossier est supprimé si un dossier du même nom existe. Les templates HTML-Jinja2 dans les sialab utilisateur sont à cause de cela stocké dans un dossier /custom\_templates alors qu'ils sont stockés dans le dossier /templates dans le sialab-core.\\
+Un autre exemple est l'importation des script Javascript dans les templates HTML. Comme on utilise un système de templating, on a un template master qui englobe tout les autres. Ainsi ces derniers ne font qu'étendre le premier. Le problème est que le template master et les templates du sialab-core sont les seules à charger ses scripts Javascript dans les balises <header> ou <footer>, car ils sont dans l'image du core. Ainsi les templates du silab utilisateur n'y ont pas accès, ce qui rend le chargement des pages Internet moins optimisés. 
+
+ 
+\subsubsection{Changement d'infrastructure}
+
+
 
 Parler des différentes étapes de structure par laquelle on est passé. Parler de la diff sialabcore et le reste.
 
 Parler du problème de scheduler en x2 qui peut niker totalement l'interete du truc
+
+Création des templates Flask 
+
 
 
 \newpage

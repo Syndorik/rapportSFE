@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  30 AUG 2019 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  30 AUG 2019 19:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1703,7 +1703,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 \c@imta@idx=\count344
 \imta@oldlinewidth=\skip138
 \imta@oldtextwidth=\skip139
-<sia_logo.jpg, id=276, 6849.59pt x 2582.64874pt>
+<sia_logo.jpg, id=280, 6849.59pt x 2582.64874pt>
 File: sia_logo.jpg Graphic file (type jpg)
 <use sia_logo.jpg>
 Package pdftex.def Info: sia_logo.jpg  used on input line 75.
@@ -1739,7 +1739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 99.
-<cleep.jpg, id=407, 1204.5pt x 501.875pt>
+<cleep.jpg, id=412, 1204.5pt x 501.875pt>
 File: cleep.jpg Graphic file (type jpg)
 <use cleep.jpg>
 Package pdftex.def Info: cleep.jpg  used on input line 104.
@@ -1760,7 +1760,7 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
                                                   \fi \fi 
 l.122 \newpage
                <./cleep.jpg>]
-<scrapping.png, id=416, 477.4638pt x 388.5717pt>
+<scrapping.png, id=421, 477.4638pt x 388.5717pt>
 File: scrapping.png Graphic file (type png)
 <use scrapping.png>
 Package pdftex.def Info: scrapping.png  used on input line 143.
@@ -1788,7 +1788,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 162.
 
-<browserInject.png, id=423, 793.16325pt x 401.0985pt>
+<browserInject.png, id=428, 793.16325pt x 401.0985pt>
 File: browserInject.png Graphic file (type png)
 <use browserInject.png>
 Package pdftex.def Info: browserInject.png  used on input line 165.
@@ -1830,7 +1830,7 @@ Overfull \hbox (30.17772pt too wide) in paragraph at lines 185--186
 AKENING-FR-SWITCH-Jeu-Nintendo-
  []
 
-<specific.png, id=430, 612.03656pt x 401.0985pt>
+<specific.png, id=435, 612.03656pt x 401.0985pt>
 File: specific.png Graphic file (type png)
 <use specific.png>
 Package pdftex.def Info: specific.png  used on input line 194.
@@ -1843,7 +1843,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 202.
 
-<fnac.png, id=457, 1861.95625pt x 875.27pt>
+<fnac.png, id=463, 1861.95625pt x 875.27pt>
 File: fnac.png Graphic file (type png)
 <use fnac.png>
 Package pdftex.def Info: fnac.png  used on input line 206.
@@ -1887,7 +1887,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 231.
 
-<static.png, id=474, 1831.84375pt x 761.84625pt>
+<static.png, id=479, 1831.84375pt x 761.84625pt>
 File: static.png Graphic file (type png)
 <use static.png>
 Package pdftex.def Info: static.png  used on input line 236.
@@ -1895,7 +1895,7 @@ Package pdftex.def Info: static.png  used on input line 236.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<step1.png, id=475, 713.66624pt x 379.4175pt>
+<step1.png, id=480, 713.66624pt x 379.4175pt>
 File: step1.png Graphic file (type png)
 <use step1.png>
 Package pdftex.def Info: step1.png  used on input line 244.
@@ -1959,7 +1959,7 @@ Package hyperref Warning: Difference (3) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 287.
 
-<reco.png, id=496, 596.2275pt x 361.35pt>
+<reco.png, id=501, 596.2275pt x 361.35pt>
 File: reco.png Graphic file (type png)
 <use reco.png>
 Package pdftex.def Info: reco.png  used on input line 298.
@@ -1980,7 +1980,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
-<ggvision.jpg, id=503, 1007.765pt x 559.08875pt>
+<ggvision.jpg, id=508, 1007.765pt x 559.08875pt>
 File: ggvision.jpg Graphic file (type jpg)
 <use ggvision.jpg>
 Package pdftex.def Info: ggvision.jpg  used on input line 311.
@@ -2001,7 +2001,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--321
                                                   \fi \fi 
 l.321 \newpage
                <./ggvision.jpg>]
-<relations.png, id=509, 361.35pt x 157.3077pt>
+<relations.png, id=514, 361.35pt x 157.3077pt>
 File: relations.png Graphic file (type png)
 <use relations.png>
 Package pdftex.def Info: relations.png  used on input line 332.
@@ -2037,7 +2037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--377
  []
 
 [19]
-<procpint.png, id=529, 659.5842pt x 325.215pt>
+<procpint.png, id=534, 659.5842pt x 325.215pt>
 File: procpint.png Graphic file (type png)
 <use procpint.png>
 Package pdftex.def Info: procpint.png  used on input line 380.
@@ -2047,7 +2047,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
-<pintfunc.png, id=530, 650.43pt x 189.8292pt>
+<pintfunc.png, id=535, 650.43pt x 189.8292pt>
 File: pintfunc.png Graphic file (type png)
 <use pintfunc.png>
 Package pdftex.def Info: pintfunc.png  used on input line 390.
@@ -2077,7 +2077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--413
 
  []
 
-<indfree.png, id=537, 1366.10374pt x 302.12875pt>
+<indfree.png, id=542, 1366.10374pt x 302.12875pt>
 File: indfree.png Graphic file (type png)
 <use indfree.png>
 Package pdftex.def Info: indfree.png  used on input line 416.
@@ -2127,7 +2127,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 485--486
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 497.
 
-<proccleep.png, id=558, 776.9025pt x 298.2342pt>
+<proccleep.png, id=563, 776.9025pt x 298.2342pt>
 File: proccleep.png Graphic file (type png)
 <use proccleep.png>
 Package pdftex.def Info: proccleep.png  used on input line 501.
@@ -2169,7 +2169,7 @@ sy/m/n/10 ^^B [] [][]
                                                   \fi \fi 
 l.522 \end{equation}
                      <./proccleep.png>]
-<atan.png, id=568, 1370.11874pt x 700.6175pt>
+<atan.png, id=573, 1370.11874pt x 700.6175pt>
 File: atan.png Graphic file (type png)
 <use atan.png>
 Package pdftex.def Info: atan.png  used on input line 526.
@@ -2229,7 +2229,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 574.
 
 [26]
-<comparison_depth_time.png, id=589, 505.89pt x 505.89pt>
+<comparison_depth_time.png, id=594, 505.89pt x 505.89pt>
 File: comparison_depth_time.png Graphic file (type png)
 <use comparison_depth_time.png>
 Package pdftex.def Info: comparison_depth_time.png  used on input line 586.
@@ -2238,7 +2238,7 @@ Package pdftex.def Info: comparison_depth_time.png  used on input line 586.
 
 LaTeX Warning: Reference `[' on page 27 undefined on input line 592.
 
-<comparison_nbWalker_time.png, id=591, 505.89pt x 505.89pt>
+<comparison_nbWalker_time.png, id=596, 505.89pt x 505.89pt>
 File: comparison_nbWalker_time.png Graphic file (type png)
 <use comparison_nbWalker_time.png>
 Package pdftex.def Info: comparison_nbWalker_time.png  used on input line 600.
@@ -2277,7 +2277,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 617.
 
-<boucle.png, id=605, 451.6875pt x 289.08pt>
+<boucle.png, id=610, 451.6875pt x 289.08pt>
 File: boucle.png Graphic file (type png)
 <use boucle.png>
 Package pdftex.def Info: boucle.png  used on input line 628.
@@ -2289,7 +2289,7 @@ Package pdftex.def Info: boucle.png  used on input line 628.
                                                   \fi \fi 
 l.632 \newpage
                <./boucle.png>]
-<bbb.png, id=613, 605.26125pt x 514.02037pt>
+<bbb.png, id=618, 605.26125pt x 514.02037pt>
 File: bbb.png Graphic file (type png)
 <use bbb.png>
 Package pdftex.def Info: bbb.png  used on input line 642.
@@ -2301,7 +2301,7 @@ Package pdftex.def Info: bbb.png  used on input line 642.
                                                   \fi \fi 
 l.650 \newpage
                <./bbb.png>]
-<bot.png, id=622, 1853.92625pt x 908.39375pt>
+<bot.png, id=627, 1853.92625pt x 908.39375pt>
 File: bot.png Graphic file (type png)
 <use bot.png>
 Package pdftex.def Info: bot.png  used on input line 664.
@@ -2357,7 +2357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 737--739
  []
 
 [33]
-<structure.png, id=642, 1196.97188pt x 527.571pt>
+<structure.png, id=647, 1196.97188pt x 527.571pt>
 File: structure.png Graphic file (type png)
 <use structure.png>
 Package pdftex.def Info: structure.png  used on input line 743.
@@ -2371,12 +2371,12 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 749.
 
-<confflask.png, id=645, 268.00125pt x 454.69875pt>
+<confflask.png, id=650, 268.00125pt x 454.69875pt>
 File: confflask.png Graphic file (type png)
 <use confflask.png>
 Package pdftex.def Info: confflask.png  used on input line 764.
 (pdftex.def)             Requested size: 160.80197pt x 272.82135pt.
-<cfla.png, id=646, 162.6075pt x 250.9375pt>
+<cfla.png, id=651, 162.6075pt x 250.9375pt>
 File: cfla.png Graphic file (type png)
 <use cfla.png>
 Package pdftex.def Info: cfla.png  used on input line 766.
@@ -2415,7 +2415,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 781--782
 
  []
 
-<resume.png, id=656, 677.6517pt x 280.1667pt>
+<resume.png, id=661, 677.6517pt x 280.1667pt>
 File: resume.png Graphic file (type png)
 <use resume.png>
 Package pdftex.def Info: resume.png  used on input line 787.
@@ -2435,12 +2435,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 l.797 	\item
              {[Obligatoire]} Build des images dockers : Cette Ã©tapes crÃ©Ã©...
  <./confflask.png> <./cfla.png>]
-<gitlab.png, id=669, 1197.47375pt x 473.77pt>
+<gitlab.png, id=674, 1197.47375pt x 473.77pt>
 File: gitlab.png Graphic file (type png)
 <use gitlab.png>
 Package pdftex.def Info: gitlab.png  used on input line 807.
 (pdftex.def)             Requested size: 478.98102pt x 189.50464pt.
-<pipeline.png, id=670, 783.92876pt x 276.03125pt>
+<pipeline.png, id=675, 783.92876pt x 276.03125pt>
 File: pipeline.png Graphic file (type png)
 <use pipeline.png>
 Package pdftex.def Info: pipeline.png  used on input line 814.
@@ -2478,158 +2478,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 839--840
                                                   \fi \fi 
 l.843 
        <./pipeline.png>]
-Overfull \hbox (5.63913pt too wide) in paragraph at lines 848--849
-\T1/phv/m/n/10 développe-ment, j'ai aussi par-ticipé au développe-ment de la pl
-ate-forme sialab pour Sia Part-ners et l'infrastructure
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
+
  []
 
-[38] [39]
-<arangoDB_nbwalker_time.png, id=693, 1084.05pt x 505.89pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
+
+ []
+
+<sia-core.png, id=691, 560.0925pt x 126.4725pt>
+File: sia-core.png Graphic file (type png)
+<use sia-core.png>
+Package pdftex.def Info: sia-core.png  used on input line 876.
+(pdftex.def)             Requested size: 336.05809pt x 75.88408pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
+
+ []
+
+[38] [39pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.26}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.897 \newpage
+               <./sia-core.png>] [40]
+<arangoDB_nbwalker_time.png, id=707, 1084.05pt x 505.89pt>
 File: arangoDB_nbwalker_time.png Graphic file (type png)
 <use arangoDB_nbwalker_time.png>
-Package pdftex.def Info: arangoDB_nbwalker_time.png  used on input line 870.
+Package pdftex.def Info: arangoDB_nbwalker_time.png  used on input line 910.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
-<arangoDB_depth_time.png, id=694, 1084.05pt x 505.89pt>
+<arangoDB_depth_time.png, id=708, 1084.05pt x 505.89pt>
 File: arangoDB_depth_time.png Graphic file (type png)
 <use arangoDB_depth_time.png>
-Package pdftex.def Info: arangoDB_depth_time.png  used on input line 878.
+Package pdftex.def Info: arangoDB_depth_time.png  used on input line 918.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
- [40pdfTeX warning (ext4): destination with the same identifier (name{figure.26
+ [41pdfTeX warning (ext4): destination with the same identifier (name{figure.27
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.882 \newpage
+l.922 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
-{figure.27}) has been already used, duplicate ignored
+{figure.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.882 \newpage
+l.922 \newpage
                <./arangoDB_nbwalker_time.png> <./arangoDB_depth_time.png>]
-<neo4j_nbwalker_time.png, id=704, 1084.05pt x 505.89pt>
+<neo4j_nbwalker_time.png, id=717, 1084.05pt x 505.89pt>
 File: neo4j_nbwalker_time.png Graphic file (type png)
 <use neo4j_nbwalker_time.png>
-Package pdftex.def Info: neo4j_nbwalker_time.png  used on input line 886.
+Package pdftex.def Info: neo4j_nbwalker_time.png  used on input line 926.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
-<neo4j_depth_time.png, id=705, 1084.05pt x 505.89pt>
+<neo4j_depth_time.png, id=718, 1084.05pt x 505.89pt>
 File: neo4j_depth_time.png Graphic file (type png)
 <use neo4j_depth_time.png>
-Package pdftex.def Info: neo4j_depth_time.png  used on input line 894.
+Package pdftex.def Info: neo4j_depth_time.png  used on input line 934.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
 
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.28}
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.29}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.898 \newpage
+l.938 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
-{figure.29}) has been already used, duplicate ignored
+{figure.30}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.898 \newpage
+l.938 \newpage
                <./neo4j_nbwalker_time.png> <./neo4j_depth_time.png>]
-<ex1.png, id=715, 667.49374pt x 335.2525pt>
+<ex1.png, id=728, 667.49374pt x 335.2525pt>
 File: ex1.png Graphic file (type png)
 <use ex1.png>
-Package pdftex.def Info: ex1.png  used on input line 904.
+Package pdftex.def Info: ex1.png  used on input line 944.
 (pdftex.def)             Requested size: 400.49934pt x 201.15305pt.
-<ex2.png, id=719, 670.505pt x 335.2525pt>
+<ex2.png, id=732, 670.505pt x 335.2525pt>
 File: ex2.png Graphic file (type png)
 <use ex2.png>
-Package pdftex.def Info: ex2.png  used on input line 912.
+Package pdftex.def Info: ex2.png  used on input line 952.
 (pdftex.def)             Requested size: 402.3061pt x 201.15305pt.
-<ex3.png, id=720, 695.59875pt x 344.28625pt>
+<ex3.png, id=733, 695.59875pt x 344.28625pt>
 File: ex3.png Graphic file (type png)
 <use ex3.png>
-Package pdftex.def Info: ex3.png  used on input line 919.
+Package pdftex.def Info: ex3.png  used on input line 959.
 (pdftex.def)             Requested size: 417.36247pt x 206.57333pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ex4.png, id=721, 639.38875pt x 340.27126pt>
+<ex4.png, id=734, 639.38875pt x 340.27126pt>
 File: ex4.png Graphic file (type png)
 <use ex4.png>
-Package pdftex.def Info: ex4.png  used on input line 926.
+Package pdftex.def Info: ex4.png  used on input line 966.
 (pdftex.def)             Requested size: 383.6362pt x 204.16432pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ex5.png, id=723, 749.80125pt x 275.0275pt>
+<ex5.png, id=736, 749.80125pt x 275.0275pt>
 File: ex5.png Graphic file (type png)
 <use ex5.png>
-Package pdftex.def Info: ex5.png  used on input line 935.
+Package pdftex.def Info: ex5.png  used on input line 975.
 (pdftex.def)             Requested size: 449.88422pt x 165.01776pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.30}
+[43pdfTeX warning (ext4): destination with the same identifier (name{figure.31}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.939 \newpage
+l.979 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
-{figure.31}) has been already used, duplicate ignored
+{figure.32}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.939 \newpage
+l.979 \newpage
                <./ex1.png> <./ex2.png>]
 
-LaTeX Warning: Text page 43 contains only floats.
+LaTeX Warning: Text page 44 contains only floats.
 
-[43pdfTeX warning (ext4): destination with the same identifier (name{figure.32}
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.33}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.939 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.33}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.939 \newpage
+l.979 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.34}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.939 \newpage
+l.979 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.35}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.979 \newpage
                <./ex3.png> <./ex4.png> <./ex5.png>]
-<botvariable.png, id=743, 305.14pt x 286.06876pt>
+<botvariable.png, id=756, 305.14pt x 286.06876pt>
 File: botvariable.png Graphic file (type png)
 <use botvariable.png>
-Package pdftex.def Info: botvariable.png  used on input line 945.
+Package pdftex.def Info: botvariable.png  used on input line 985.
 (pdftex.def)             Requested size: 183.0854pt x 171.64258pt.
-<projectvariable.png, id=744, 342.27875pt x 365.365pt>
+<projectvariable.png, id=757, 342.27875pt x 365.365pt>
 File: projectvariable.png Graphic file (type png)
 <use projectvariable.png>
-Package pdftex.def Info: projectvariable.png  used on input line 946.
+Package pdftex.def Info: projectvariable.png  used on input line 986.
 (pdftex.def)             Requested size: 205.36882pt x 219.22069pt.
- [44pdfTeX warning (ext4): destination with the same identifier (name{figure.35
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.36
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.954 \newpage
+l.994 \newpage
                <./botvariable.png> <./projectvariable.png>]
-Underfull \hbox (badness 3029) in paragraph at lines 968--972
+Underfull \hbox (badness 3029) in paragraph at lines 1008--1012
 []\T1/phv/m/n/10 Pixie: A Sys-tem for Rec-om-mend-ing 3+ Bil-lion Items to 200+
  Mil-lion Users in Real-Time :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 980--982
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1022
 \T1/phv/m/sl/10 https://neo4j.com/docs/java-reference/current/extending-neo4j/p
 rocedures-and-functions/aggregation-
  []
 
-[45]
+[46]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2662,18 +2685,18 @@ rocedures-and-functions/aggregation-
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [46
+ [47
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1000.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1000.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1040.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1040.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1000.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1000.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1040.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1040.
 
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: DE6F302E14EC32D3274B4E16693EA5ED;5439.
+(rerunfilecheck)             Checksum: 4081D08DD1C1B064E6909BD3C506656F;5528.
 
 
 LaTeX Warning: There were undefined references.
@@ -2681,13 +2704,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1000.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1040.
  ) 
 Here is how much of TeX's memory you used:
- 32384 strings out of 494923
- 607198 string characters out of 6180742
- 759587 words of memory out of 5000000
- 34979 multiletter control sequences out of 15000+600000
+ 32394 strings out of 494923
+ 607345 string characters out of 6180742
+ 759662 words of memory out of 5000000
+ 34985 multiletter control sequences out of 15000+600000
  578031 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,12n,75p,10420b,1360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2704,10 +2727,10 @@ mbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (46 pages, 3016031 bytes).
+Output written on rapport.pdf (47 pages, 3086499 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 713 compressed objects within 8 object streams
- 186 named destinations out of 1000 (max. 500000)
- 739 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 724 compressed objects within 8 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 752 words of extra memory for PDF output out of 10000 (max. 10000000)
 
