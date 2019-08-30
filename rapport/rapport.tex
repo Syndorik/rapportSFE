@@ -746,7 +746,7 @@ Les prochains paragraphes vont détailler cette structure et son fonctionnement.
 \end{figure}
 
 \paragraph{Développement local\\}
-Afin d'uniformiser les projets et les conditions de développements, des template sont utilisés. Un template est la réplique d'un dépôt Git contenant au préalable une base de code déjà existant. Le template est donc différent en fonction du projets qui est créé. Pour l'instant il y a 6 template différents :
+Afin d'uniformiser les projets et les conditions de développements, des template sont utilisés. Un template est la réplique d'un dépôt Git contenant au préalable plusieurs fichiers de configurations ainsi qu'une base de code suivant la charte graphique imposé. Le template est donc différent en fonction du projets qui est créé. Pour l'instant il y a 7 template différents :
 \begin{itemize}
 	\item Web App : Application en HTML static et javascript.
 	\item Shiny App : Application R-shiny
@@ -754,12 +754,70 @@ Afin d'uniformiser les projets et les conditions de développements, des templat
 	\item Bokeh App : Application en python Bokeh
 	\item Flask App : Aplication en python Flask
 	\item ReactJS App : Application en ReactJS
+	\item Sialab App : Template pour la création d'une plateforme sialab. Les plateformes sialab seront détaillées plus en détail par la suite.
 \end{itemize}
-Pour des raisons de sécurités, les donnée comme les codes permettant l'authentifications à la base de donnée ainsi que d'autres éléments sensibles sont sauvegarder dans les variables d'environnement des serveurs sur lesquels sont déployés les
 
-La création d'un projet commence donc par la création d'un dépôt git associé au projet sur GitLab. De plus GitLab permet l'enregistrement de variables d'environnements grâce à son module CI/CD (Continuous Integration / Continuous Deployment). Un script permet de créer le dépôt git avec le template choisi et les variables d'environnement associés au projet (cf \textbf{Figure \ref{fig:varenv} en Annexe 9.4}) automatiquement.
+La \textbf{figure \ref{fig:cfl}} illustre les fichiers déjà présents dans le template flask.  L'image de gauche est ce qu'il y a à la base du template, et l'image de droite est ce qu'il ya dans le dossier /app. Les fichiers à la racine qui ne sont pas des extensions ".md" ou ".py" sont des fichiers de configurations pour le déploiement du projet mais aussi pour le développement en local. J'y reviendrai plus en détail dans les prochaines parties. Le dossier /app contient les bases nécessaires pour développer sur le template. Dans l'exemple \textbf{figure \ref{fig:cfl}} le dossier /app, contient les fichiers/dossiers important à la création d'une application Flask avec un exemple d'application simple respectant la charte graphique de Sia Partners.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{confflask.png}
+	\hspace{2cm}
+	\includegraphics[keepaspectratio = true,scale=0.6]{cfla.png}
+	\caption{Fichier présents dans le template Flask}
+	\label{fig:cfl}
+\end{figure}
+
+La création d'un projet commence donc par la création d'un dépôt git avec le template requis sur GitLab. Un script permet d'automatiser le processus, ainsi il n'y a pas de manipulation à faire à chaque lancement de projet.\\
+
+Le git créé, les consultants travaillant sur le projet doivent alors cloner le dépôts sur leur machine en local. Le nouveau processus mis en place avec les templates permet aux consultants de développer sur leur machines dans un environnement similaire à celui de la production (donc déployé sur un serveur) sans devoir procéder à l'installation de l'ensemble des packages/librairies/software nécessaires. Cela est possible grâce à Docker et Docker-compose.\\
+
+Docker permet la création d'image système spécifique, et donne la possibilité de monter ces images dans des containers indépendamment du système d"exploitation sur lequel il se trouve. Un container est l'équivalent d'une machine virtuelle, et l'image est le système d'exploitation avec l'ensemble des fichiers, services ... qui sont dessus. Cette comparaison se limite à une comparaison et les spécificités techniques d'un containers Docker et d'une machine virtuelle sont bien différentes \cite{comp}.\\
+
+Le Dockerfile présents à la racine de chaque template est un fichier qui configure l'image docker que l'on veut créer. En général, il permet de configurer les services à lancer au démarrage, l'ensemble des packages à installer, de copier le code de l'application à lancer et finalement de lancer cette dernière. Une fois que l'image est créée, celle-ci peut être build, ce qui permet de créer un container avec l'application en train de tourner à l'intérieure et accessible en localhost selon le chemin défini au préalable (par exemple : "http://localhost/monbot). Dans le cas où l'application développée est plus complexe et nécessite plusieurs images qui communiquent entre elles (comme pour les plateformes sialab qui nécessitent une image pour le serveur frontend, une pour le serveur backend et une pour un nginx), Docker-compose est utilisé. Ce dernier  build les images, créé les containers et créé les réseaux permettant de aux containers de communiquer. \\
+
+Pour des raisons de sécurités, les donnée comme les identifiants permettant l'authentifications à la base de donnée ainsi que d'autres éléments sensibles sont sauvegardés dans les variables d'environnement des serveurs sur lesquels sont déployés les projets (cf \textbf{Figure \ref{fig:varenv} en Annexe 9.4}). Ainsi aucune de ces valeurs ne doivent être codés en durs, donc aucune de ces valeurs ne doivent apparaître sur les différents commit du git.
+
+Ainsi tout consultant développant un bot ou une plateforme sialab travail uniquement avec docker sans installations externes quelconque. Cela permet d'avoir un environnement de travail propre et surtout qui ne varie pas par rapport à l'environnement de production. J'explique pourquoi dans la partie suivante.\\
+
+Finalement, une fois que l'application/une fonctionnalité de l'application est développée. Le consultant pousse ses modifications sur le dépôt, et c'est ici que le travaille du consultant s'arrête. C'est cette action qui va enclencher tout le processus de déploiement qui est donc continue. La figure suivante (\textbf{figure \cite{fig:res}})résume les différentes étapes du développement en local.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{resume.png}
+	\caption{Résumé de la procédure}
+	\label{fig:res}
+\end{figure}
 
 
+
+\paragraph{Déploiement\\}
+Une fois que le code est poussé sur le dépôt du projet dans Gitlab, c'est l'intégration et le déploiement en continue qui suit. Gitlab dispose d'un module CI/CD (Continuous Integration / Continuous Deployment) qui permet de faire de l'intégration/déploiement en continue. Les fichiers de la \textbf{figure \ref{fig:cfl}} qui nous intéresse maintenant est le fichier .gitlab-ci.yml. C'est un fichier qui permet de configurer les pipelines.\\
+Une pipeline est une suite d'actions effectuées les unes à la suite des autres (exemple \textbf{figure \ref{fig:pipeline}}). Dans notre cas les actions effectuées pour chaque projets sont : 
+\begin{itemize}
+	\item {[Obligatoire]} Build des images dockers : Cette étapes créé les images dockers sur le serveur Gitlab en se basant sur les Dockerfiles.
+	\item {[Optionnel]} Test des images venant d'être build : Cette étape test les images créées. Ces tests peuvent concerner le linting (le formatage du code, l'import de librairie inutilisé, la création de variable inutilisé etc.), mais aussi des tests unitaires. Ainsi, si les tests unitaires échouent ou si le code n'est pas linté, la pipeline s'arrête à ce moment là. Ces tests permettent d'avoir un service qui marche en continue, mais aussi d'avoir un code "propre".
+	\item {[Obligatoire]} Push des images dockers : A cette étape les images créées précédemment sont enregistré dans le registre gitlab. Ainsi ces images peuvent être téléchargées (pull) du serveur avec la bonne adresse. 
+	\item {[Obligatoire]} Déploiement des images sur Google Cloud Plateforme	
+\end{itemize}
+
+Le fichier de configuration .gitlab-ci.yml, permet de préciser pour chaque étape ce qui doit être fait durant cette étape. Par exemple pendant l'étape du build, le fichier précise quel script doit être exécuté, en l'occurrence ici les commandes de build de l'images vont être exécuter. La \textbf{Figure \ref{fig:gitlab-ci}} est un exemple de configuration pour une étape de build.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{gitlab.png}
+	\caption{Configuration d'une étape build d'une pipeline.}
+	\label{fig:gitlab-ci}
+\end{figure}
+~\\
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{pipeline.png}
+	\caption{Exemple de pipeline}
+	\label{fig:pipeline}
+\end{figure}
+
+GitLab permet l'enregistrement de variables d'environnements grâce à son module CI/CD. Il les intègre directement dans la pipeline, c'est comme cela qu'on retrouve les variables d'environnements. 
 
 
 \subsection{Vision critique et apport personnel}
@@ -895,6 +953,9 @@ La \textbf{figure \ref{fig:ex5}} décrit le processus de selection des meilleurs
 	\bibitem{bot}
 	Bot détection de fraude:\\
 	\textit{https://lab.sia-partners.ai/showroom/fraud-detection/}
+	\bibitem{comp}
+	Comparaison machine virtuelle/ container docker:\\
+	\textit{https://www.sdxcentral.com/containers/definitions/what-is-docker-container/}
 	
 \end{thebibliography}
 \newpage
