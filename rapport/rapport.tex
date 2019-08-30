@@ -728,7 +728,26 @@ L'ensemble des problèmes listés auparavant reposaient sur deux éléments:
 	\item Le code n'est pas contrôlé : les consultants n'étaient pas "forcés" à utiliser le contrôle de version (git)
 	\item Le déploiement n'est pas normalisé : les consultants déployaient leurs bots sur les serveurs qu'ils connaissaient
 \end{itemize}
-C'est pourquoi l'ensemble de la chaîne de déploiement a été repensé. Cela implique des changement dans la manière de développer mais aussi dans la manière d'utiliser les outils à disposition. 
+C'est pourquoi l'ensemble de la chaîne de déploiement a été repensé. Cela implique des changement dans la manière de développer mais aussi dans la manière d'utiliser les outils à disposition. La \textbf{Figure \ref{fig:struct}} décrit le nouveau processus de déploiement qui se décrit en 3 parties distinctes :
+\begin{itemize}
+	\item Développement local avec Docker
+	\item Contrôle de version et build des images avec Gitlab
+	\item Déploiement sur la plateforme Google Cloud Platform (GCP)
+\end{itemize}
+Le nouveau processus permet d'avoir des rôles répartis de manière équitable entre les consultants et d'alléger la charge de travail au sujet du déploiement des projets sur la plateforme. Chacune des trois parties requiert des compétences différentes, cependant en tant que consultant développant un nouveau projet, il n'est pas nécessaire d'acquérir les compétences technique niveau Git et niveau Google Cloud Plateform. En effet avec ce nouveau processus, un consultant doit savoir uniquement se servir des outils Git et GCP, mais il ne doit pas en général développer dessus. C'est à dire qu'il n'aura jamais à configurer le Gitlab et les pipeline de déploiement, juste à les utiliser.\\ \\
+Les prochains paragraphes vont détailler cette structure et son fonctionnement.
+\newpage
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.4]{structure.png}
+	\caption{Processus de déploiement de la plateforme}
+	\label{fig:struct}
+\end{figure}
+
+
+
+
 
 \subsection{Vision critique et apport personnel}
 
