@@ -54,12 +54,14 @@
 \BOOKMARK [2][-]{subsection.7.3}{Travail effectu\351}{section.7}% 54
 \BOOKMARK [3][-]{subsubsection.7.3.1}{Processus de d\351ploiement}{subsection.7.3}% 55
 \BOOKMARK [4][-]{paragraph.7.3.1.1}{D\351veloppement local}{subsubsection.7.3.1}% 56
-\BOOKMARK [5][-]{paragraph.7.3.1.2}{D\351ploiement}{paragraph.7.3.1.1}% 57
-\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 58
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 59
-\BOOKMARK [1][-]{section.9}{Annexes}{}% 60
-\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 61
-\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 62
-\BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 63
-\BOOKMARK [2][-]{subsection.9.4}{Exemple de variable d'environnent}{section.9}% 64
-\BOOKMARK [1][-]{section.10}{Glossaire}{}% 65
+\BOOKMARK [5][-]{paragraph.7.3.1.2}{D\351ploiement \(gitlab\)}{paragraph.7.3.1.1}% 57
+\BOOKMARK [5][-]{paragraph.7.3.1.3}{D\351ploiement \(Google Cloud Plateform\)}{paragraph.7.3.1.1}% 58
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Plateforme Sialab}{subsection.7.3}% 59
+\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 60
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 61
+\BOOKMARK [1][-]{section.9}{Annexes}{}% 62
+\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 63
+\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 64
+\BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 65
+\BOOKMARK [2][-]{subsection.9.4}{Exemple de variable d'environnent}{section.9}% 66
+\BOOKMARK [1][-]{section.10}{Glossaire}{}% 67

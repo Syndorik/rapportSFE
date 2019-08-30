@@ -56,12 +56,14 @@
 \contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{33}{subsection.7.3}
 \contentsline {subsubsection}{\numberline {7.3.1}Processus de d\IeC {\'e}ploiement}{33}{subsubsection.7.3.1}
 \contentsline {paragraph}{\numberline {7.3.1.1}D\IeC {\'e}veloppement local\\}{34}{paragraph.7.3.1.1}
-\contentsline {paragraph}{\numberline {7.3.1.2}D\IeC {\'e}ploiement\\}{35}{paragraph.7.3.1.2}
-\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{37}{subsection.7.4}
-\contentsline {section}{\numberline {8}Conclusion}{38}{section.8}
-\contentsline {section}{\numberline {9}Annexes}{39}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{39}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{39}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{41}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Exemple de variable d'environnent}{43}{subsection.9.4}
-\contentsline {section}{\numberline {10}Glossaire}{44}{section.10}
+\contentsline {paragraph}{\numberline {7.3.1.2}D\IeC {\'e}ploiement (gitlab)\\}{35}{paragraph.7.3.1.2}
+\contentsline {paragraph}{\numberline {7.3.1.3}D\IeC {\'e}ploiement (Google Cloud Plateform)\\}{37}{paragraph.7.3.1.3}
+\contentsline {subsubsection}{\numberline {7.3.2}Plateforme Sialab}{38}{subsubsection.7.3.2}
+\contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{38}{subsection.7.4}
+\contentsline {section}{\numberline {8}Conclusion}{39}{section.8}
+\contentsline {section}{\numberline {9}Annexes}{40}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{40}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{40}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{42}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Exemple de variable d'environnent}{44}{subsection.9.4}
+\contentsline {section}{\numberline {10}Glossaire}{45}{section.10}
