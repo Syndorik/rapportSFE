@@ -55,10 +55,12 @@
 \contentsline {subsubsection}{\numberline {7.2.3}Objectifs}{33}{subsubsection.7.2.3}
 \contentsline {subsection}{\numberline {7.3}Travail effectu\IeC {\'e}}{33}{subsection.7.3}
 \contentsline {subsubsection}{\numberline {7.3.1}Processus de d\IeC {\'e}ploiement}{33}{subsubsection.7.3.1}
+\contentsline {paragraph}{\numberline {7.3.1.1}D\IeC {\'e}veloppement local\\}{34}{paragraph.7.3.1.1}
 \contentsline {subsection}{\numberline {7.4}Vision critique et apport personnel}{34}{subsection.7.4}
 \contentsline {section}{\numberline {8}Conclusion}{35}{section.8}
 \contentsline {section}{\numberline {9}Annexes}{36}{section.9}
 \contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{36}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{36}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{38}{subsection.9.3}
-\contentsline {section}{\numberline {10}Glossaire}{40}{section.10}
+\contentsline {subsection}{\numberline {9.4}Exemple de variable d'environnent}{40}{subsection.9.4}
+\contentsline {section}{\numberline {10}Glossaire}{41}{section.10}

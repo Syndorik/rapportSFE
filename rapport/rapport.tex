@@ -745,13 +745,26 @@ Les prochains paragraphes vont détailler cette structure et son fonctionnement.
 	\label{fig:struct}
 \end{figure}
 
+\paragraph{Développement local\\}
+Afin d'uniformiser les projets et les conditions de développements, des template sont utilisés. Un template est la réplique d'un dépôt Git contenant au préalable une base de code déjà existant. Le template est donc différent en fonction du projets qui est créé. Pour l'instant il y a 6 template différents :
+\begin{itemize}
+	\item Web App : Application en HTML static et javascript.
+	\item Shiny App : Application R-shiny
+	\item Dash App : Application en python Dash
+	\item Bokeh App : Application en python Bokeh
+	\item Flask App : Aplication en python Flask
+	\item ReactJS App : Application en ReactJS
+\end{itemize}
+Pour des raisons de sécurités, les donnée comme les codes permettant l'authentifications à la base de donnée ainsi que d'autres éléments sensibles sont sauvegarder dans les variables d'environnement des serveurs sur lesquels sont déployés les
+
+La création d'un projet commence donc par la création d'un dépôt git associé au projet sur GitLab. De plus GitLab permet l'enregistrement de variables d'environnements grâce à son module CI/CD (Continuous Integration / Continuous Deployment). Un script permet de créer le dépôt git avec le template choisi et les variables d'environnement associés au projet (cf \textbf{Figure \ref{fig:varenv} en Annexe 9.4}) automatiquement.
 
 
 
 
 \subsection{Vision critique et apport personnel}
 
-
+Création des templates Flask 
 
 
 \newpage
@@ -833,9 +846,22 @@ La \textbf{figure \ref{fig:ex5}} décrit le processus de selection des meilleurs
 \begin{figure}[!h]
 	\centering
 	\includegraphics[keepaspectratio = true,scale=0.6]{ex5}
-	\caption{}
+	\caption{Scoring des Cleeps}
 	\label{fig:ex5}
 \end{figure}
+\newpage
+
+\subsection{Exemple de variable d'environnent}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{botvariable.png}
+	\includegraphics[keepaspectratio = true,scale=0.6]{projectvariable.png}
+	\caption{Variables d'environnements}
+	\label{fig:varenv}
+\end{figure}
+
+
 
 
 \newpage

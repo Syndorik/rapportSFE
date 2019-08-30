@@ -53,10 +53,12 @@
 \BOOKMARK [3][-]{subsubsection.7.2.3}{Objectifs}{subsection.7.2}% 53
 \BOOKMARK [2][-]{subsection.7.3}{Travail effectu\351}{section.7}% 54
 \BOOKMARK [3][-]{subsubsection.7.3.1}{Processus de d\351ploiement}{subsection.7.3}% 55
-\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 56
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 57
-\BOOKMARK [1][-]{section.9}{Annexes}{}% 58
-\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 59
-\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 60
-\BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 61
-\BOOKMARK [1][-]{section.10}{Glossaire}{}% 62
+\BOOKMARK [4][-]{paragraph.7.3.1.1}{D\351veloppement local}{subsubsection.7.3.1}% 56
+\BOOKMARK [2][-]{subsection.7.4}{Vision critique et apport personnel}{section.7}% 57
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 58
+\BOOKMARK [1][-]{section.9}{Annexes}{}% 59
+\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 60
+\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 61
+\BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 62
+\BOOKMARK [2][-]{subsection.9.4}{Exemple de variable d'environnent}{section.9}% 63
+\BOOKMARK [1][-]{section.10}{Glossaire}{}% 64
