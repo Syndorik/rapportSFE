@@ -1,76 +1,74 @@
 \BOOKMARK [1][-]{section.1}{Remerciements}{}% 1
-\BOOKMARK [1][-]{section.2}{R\351sum\351}{}% 2
-\BOOKMARK [1][-]{section.3}{Summary}{}% 3
-\BOOKMARK [1][-]{section.4}{Introduction}{}% 4
-\BOOKMARK [1][-]{section.5}{Pr\351sentation de l'entreprise}{}% 5
-\BOOKMARK [2][-]{subsection.5.1}{Historique}{section.5}% 6
-\BOOKMARK [2][-]{subsection.5.2}{Unit\351 de Comp\351tence Data Science}{section.5}% 7
-\BOOKMARK [2][-]{subsection.5.3}{Organisation de l'entreprise}{section.5}% 8
-\BOOKMARK [1][-]{section.6}{Mission : webscrapping pour Cleep \(1 mois\)}{}% 9
-\BOOKMARK [2][-]{subsection.6.1}{Pr\351sentation de Cleep}{section.6}% 10
-\BOOKMARK [2][-]{subsection.6.2}{Objectifs et probl\351matique}{section.6}% 11
-\BOOKMARK [2][-]{subsection.6.3}{Travail effectu\351}{section.6}% 12
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Contexte}{subsection.6.3}% 13
-\BOOKMARK [4][-]{paragraph.6.3.1.1}{M\351thode automatique:}{subsubsection.6.3.1}% 14
-\BOOKMARK [5][-]{paragraph.6.3.1.2}{M\351thode spc\351ifique:}{paragraph.6.3.1.1}% 15
-\BOOKMARK [5][-]{paragraph.6.3.1.3}{D\351marche}{paragraph.6.3.1.1}% 16
-\BOOKMARK [5][-]{paragraph.6.3.1.4}{R\351sultats}{paragraph.6.3.1.1}% 17
-\BOOKMARK [2][-]{subsection.6.4}{Vision critique et apport personnel}{section.6}% 18
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Scrapper g\351n\351rique}{subsection.6.4}% 19
-\BOOKMARK [4][-]{paragraph.6.4.1.1}{R\351cup\351rations des liens "dynamique" de la page HTML:}{subsubsection.6.4.1}% 20
-\BOOKMARK [5][-]{paragraph.6.4.1.2}{Clustering des liens}{paragraph.6.4.1.1}% 21
-\BOOKMARK [5][-]{paragraph.6.4.1.3}{Tests et r\351sultats}{paragraph.6.4.1.1}% 22
-\BOOKMARK [3][-]{subsubsection.6.4.2}{Technologie utilis\351e}{subsection.6.4}% 23
-\BOOKMARK [1][-]{section.7}{Mission : Moteur de recommandation pour Cleep \(3 mois\)}{}% 24
-\BOOKMARK [2][-]{subsection.7.1}{Contexte et probl\351matique}{section.7}% 25
-\BOOKMARK [3][-]{paragraph.7.1.0.1}{Objectif\(s\)}{subsection.7.1}% 26
-\BOOKMARK [4][-]{paragraph.7.1.0.2}{\311tat initial}{paragraph.7.1.0.1}% 27
-\BOOKMARK [5][-]{paragraph.7.1.0.3}{\311cosyst\350me de Cleep}{paragraph.7.1.0.2}% 28
-\BOOKMARK [2][-]{subsection.7.2}{Travail effectu\351}{section.7}% 29
-\BOOKMARK [3][-]{subsubsection.7.2.1}{\311tude des moteur de recommandations similaires}{subsection.7.2}% 30
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Article de recherche : moteur de recommandation de Pinterest}{subsection.7.2}% 31
-\BOOKMARK [4][-]{paragraph.7.2.2.1}{Inter\352t des bases de donn\351es en graphe}{subsubsection.7.2.2}% 32
-\BOOKMARK [5][-]{paragraph.7.2.2.2}{Les d\351savantages}{paragraph.7.2.2.1}% 33
-\BOOKMARK [5][-]{paragraph.7.2.2.3}{Comparatif ArangoDB / Neo4j}{paragraph.7.2.2.1}% 34
-\BOOKMARK [3][-]{subsubsection.7.2.3}{Impl\351mentation}{subsection.7.2}% 35
-\BOOKMARK [4][-]{paragraph.7.2.3.1}{Premi\350re version du moteur de recommandation}{subsubsection.7.2.3}% 36
-\BOOKMARK [5][-]{paragraph.7.2.3.2}{Description du processus}{paragraph.7.2.3.1}% 37
-\BOOKMARK [5][-]{paragraph.7.2.3.3}{Fonction de scoring}{paragraph.7.2.3.1}% 38
-\BOOKMARK [6][-]{subparagraph.7.2.3.3.1}{1\350re version}{paragraph.7.2.3.3}% 39
-\BOOKMARK [6][-]{subparagraph.7.2.3.3.2}{2\350me version}{paragraph.7.2.3.3}% 40
-\BOOKMARK [5][-]{paragraph.7.2.3.4}{Tests du moteur}{paragraph.7.2.3.1}% 41
-\BOOKMARK [2][-]{subsection.7.3}{Vision critique et apport personnel}{section.7}% 42
-\BOOKMARK [3][-]{paragraph.7.3.0.1}{Tests sur ArangoDB et Neo4j}{subsection.7.3}% 43
-\BOOKMARK [4][-]{paragraph.7.3.0.2}{Am\351lioration de la marche al\351atoire de Neo4j}{paragraph.7.3.0.1}% 44
-\BOOKMARK [5][-]{paragraph.7.3.0.3}{Optimisation du calcul de score}{paragraph.7.3.0.2}% 45
-\BOOKMARK [1][-]{section.8}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners \(2 mois\)}{}% 46
-\BOOKMARK [2][-]{subsection.8.1}{Pr\351sentation du sialab}{section.8}% 47
-\BOOKMARK [2][-]{subsection.8.2}{Objectifs et probl\351matique}{section.8}% 48
-\BOOKMARK [3][-]{subsubsection.8.2.1}{Bots}{subsection.8.2}% 49
-\BOOKMARK [4][-]{paragraph.8.2.1.1}{Backups}{subsubsection.8.2.1}% 50
-\BOOKMARK [5][-]{paragraph.8.2.1.2}{Contr\364le de Version}{paragraph.8.2.1.1}% 51
-\BOOKMARK [5][-]{paragraph.8.2.1.3}{La stabilit\351}{paragraph.8.2.1.1}% 52
-\BOOKMARK [5][-]{paragraph.8.2.1.4}{L'administration}{paragraph.8.2.1.1}% 53
-\BOOKMARK [3][-]{subsubsection.8.2.2}{Plateforme}{subsection.8.2}% 54
-\BOOKMARK [4][-]{paragraph.8.2.2.1}{Contr\364le de Version et Backups}{subsubsection.8.2.2}% 55
-\BOOKMARK [5][-]{paragraph.8.2.2.2}{Stabilit\351 et administration}{paragraph.8.2.2.1}% 56
-\BOOKMARK [3][-]{subsubsection.8.2.3}{Objectifs}{subsection.8.2}% 57
-\BOOKMARK [2][-]{subsection.8.3}{Travail effectu\351}{section.8}% 58
-\BOOKMARK [3][-]{subsubsection.8.3.1}{Processus de d\351ploiement}{subsection.8.3}% 59
-\BOOKMARK [4][-]{paragraph.8.3.1.1}{D\351veloppement local}{subsubsection.8.3.1}% 60
-\BOOKMARK [5][-]{paragraph.8.3.1.2}{D\351ploiement \(gitlab\)}{paragraph.8.3.1.1}% 61
-\BOOKMARK [5][-]{paragraph.8.3.1.3}{D\351ploiement \(Google Cloud Plateform\)}{paragraph.8.3.1.1}% 62
-\BOOKMARK [3][-]{subsubsection.8.3.2}{Plateforme Sialab}{subsection.8.3}% 63
-\BOOKMARK [2][-]{subsection.8.4}{Vision critique et apport personnel}{section.8}% 64
-\BOOKMARK [3][-]{subsubsection.8.4.1}{Images des plateformes sialab}{subsection.8.4}% 65
-\BOOKMARK [3][-]{subsubsection.8.4.2}{Changement d'infrastructure}{subsection.8.4}% 66
-\BOOKMARK [1][-]{section.9}{Politique de Responsabilit\351 Soci\351tale de l\220Entreprise Sia Partners}{}% 67
-\BOOKMARK [1][-]{section.10}{Conclusion}{}% 68
-\BOOKMARK [2][-]{subsection.10.1}{Bilan des missions et bilan personnel}{section.10}% 69
-\BOOKMARK [2][-]{subsection.10.2}{Perspectives professionnelles}{section.10}% 70
-\BOOKMARK [1][-]{section.11}{Annexes}{}% 71
-\BOOKMARK [2][-]{subsection.11.1}{Code source all\351g\351 du site de la fnac}{section.11}% 72
-\BOOKMARK [2][-]{subsection.11.2}{Graphe tests ArangoDB / Neo4j}{section.11}% 73
-\BOOKMARK [2][-]{subsection.11.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.11}% 74
-\BOOKMARK [2][-]{subsection.11.4}{Exemple de variable d'environnent}{section.11}% 75
-\BOOKMARK [1][-]{section.12}{Glossaire}{}% 76
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{Pr\351sentation de l'entreprise}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Historique}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Unit\351 de Comp\351tence Data Science}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Organisation de l'entreprise}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Mission : webscrapping pour Cleep \(1 mois\)}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Pr\351sentation de Cleep}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Objectifs et probl\351matique}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Travail effectu\351}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Contexte}{subsection.4.3}% 11
+\BOOKMARK [4][-]{paragraph.4.3.1.1}{M\351thode automatique:}{subsubsection.4.3.1}% 12
+\BOOKMARK [5][-]{paragraph.4.3.1.2}{M\351thode spc\351ifique:}{paragraph.4.3.1.1}% 13
+\BOOKMARK [5][-]{paragraph.4.3.1.3}{D\351marche}{paragraph.4.3.1.1}% 14
+\BOOKMARK [5][-]{paragraph.4.3.1.4}{R\351sultats}{paragraph.4.3.1.1}% 15
+\BOOKMARK [2][-]{subsection.4.4}{Vision critique et apport personnel}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Scrapper g\351n\351rique}{subsection.4.4}% 17
+\BOOKMARK [4][-]{paragraph.4.4.1.1}{R\351cup\351rations des liens "dynamique" de la page HTML:}{subsubsection.4.4.1}% 18
+\BOOKMARK [5][-]{paragraph.4.4.1.2}{Clustering des liens}{paragraph.4.4.1.1}% 19
+\BOOKMARK [5][-]{paragraph.4.4.1.3}{Tests et r\351sultats}{paragraph.4.4.1.1}% 20
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Technologie utilis\351e}{subsection.4.4}% 21
+\BOOKMARK [1][-]{section.5}{Mission : Moteur de recommandation pour Cleep \(3 mois\)}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Contexte et probl\351matique}{section.5}% 23
+\BOOKMARK [3][-]{paragraph.5.1.0.1}{Objectif\(s\)}{subsection.5.1}% 24
+\BOOKMARK [4][-]{paragraph.5.1.0.2}{\311tat initial}{paragraph.5.1.0.1}% 25
+\BOOKMARK [5][-]{paragraph.5.1.0.3}{\311cosyst\350me de Cleep}{paragraph.5.1.0.2}% 26
+\BOOKMARK [2][-]{subsection.5.2}{Travail effectu\351}{section.5}% 27
+\BOOKMARK [3][-]{subsubsection.5.2.1}{\311tude des moteur de recommandations similaires}{subsection.5.2}% 28
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Article de recherche : moteur de recommandation de Pinterest}{subsection.5.2}% 29
+\BOOKMARK [4][-]{paragraph.5.2.2.1}{Inter\352t des bases de donn\351es en graphe}{subsubsection.5.2.2}% 30
+\BOOKMARK [5][-]{paragraph.5.2.2.2}{Les d\351savantages}{paragraph.5.2.2.1}% 31
+\BOOKMARK [5][-]{paragraph.5.2.2.3}{Comparatif ArangoDB / Neo4j}{paragraph.5.2.2.1}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Impl\351mentation}{subsection.5.2}% 33
+\BOOKMARK [4][-]{paragraph.5.2.3.1}{Premi\350re version du moteur de recommandation}{subsubsection.5.2.3}% 34
+\BOOKMARK [5][-]{paragraph.5.2.3.2}{Description du processus}{paragraph.5.2.3.1}% 35
+\BOOKMARK [5][-]{paragraph.5.2.3.3}{Fonction de scoring}{paragraph.5.2.3.1}% 36
+\BOOKMARK [6][-]{subparagraph.5.2.3.3.1}{1\350re version}{paragraph.5.2.3.3}% 37
+\BOOKMARK [6][-]{subparagraph.5.2.3.3.2}{2\350me version}{paragraph.5.2.3.3}% 38
+\BOOKMARK [5][-]{paragraph.5.2.3.4}{Tests du moteur}{paragraph.5.2.3.1}% 39
+\BOOKMARK [2][-]{subsection.5.3}{Vision critique et apport personnel}{section.5}% 40
+\BOOKMARK [3][-]{paragraph.5.3.0.1}{Tests sur ArangoDB et Neo4j}{subsection.5.3}% 41
+\BOOKMARK [4][-]{paragraph.5.3.0.2}{Am\351lioration de la marche al\351atoire de Neo4j}{paragraph.5.3.0.1}% 42
+\BOOKMARK [5][-]{paragraph.5.3.0.3}{Optimisation du calcul de score}{paragraph.5.3.0.2}% 43
+\BOOKMARK [1][-]{section.6}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners \(2 mois\)}{}% 44
+\BOOKMARK [2][-]{subsection.6.1}{Pr\351sentation du sialab}{section.6}% 45
+\BOOKMARK [2][-]{subsection.6.2}{Objectifs et probl\351matique}{section.6}% 46
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Bots}{subsection.6.2}% 47
+\BOOKMARK [4][-]{paragraph.6.2.1.1}{Backups}{subsubsection.6.2.1}% 48
+\BOOKMARK [5][-]{paragraph.6.2.1.2}{Contr\364le de Version}{paragraph.6.2.1.1}% 49
+\BOOKMARK [5][-]{paragraph.6.2.1.3}{La stabilit\351}{paragraph.6.2.1.1}% 50
+\BOOKMARK [5][-]{paragraph.6.2.1.4}{L'administration}{paragraph.6.2.1.1}% 51
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Plateforme}{subsection.6.2}% 52
+\BOOKMARK [4][-]{paragraph.6.2.2.1}{Contr\364le de Version et Backups}{subsubsection.6.2.2}% 53
+\BOOKMARK [5][-]{paragraph.6.2.2.2}{Stabilit\351 et administration}{paragraph.6.2.2.1}% 54
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Objectifs}{subsection.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.3}{Travail effectu\351}{section.6}% 56
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Processus de d\351ploiement}{subsection.6.3}% 57
+\BOOKMARK [4][-]{paragraph.6.3.1.1}{D\351veloppement local}{subsubsection.6.3.1}% 58
+\BOOKMARK [5][-]{paragraph.6.3.1.2}{D\351ploiement \(gitlab\)}{paragraph.6.3.1.1}% 59
+\BOOKMARK [5][-]{paragraph.6.3.1.3}{D\351ploiement \(Google Cloud Plateform\)}{paragraph.6.3.1.1}% 60
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Plateforme Sialab}{subsection.6.3}% 61
+\BOOKMARK [2][-]{subsection.6.4}{Vision critique et apport personnel}{section.6}% 62
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Images des plateformes sialab}{subsection.6.4}% 63
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Changement d'infrastructure}{subsection.6.4}% 64
+\BOOKMARK [1][-]{section.7}{Politique de Responsabilit\351 Soci\351tale de l\220Entreprise Sia Partners}{}% 65
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 66
+\BOOKMARK [2][-]{subsection.8.1}{Bilan des missions et bilan personnel}{section.8}% 67
+\BOOKMARK [2][-]{subsection.8.2}{Perspectives professionnelles}{section.8}% 68
+\BOOKMARK [1][-]{section.9}{Annexes}{}% 69
+\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 70
+\BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 71
+\BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 72
+\BOOKMARK [2][-]{subsection.9.4}{Exemple de variable d'environnent}{section.9}% 73
+\BOOKMARK [1][-]{section.10}{Glossaire}{}% 74

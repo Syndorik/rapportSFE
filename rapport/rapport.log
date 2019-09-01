@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  1 SEP 2019 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.13)  1 SEP 2019 17:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1703,7 +1703,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 \c@imta@idx=\count344
 \imta@oldlinewidth=\skip138
 \imta@oldtextwidth=\skip139
-<sia_logo.jpg, id=308, 6849.59pt x 2582.64874pt>
+<sia_logo.jpg, id=312, 6849.59pt x 2582.64874pt>
 File: sia_logo.jpg Graphic file (type jpg)
 <use sia_logo.jpg>
 Package pdftex.def Info: sia_logo.jpg  used on input line 75.
@@ -1760,161 +1760,161 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 \tf@toc=\write8
 \openout8 = `rapport.toc'.
 
- [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 109--112
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+[5]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
 
 Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-[7]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 136.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 162.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 153.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 <cleep.jpg, id=461, 1204.5pt x 501.875pt>
 File: cleep.jpg Graphic file (type jpg)
 <use cleep.jpg>
-Package pdftex.def Info: cleep.jpg  used on input line 217.
+Package pdftex.def Info: cleep.jpg  used on input line 208.
 (pdftex.def)             Requested size: 240.89574pt x 100.37321pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--220
+Underfull \hbox (badness 10000) in paragraph at lines 205--211
 \T1/phv/m/n/10 général-iste comme Ama-zon ou un site spé-cial-isé comme Asos).
  []
 
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 222.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 213.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-) [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.235 \newpage
-               <./cleep.jpg>]
-<scrapping.png, id=470, 477.4638pt x 388.5717pt>
-File: scrapping.png Graphic file (type png)
-<use scrapping.png>
-Package pdftex.def Info: scrapping.png  used on input line 256.
-(pdftex.def)             Requested size: 334.22238pt x 271.99832pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) [9pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.259 \newpage
+l.226 \newpage
+               <./cleep.jpg>]
+<scrapping.png, id=470, 477.4638pt x 388.5717pt>
+File: scrapping.png Graphic file (type png)
+<use scrapping.png>
+Package pdftex.def Info: scrapping.png  used on input line 247.
+(pdftex.def)             Requested size: 334.22238pt x 271.99832pt.
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.250 \newpage
                <./scrapping.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 267.
+(hyperref)                removing `\\' on input line 258.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 275.
+(hyperref)                than one, level fixed on input line 266.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 275.
+(hyperref)                removing `\\' on input line 266.
 
-<browserInject.png, id=477, 793.16325pt x 401.0985pt>
+<browserInject.png, id=479, 793.16325pt x 401.0985pt>
 File: browserInject.png Graphic file (type png)
 <use browserInject.png>
-Package pdftex.def Info: browserInject.png  used on input line 278.
+Package pdftex.def Info: browserInject.png  used on input line 269.
 (pdftex.def)             Requested size: 475.90163pt x 240.66095pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--282
+Underfull \hbox (badness 10000) in paragraph at lines 266--273
 
  []
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.282 \newpage
+l.273 \newpage
                <./browserInject.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1923,8 +1923,8 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 284.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 284.
+nput line 275.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 275.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1933,947 +1933,947 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 (./site2.html)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 293.
+(hyperref)                removing `\\' on input line 284.
 
 
-Overfull \hbox (30.17772pt too wide) in paragraph at lines 298--299
+Overfull \hbox (30.17772pt too wide) in paragraph at lines 289--290
 []\T1/phv/m/n/10 https://jeux-video.fnac.com/a13608859/LEGEND-OF-ZELDA-LINKS-AW
 AKENING-FR-SWITCH-Jeu-Nintendo-
  []
 
-<specific.png, id=485, 612.03656pt x 401.0985pt>
+<specific.png, id=489, 612.03656pt x 401.0985pt>
 File: specific.png Graphic file (type png)
 <use specific.png>
-Package pdftex.def Info: specific.png  used on input line 307.
+Package pdftex.def Info: specific.png  used on input line 298.
 (pdftex.def)             Requested size: 367.22476pt x 240.66095pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14]
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 315.
+(hyperref)                removing `\\' on input line 306.
 
-<fnac.png, id=512, 1861.95625pt x 875.27pt>
+<fnac.png, id=517, 1861.95625pt x 875.27pt>
 File: fnac.png Graphic file (type png)
 <use fnac.png>
-Package pdftex.def Info: fnac.png  used on input line 319.
+Package pdftex.def Info: fnac.png  used on input line 310.
 (pdftex.def)             Requested size: 465.48793pt x 218.81696pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--325
+Underfull \hbox (badness 10000) in paragraph at lines 306--316
 
  []
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.325 
+l.316 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.325 
+l.316 
        <./specific.png> <./fnac.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 327.
+(hyperref)                removing `\\' on input line 318.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 334.
+(hyperref)                removing `\\' on input line 325.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 344.
+(hyperref)                than one, level fixed on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 344.
+(hyperref)                removing `\\' on input line 335.
 
-<static.png, id=528, 1831.84375pt x 761.84625pt>
+<static.png, id=535, 1831.84375pt x 761.84625pt>
 File: static.png Graphic file (type png)
 <use static.png>
-Package pdftex.def Info: static.png  used on input line 349.
+Package pdftex.def Info: static.png  used on input line 340.
 (pdftex.def)             Requested size: 457.95982pt x 190.46109pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<step1.png, id=529, 713.66624pt x 379.4175pt>
+<step1.png, id=536, 713.66624pt x 379.4175pt>
 File: step1.png Graphic file (type png)
 <use step1.png>
-Package pdftex.def Info: step1.png  used on input line 357.
+Package pdftex.def Info: step1.png  used on input line 348.
 (pdftex.def)             Requested size: 285.46143pt x 151.7643pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 363.
+(hyperref)                removing `\\' on input line 354.
 
-[16]
+[14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 368.
+(hyperref)                removing `\\' on input line 359.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--371
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 371.
+(hyperref)                removing `\\' on input line 362.
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.376 	\item N
+l.367 	\item N
               e pas lancer "involontairement" une attaque contre les serveur...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.376 	\item N
+l.367 	\item N
               e pas lancer "involontairement" une attaque contre les serveur...
  <./static.png> <./step1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
-[18]
-Overfull \hbox (8.17377pt too wide) in paragraph at lines 388--388
+[16]
+Overfull \hbox (8.17377pt too wide) in paragraph at lines 379--379
 []\T1/phv/b/n/17.28 Mission : Mo-teur de recom-man-da-tion pour Cleep (3 mois) 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 402.
+(hyperref)                than one, level fixed on input line 393.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 402.
+(hyperref)                removing `\\' on input line 393.
 
-<reco.png, id=549, 596.2275pt x 361.35pt>
+<reco.png, id=563, 596.2275pt x 361.35pt>
 File: reco.png Graphic file (type png)
 <use reco.png>
-Package pdftex.def Info: reco.png  used on input line 413.
+Package pdftex.def Info: reco.png  used on input line 404.
 (pdftex.def)             Requested size: 238.48677pt x 144.53743pt.
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.420 \paragraph
+l.411 \paragraph
                 {Ã‰tat initial} <./reco.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 421.
+(hyperref)                than one, level fixed on input line 412.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--423
+Underfull \hbox (badness 10000) in paragraph at lines 412--414
 
  []
 
-<ggvision.jpg, id=557, 1007.765pt x 559.08875pt>
+<ggvision.jpg, id=571, 1007.765pt x 559.08875pt>
 File: ggvision.jpg Graphic file (type jpg)
 <use ggvision.jpg>
-Package pdftex.def Info: ggvision.jpg  used on input line 426.
+Package pdftex.def Info: ggvision.jpg  used on input line 417.
 (pdftex.def)             Requested size: 403.09886pt x 223.63153pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 435.
+(hyperref)                removing `\\' on input line 426.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.436 \newpage
+l.427 \newpage
                <./ggvision.jpg>]
-<relations.png, id=563, 361.35pt x 157.3077pt>
+<relations.png, id=579, 361.35pt x 157.3077pt>
 File: relations.png Graphic file (type png)
 <use relations.png>
-Package pdftex.def Info: relations.png  used on input line 447.
+Package pdftex.def Info: relations.png  used on input line 438.
 (pdftex.def)             Requested size: 361.34912pt x 157.3073pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--470
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 470.
+(hyperref)                removing `\\' on input line 461.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--473
+Underfull \hbox (badness 10000) in paragraph at lines 462--464
 
  []
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.473 
+l.464 
        <./relations.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 474--478
+Underfull \hbox (badness 10000) in paragraph at lines 465--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--492
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 
  []
 
-[22]
-<procpint.png, id=582, 659.5842pt x 325.215pt>
+[20]
+<procpint.png, id=601, 659.5842pt x 325.215pt>
 File: procpint.png Graphic file (type png)
 <use procpint.png>
-Package pdftex.def Info: procpint.png  used on input line 495.
+Package pdftex.def Info: procpint.png  used on input line 486.
 (pdftex.def)             Requested size: 461.70578pt x 227.64894pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--502
+Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
  []
 
-<pintfunc.png, id=583, 650.43pt x 189.8292pt>
+<pintfunc.png, id=602, 650.43pt x 189.8292pt>
 File: pintfunc.png Graphic file (type png)
 <use pintfunc.png>
-Package pdftex.def Info: pintfunc.png  used on input line 505.
+Package pdftex.def Info: pintfunc.png  used on input line 496.
 (pdftex.def)             Requested size: 455.2979pt x 132.87952pt.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 514.
+(hyperref)                than one, level fixed on input line 505.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 514.
+(hyperref)                removing `\\' on input line 505.
 
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.517 	\itemsep
+l.508 	\itemsep
                 0 empdfTeX warning (ext4): destination with the same identifier
  (name{figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.517 	\itemsep
+l.508 	\itemsep
                 0 em <./procpint.png> <./pintfunc.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 523--528
+Underfull \hbox (badness 10000) in paragraph at lines 514--519
 
  []
 
-<indfree.png, id=591, 1366.10374pt x 302.12875pt>
+<indfree.png, id=609, 1366.10374pt x 302.12875pt>
 File: indfree.png Graphic file (type png)
 <use indfree.png>
-Package pdftex.def Info: indfree.png  used on input line 531.
+Package pdftex.def Info: indfree.png  used on input line 522.
 (pdftex.def)             Requested size: 409.83429pt x 90.63931pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 537.
+(hyperref)                removing `\\' on input line 528.
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.541 	\item C
+l.532 	\item C
               haque base de donnÃ©e possÃ¨de son propre langage contrairemen...
  <./indfree.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 548.
+(hyperref)                removing `\\' on input line 539.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
 
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 565.
+(hyperref)                than one, level fixed on input line 556.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 565.
+(hyperref)                removing `\\' on input line 556.
 
 
-Overfull \hbox (20.7776pt too wide) in paragraph at lines 565--570
+Overfull \hbox (20.7776pt too wide) in paragraph at lines 556--561
 \T1/phv/m/n/10 En pre-mier lieu j'ai créé un script per-me-t-tant de générer le
 s don-nées néces-saires et de com-mencer l'implémentation
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 600--601
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
-[26]
+[24]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 612.
+(hyperref)                removing `\\' on input line 603.
 
-<proccleep.png, id=613, 776.9025pt x 298.2342pt>
+<proccleep.png, id=636, 776.9025pt x 298.2342pt>
 File: proccleep.png Graphic file (type png)
 <use proccleep.png>
-Package pdftex.def Info: proccleep.png  used on input line 616.
+Package pdftex.def Info: proccleep.png  used on input line 607.
 (pdftex.def)             Requested size: 543.82803pt x 208.76251pt.
 
-Overfull \hbox (60.13116pt too wide) in paragraph at lines 616--617
+Overfull \hbox (60.13116pt too wide) in paragraph at lines 607--608
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 624.
+(hyperref)                removing `\\' on input line 615.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 625.
+(hyperref)                removing `\\' on input line 616.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--627
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
 
-Overfull \hbox (151.16508pt too wide) detected at line 632
+Overfull \hbox (151.16508pt too wide) detected at line 623
 [][]\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = []
  [][]
  []
 
 
-Overfull \hbox (204.08052pt too wide) detected at line 637
+Overfull \hbox (204.08052pt too wide) detected at line 628
 [][]\OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 coefficient \OMS/cm
 sy/m/n/10 ^^B [] [][]
  []
 
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.637 \end{equation}
+l.628 \end{equation}
                      <./proccleep.png>]
-<atan.png, id=623, 1370.11874pt x 700.6175pt>
+<atan.png, id=651, 1370.11874pt x 700.6175pt>
 File: atan.png Graphic file (type png)
 <use atan.png>
-Package pdftex.def Info: atan.png  used on input line 641.
+Package pdftex.def Info: atan.png  used on input line 632.
 (pdftex.def)             Requested size: 411.03879pt x 210.18686pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 
-Overfull \hbox (310.7246pt too wide) detected at line 654
+Overfull \hbox (310.7246pt too wide) detected at line 645
 [][]\OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 coefficient \OMS/cm
 sy/m/n/10 ^^B [] [][]
  []
 
 
-Overfull \hbox (175.25464pt too wide) detected at line 663
+Overfull \hbox (175.25464pt too wide) detected at line 654
 [][]\OML/cmm/m/it/10 s[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 coefficient \OMS/cm
 sy/m/n/10 ^^B [] [][]
  []
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.664 \newpage
+l.655 \newpage
                <./atan.png>]
-Overfull \hbox (128.38264pt too wide) detected at line 670
+Overfull \hbox (128.38264pt too wide) detected at line 661
 [][]\OML/cmm/m/it/10 score \OT1/cmr/m/n/10 = [] [][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 675.
+(hyperref)                removing `\\' on input line 666.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
 
  []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 671.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 680.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 680.
 
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 689.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 689.
-
-[29]
-<comparison_depth_time.png, id=642, 505.89pt x 505.89pt>
+[27]
+<comparison_depth_time.png, id=674, 505.89pt x 505.89pt>
 File: comparison_depth_time.png Graphic file (type png)
 <use comparison_depth_time.png>
-Package pdftex.def Info: comparison_depth_time.png  used on input line 701.
+Package pdftex.def Info: comparison_depth_time.png  used on input line 692.
 (pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
 
 
-LaTeX Warning: Reference `[' on page 30 undefined on input line 707.
+LaTeX Warning: Reference `[' on page 28 undefined on input line 698.
 
-<comparison_nbWalker_time.png, id=644, 505.89pt x 505.89pt>
+<comparison_nbWalker_time.png, id=676, 505.89pt x 505.89pt>
 File: comparison_nbWalker_time.png Graphic file (type png)
 <use comparison_nbWalker_time.png>
-Package pdftex.def Info: comparison_nbWalker_time.png  used on input line 715.
+Package pdftex.def Info: comparison_nbWalker_time.png  used on input line 706.
 (pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
 
  []
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.722 
-       <./comparison_depth_time.png>] [31pdfTeX warning (ext4): destination wit
+l.713 
+       <./comparison_depth_time.png>] [29pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.17}) has been already used, duplicate ignore
 d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.725 \newpage
+l.716 \newpage
                <./comparison_nbWalker_time.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 727.
+(hyperref)                than one, level fixed on input line 718.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 727.
+(hyperref)                removing `\\' on input line 718.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 732.
+(hyperref)                removing `\\' on input line 723.
 
-<boucle.png, id=659, 451.6875pt x 289.08pt>
+<boucle.png, id=690, 451.6875pt x 289.08pt>
 File: boucle.png Graphic file (type png)
 <use boucle.png>
-Package pdftex.def Info: boucle.png  used on input line 743.
+Package pdftex.def Info: boucle.png  used on input line 734.
 (pdftex.def)             Requested size: 316.17908pt x 202.35461pt.
-[32pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.747 \newpage
+l.738 \newpage
                <./boucle.png>]
-<bbb.png, id=667, 605.26125pt x 514.02037pt>
+<bbb.png, id=700, 605.26125pt x 514.02037pt>
 File: bbb.png Graphic file (type png)
 <use bbb.png>
-Package pdftex.def Info: bbb.png  used on input line 757.
+Package pdftex.def Info: bbb.png  used on input line 748.
 (pdftex.def)             Requested size: 363.15953pt x 308.4146pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--764
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--764
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
 
  []
 
-[33pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.767 \newpage
+l.758 \newpage
                <./bbb.png>]
-<bot.png, id=676, 1853.92625pt x 908.39375pt>
+<bot.png, id=710, 1853.92625pt x 908.39375pt>
 File: bot.png Graphic file (type png)
 <use bot.png>
-Package pdftex.def Info: bot.png  used on input line 781.
+Package pdftex.def Info: bot.png  used on input line 772.
 (pdftex.def)             Requested size: 463.48044pt x 227.09789pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 786--787
+Underfull \hbox (badness 10000) in paragraph at lines 777--778
 
  []
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.20}
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.20}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.793 \subsubsection
+l.784 \subsubsection
                     {Bots\\} <./bot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 793--793
+Underfull \hbox (badness 10000) in paragraph at lines 784--784
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 793.
+(hyperref)                removing `\\' on input line 784.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 797.
+(hyperref)                than one, level fixed on input line 788.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 825.
+(hyperref)                than one, level fixed on input line 816.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 825--827
-
- []
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 832--833
+Underfull \hbox (badness 10000) in paragraph at lines 816--818
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 834--835
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 854--856
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
 
  []
 
-[36]
-<structure.png, id=694, 1196.97188pt x 527.571pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 845--847
+
+ []
+
+[34]
+<structure.png, id=737, 1196.97188pt x 527.571pt>
 File: structure.png Graphic file (type png)
 <use structure.png>
-Package pdftex.def Info: structure.png  used on input line 860.
+Package pdftex.def Info: structure.png  used on input line 851.
 (pdftex.def)             Requested size: 478.78027pt x 211.02466pt.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 866.
+(hyperref)                than one, level fixed on input line 857.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 866.
+(hyperref)                removing `\\' on input line 857.
 
-<confflask.png, id=697, 268.00125pt x 454.69875pt>
+<confflask.png, id=740, 268.00125pt x 454.69875pt>
 File: confflask.png Graphic file (type png)
 <use confflask.png>
-Package pdftex.def Info: confflask.png  used on input line 881.
+Package pdftex.def Info: confflask.png  used on input line 872.
 (pdftex.def)             Requested size: 160.80197pt x 272.82135pt.
-<cfla.png, id=698, 162.6075pt x 250.9375pt>
+<cfla.png, id=741, 162.6075pt x 250.9375pt>
 File: cfla.png Graphic file (type png)
 <use cfla.png>
-Package pdftex.def Info: cfla.png  used on input line 883.
+Package pdftex.def Info: cfla.png  used on input line 874.
 (pdftex.def)             Requested size: 97.56525pt x 150.56364pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--889
+Underfull \hbox (badness 10000) in paragraph at lines 879--880
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 890--891
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--893
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 
  []
 
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.893 
+l.884 
        <./structure.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 894--895
+Underfull \hbox (badness 10000) in paragraph at lines 885--886
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--899
+Underfull \hbox (badness 10000) in paragraph at lines 889--890
 
  []
 
-<resume.png, id=710, 677.6517pt x 280.1667pt>
+<resume.png, id=751, 677.6517pt x 280.1667pt>
 File: resume.png Graphic file (type png)
 <use resume.png>
-Package pdftex.def Info: resume.png  used on input line 904.
+Package pdftex.def Info: resume.png  used on input line 895.
 (pdftex.def)             Requested size: 406.59416pt x 168.10132pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 911.
+(hyperref)                removing `\\' on input line 902.
 
-[38pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.914 	\item
+l.905 	\item
              {[Obligatoire]} Build des images dockers : Cette Ã©tapes crÃ©Ã©...
  <./confflask.png> <./cfla.png>]
-<gitlab.png, id=723, 1197.47375pt x 473.77pt>
+<gitlab.png, id=765, 1197.47375pt x 473.77pt>
 File: gitlab.png Graphic file (type png)
 <use gitlab.png>
-Package pdftex.def Info: gitlab.png  used on input line 924.
+Package pdftex.def Info: gitlab.png  used on input line 915.
 (pdftex.def)             Requested size: 478.98102pt x 189.50464pt.
-<pipeline.png, id=724, 783.92876pt x 276.03125pt>
+<pipeline.png, id=766, 783.92876pt x 276.03125pt>
 File: pipeline.png Graphic file (type png)
 <use pipeline.png>
-Package pdftex.def Info: pipeline.png  used on input line 931.
+Package pdftex.def Info: pipeline.png  used on input line 922.
 (pdftex.def)             Requested size: 313.56595pt x 110.41054pt.
- [39pdfTeX warning (ext4): destination with the same identifier (name{figure.23
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.23
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.935 
+l.926 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.935 
+l.926 
        <./resume.png> <./gitlab.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 936--937
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 942.
+(hyperref)                removing `\\' on input line 933.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
+
+ []
+
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.951 
+       <./pipeline.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 956--957
 
  []
 
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.960 
-       <./pipeline.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 965--966
-
- []
-
-<structure_sia.png, id=738, 803.0pt x 602.25pt>
+<structure_sia.png, id=781, 803.0pt x 602.25pt>
 File: structure_sia.png Graphic file (type png)
 <use structure_sia.png>
-Package pdftex.def Info: structure_sia.png  used on input line 969.
+Package pdftex.def Info: structure_sia.png  used on input line 960.
 (pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.26}
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.26}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.981 \end{itemize}
+l.972 \end{itemize}
                     <./structure_sia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 983--984
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
 
  []
 
-<sia-core.png, id=749, 555.5154pt x 162.6075pt>
+<sia-core.png, id=793, 555.5154pt x 162.6075pt>
 File: sia-core.png Graphic file (type png)
 <use sia-core.png>
-Package pdftex.def Info: sia-core.png  used on input line 1003.
+Package pdftex.def Info: sia-core.png  used on input line 994.
 (pdftex.def)             Requested size: 333.31181pt x 97.56525pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1009
+Underfull \hbox (badness 10000) in paragraph at lines 999--1000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
 
  []
 
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.27}
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.27}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1012 
+l.1003 
         <./sia-core.png>]
-<structancienne.png, id=759, 687.56876pt x 347.2975pt>
+<structancienne.png, id=803, 687.56876pt x 347.2975pt>
 File: structancienne.png Graphic file (type png)
 <use structancienne.png>
-Package pdftex.def Info: structancienne.png  used on input line 1020.
+Package pdftex.def Info: structancienne.png  used on input line 1011.
 (pdftex.def)             Requested size: 412.54443pt x 208.3801pt.
 
-Overfull \hbox (1.04813pt too wide) in paragraph at lines 1025--1026
+Overfull \hbox (1.04813pt too wide) in paragraph at lines 1016--1017
 []\T1/phv/m/n/10 Cette an-ci-enne struc-ture ne re-spec-tait pas le paradigme m
 icro-service ce qui a posé au cours du développe-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1026
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
 
  []
 
-[43pdfTeX warning (ext4): destination with the same identifier (name{figure.28}
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.28}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1028 
+l.1019 
         <./structancienne.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 
  []
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1050
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
 
  []
 
 
-Overfull \hbox (16.77794pt too wide) in paragraph at lines 1055--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1045
+
+ []
+
+
+Overfull \hbox (16.77794pt too wide) in paragraph at lines 1046--1047
 []\T1/phv/m/n/10 Sia Part-ners dis-pose d'une charte d'achat re-spon-s-able qu'
 elle fait signer à l'ensemble de ses four-nisseurs.Cette
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
 
  []
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1088
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1089--1090
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1079
 
  []
 
-[46] [47]
-<arangoDB_nbwalker_time.png, id=784, 1084.05pt x 505.89pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+
+ []
+
+[44] [45]
+<arangoDB_nbwalker_time.png, id=828, 1084.05pt x 505.89pt>
 File: arangoDB_nbwalker_time.png Graphic file (type png)
 <use arangoDB_nbwalker_time.png>
-Package pdftex.def Info: arangoDB_nbwalker_time.png  used on input line 1104.
+Package pdftex.def Info: arangoDB_nbwalker_time.png  used on input line 1095.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
-<arangoDB_depth_time.png, id=785, 1084.05pt x 505.89pt>
+<arangoDB_depth_time.png, id=829, 1084.05pt x 505.89pt>
 File: arangoDB_depth_time.png Graphic file (type png)
 <use arangoDB_depth_time.png>
-Package pdftex.def Info: arangoDB_depth_time.png  used on input line 1112.
+Package pdftex.def Info: arangoDB_depth_time.png  used on input line 1103.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
- [48pdfTeX warning (ext4): destination with the same identifier (name{figure.29
+ [46pdfTeX warning (ext4): destination with the same identifier (name{figure.29
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1116 \newpage
+l.1107 \newpage
                pdfTeX warning (ext4): destination with the same identifier (nam
 e{figure.30}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1116 \newpage
+l.1107 \newpage
                 <./arangoDB_nbwalker_time.png> <./arangoDB_depth_time.png>]
-<neo4j_nbwalker_time.png, id=795, 1084.05pt x 505.89pt>
+<neo4j_nbwalker_time.png, id=839, 1084.05pt x 505.89pt>
 File: neo4j_nbwalker_time.png Graphic file (type png)
 <use neo4j_nbwalker_time.png>
-Package pdftex.def Info: neo4j_nbwalker_time.png  used on input line 1120.
+Package pdftex.def Info: neo4j_nbwalker_time.png  used on input line 1111.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
-<neo4j_depth_time.png, id=796, 1084.05pt x 505.89pt>
+<neo4j_depth_time.png, id=840, 1084.05pt x 505.89pt>
 File: neo4j_depth_time.png Graphic file (type png)
 <use neo4j_depth_time.png>
-Package pdftex.def Info: neo4j_depth_time.png  used on input line 1128.
+Package pdftex.def Info: neo4j_depth_time.png  used on input line 1119.
 (pdftex.def)             Requested size: 433.61232pt x 202.3524pt.
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.31}
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.31}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1132 \newpage
+l.1123 \newpage
                pdfTeX warning (ext4): destination with the same identifier (nam
 e{figure.32}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1132 \newpage
+l.1123 \newpage
                 <./neo4j_nbwalker_time.png> <./neo4j_depth_time.png>]
-<ex1.png, id=807, 667.49374pt x 335.2525pt>
+<ex1.png, id=850, 667.49374pt x 335.2525pt>
 File: ex1.png Graphic file (type png)
 <use ex1.png>
-Package pdftex.def Info: ex1.png  used on input line 1138.
+Package pdftex.def Info: ex1.png  used on input line 1129.
 (pdftex.def)             Requested size: 400.49934pt x 201.15305pt.
-<ex2.png, id=811, 670.505pt x 335.2525pt>
+<ex2.png, id=854, 670.505pt x 335.2525pt>
 File: ex2.png Graphic file (type png)
 <use ex2.png>
-Package pdftex.def Info: ex2.png  used on input line 1146.
+Package pdftex.def Info: ex2.png  used on input line 1137.
 (pdftex.def)             Requested size: 402.3061pt x 201.15305pt.
-<ex3.png, id=812, 695.59875pt x 344.28625pt>
+<ex3.png, id=855, 695.59875pt x 344.28625pt>
 File: ex3.png Graphic file (type png)
 <use ex3.png>
-Package pdftex.def Info: ex3.png  used on input line 1153.
+Package pdftex.def Info: ex3.png  used on input line 1144.
 (pdftex.def)             Requested size: 417.36247pt x 206.57333pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ex4.png, id=813, 639.38875pt x 340.27126pt>
+<ex4.png, id=856, 639.38875pt x 340.27126pt>
 File: ex4.png Graphic file (type png)
 <use ex4.png>
-Package pdftex.def Info: ex4.png  used on input line 1160.
+Package pdftex.def Info: ex4.png  used on input line 1151.
 (pdftex.def)             Requested size: 383.6362pt x 204.16432pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ex5.png, id=815, 749.80125pt x 275.0275pt>
+<ex5.png, id=858, 749.80125pt x 275.0275pt>
 File: ex5.png Graphic file (type png)
 <use ex5.png>
-Package pdftex.def Info: ex5.png  used on input line 1169.
+Package pdftex.def Info: ex5.png  used on input line 1160.
 (pdftex.def)             Requested size: 449.88422pt x 165.01776pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[50pdfTeX warning (ext4): destination with the same identifier (name{figure.33}
+[48pdfTeX warning (ext4): destination with the same identifier (name{figure.33}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1173 \newpage
+l.1164 \newpage
                pdfTeX warning (ext4): destination with the same identifier (nam
 e{figure.34}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1173 \newpage
+l.1164 \newpage
                 <./ex1.png> <./ex2.png>]
 
-LaTeX Warning: Text page 51 contains only floats.
+LaTeX Warning: Text page 49 contains only floats.
 
-[51pdfTeX warning (ext4): destination with the same identifier (name{figure.35}
+[49pdfTeX warning (ext4): destination with the same identifier (name{figure.35}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1173 \newpage
+l.1164 \newpage
                pdfTeX warning (ext4): destination with the same identifier (nam
 e{figure.36}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1173 \newpage
+l.1164 \newpage
                pdfTeX warning (ext4): destination with the same identifier (nam
 e{figure.37}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1173 \newpage
+l.1164 \newpage
                 <./ex3.png> <./ex4.png> <./ex5.png>]
-<botvariable.png, id=835, 305.14pt x 286.06876pt>
+<botvariable.png, id=879, 305.14pt x 286.06876pt>
 File: botvariable.png Graphic file (type png)
 <use botvariable.png>
-Package pdftex.def Info: botvariable.png  used on input line 1179.
+Package pdftex.def Info: botvariable.png  used on input line 1170.
 (pdftex.def)             Requested size: 183.0854pt x 171.64258pt.
-<projectvariable.png, id=836, 342.27875pt x 365.365pt>
+<projectvariable.png, id=880, 342.27875pt x 365.365pt>
 File: projectvariable.png Graphic file (type png)
 <use projectvariable.png>
-Package pdftex.def Info: projectvariable.png  used on input line 1180.
+Package pdftex.def Info: projectvariable.png  used on input line 1171.
 (pdftex.def)             Requested size: 205.36882pt x 219.22069pt.
- [52pdfTeX warning (ext4): destination with the same identifier (name{figure.38
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.38
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1188 \newpage
+l.1179 \newpage
                 <./botvariable.png> <./projectvariable.png>]
-Underfull \hbox (badness 3029) in paragraph at lines 1202--1206
+Underfull \hbox (badness 3029) in paragraph at lines 1193--1197
 []\T1/phv/m/n/10 Pixie: A Sys-tem for Rec-om-mend-ing 3+ Bil-lion Items to 200+
  Mil-lion Users in Real-Time :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1214--1216
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1207
 \T1/phv/m/sl/10 https://neo4j.com/docs/java-reference/current/extending-neo4j/p
 rocedures-and-functions/aggregation-
  []
 
-[53]
+[51]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2906,15 +2906,15 @@ rocedures-and-functions/aggregation-
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [54
+ [52
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1237.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1237.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1228.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1237.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1228.
 
 
 
@@ -2923,35 +2923,182 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
-(rerunfilecheck)             Before: A71A5E23D0732228FBA7DE3CF6421983;6065
-(rerunfilecheck)             After:  1E0AEA1FE48F2B3DC87552BD30B4383E;6181.
+(rerunfilecheck)             Before: 1E0AEA1FE48F2B3DC87552BD30B4383E;6181
+(rerunfilecheck)             After:  4CB4A2A9F2B1B403070CDA3FC76A0248;6076.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1237.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1228.
  ) 
 Here is how much of TeX's memory you used:
- 32436 strings out of 494923
- 607955 string characters out of 6180742
+ 32482 strings out of 494923
+ 608751 string characters out of 6180742
  759809 words of memory out of 5000000
- 35003 multiletter control sequences out of 15000+600000
+ 35004 multiletter control sequences out of 15000+600000
  578031 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,12n,75p,10420b,1360s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.10.4} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{equation.7.3} has been referenced but does not ex
+ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.10.3} has been referenced but does not e
+pdfTeX warning (dest): name{equation.7.1} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.12} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.11.4} has been referenced but does not e
 xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.9.2} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.11.3} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.11.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.11.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.11} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.10.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.10.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.4.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.4.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.4} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.9.1} has been referenced but does not ex
+pdfTeX warning (dest): name{subsubsection.8.3.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.3.1.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.3.1.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.3.1.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.3.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.8.3} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.2.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.2.2.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.2.2.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.2.1.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.2.1.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.2.1.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.8.2.1.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.3.0.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.3.0.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.3.0.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.3.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subparagraph.7.2.3.3.2} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subparagraph.7.2.3.3.1} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.3.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.3.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.3.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.2.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.2.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.2.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.2.2.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.1.0.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.1.0.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.7.1.0.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.6.4.1.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.6.4.1.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.6.4.1.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph.6.3.1.4} has been referenced but does not
+ exist, replaced by a fixed one
 
  </home/syndorik/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.60
 0pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texl
@@ -2966,10 +3113,10 @@ ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on rapport.pdf (54 pages, 3179985 bytes).
+Output written on rapport.pdf (52 pages, 3180534 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 798 compressed objects within 8 object streams
- 211 named destinations out of 1000 (max. 500000)
- 818 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1041 PDF objects out of 1200 (max. 8388607)
+ 854 compressed objects within 9 object streams
+ 256 named destinations out of 1000 (max. 500000)
+ 826 words of extra memory for PDF output out of 10000 (max. 10000000)
 
