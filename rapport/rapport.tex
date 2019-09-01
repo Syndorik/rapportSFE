@@ -266,7 +266,9 @@ Par ailleurs, plusieurs sites internet ont des protections vis à vis du webscra
 
 Le deuxième problème s'explique par une technologie de protection employé par les site internet contre le webscrapping : Datadome. Datadome detecte si une requête est faite par un utilisateur ou un robot en regardant si le javascript de la page est chargé et executé. Si ce dernier n'est pas executé, il s'agit probablement d'un bot ayant requêté uniquement le code source de la page, ce qui est exactement notre cas. Une fois detecté par Datadome, l'adresse IP qui a servi pour la requête est mise sur liste noire et il n'est plus possible de faire de requête.\\
 
-La solution trouvé avec le client est de passer par un service de Proxy payant : Luminati, qui permet de changer d'adresse IP à chaque requête et donc de pouvoir utiliser les scripts de scrapping. Il est a noté que ce service facture à la requête, ainsi seul les sites ayant une protections datadome ou similaire passent par ce proxy.
+La solution trouvé avec le client est de passer par un service de Proxy payant : Luminati, qui permet de changer d'adresse IP à chaque requête et donc de pouvoir utiliser les scripts de scrapping. Il est a noté que ce service facture à la requête, ainsi seul les sites ayant une protections datadome ou similaire passent par ce proxy.\\ \\
+
+Cette mission m'a permis d'apprendre ce qu'était le webscrapping et m'a donné les clés pour passer à une mission plus intéressante, la création d'un moteur de recommandation.
 
 \newpage
 
@@ -645,7 +647,9 @@ Ainsi les boucles n'ont pas d'impact sur la procédure adapté. Plusieurs cas pa
 \end{figure}
 
 La suppression des boucles est une petite optimisation par rapport au reste du travail qui a été fait. Cependant, cela reste dans le but d'avoir des chemins qui avancent en profondeur dans le graphe s'éloignant un maximum du point d'origine. Cela permet aussi d'avoir une certaine uniformité, évitant plusieurs chemins donnant des scores très différents.\\
-Ce dernier point est l'une des forces, mais aussi faiblesse de ce moteur de recommandation. C'est la force principale dans le sens où l'utilisation des données intermédiaires permet de comprendre la connexion entre les cleeps. C'est une faiblesse pour les chemins très longs revenant proche du cleep original, l'information sur ce chemin n'est plus assez pertinente par rapport à la proximité.
+Ce dernier point est l'une des forces, mais aussi faiblesse de ce moteur de recommandation. C'est la force principale dans le sens où l'utilisation des données intermédiaires permet de comprendre la connexion entre les cleeps. C'est une faiblesse pour les chemins très longs revenant proche du cleep original, l'information sur ce chemin n'est plus assez pertinente par rapport à la proximité.\\ \\
+
+Cette mission m'a permis de (re)découvrir les différents types de base de donnée et savoir quelles sont leurs avantages et leurs inconvénients. J'ai pu aussi me documenter sur les différents types de moteur de recommandation et voir lesquels pouvaient le mieux s'adapter au cas de Cleep. Grâce à ce sujet, j'ai pu animer une formation avec Paul Saffers devant les consultants de Sia Partners sur ce sujet ce qui m'a permis d'approfondir le sujet d'autant plus. 
 
 \newpage
 
@@ -847,24 +851,34 @@ Mon travail sur cette partie déploiement a surtout été de faire, en collabora
 \subsubsection{Plateforme Sialab}
 Le travail que j'ai effectué pour le sialab ne se résume pas uniquement à l'établissement du processus de développement, j'ai aussi participé au développement de la plateforme sialab pour Sia Partners ainsi que l'infrastructure qu'il y a derrière l'ensemble des ces plateformes (template sialab).\\
 
-Les plateformes sialab, suivent le même processus de développement qu'expliqué précédemment. Ils sont formés de 5 différentes micro-services:
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.5]{structure_sia.png}
+	\caption{Structure des plateformes sialab}
+	\label{fig:strt}
+\end{figure}
+
+Les plateformes sialab, suivent le même processus de déploiement expliqué précédemment. Elles sont formées de 5 différents micro-services (\textbf{figure \ref{fig:strt}}):
 \begin{itemize}
-	\item Custom Endpoints : API créées par les développeurs du projet. Ces API sont reliés au besoin métier qui nécessitaient la plateforme
-	\item Authentication : Module qui gère l'authentification des utilisateurs sur la plateforme, mais aussi les droits des utilisateurs (Admin, lecture, écriture).
+	\item External Endpoints : API créées par les développeurs du projet. Ces API sont reliées au besoin métier qui nécessitaient la création de la plateforme. 
+	\item Authentication : Module qui gère l'authentification des utilisateurs sur la plateforme, mais aussi les droits d'accès sur cette dernière (Admin, lecture, écriture).
 	\item Launcher : Service qui permet de lancer des scripts (Python, NodeJs, Java ...). Ces scripts sont créés par les développeurs sur le projet. De même que pour custom endpoints, l'exécution de ces scripts relèvent d'un besoin métier
 	\item Scheduler : Ce service permet de programmer à une fréquence précise l'exécution d'un script.
 	\item Frontend : L'interface graphique de la plateforme. Elle sert en général à avoir une interface utilisateur afin d'utiliser les API ou montrer les résultats des scripts lancés.
 \end{itemize}
 
-Les plateformes sialab sont toutes basées sur un même template, et chacun des micro-services sont codés en python Flask. Le frontend possède évidement une composante en javascript, mais les serveurs en eux même sont des serveurs Flask orchestrés par Gunicorn.\\
+Les plateformes sialab sont toutes basées sur un même template, et chacun des micro-services est codé en python Flask. Le frontend possède évidement une composante en javascript, mais les serveurs en eux même sont des serveurs Flask orchestrés par Gunicorn. Chacun des micro-services est protégé par une authentification basé sur des tokens. Ces tokens sont émis par le service authentification pour chaque utilisateur et sont utilisé pour toutes les communications, que ce soit entre service interne aux plateformes sialab, ou entre l'utilisateur et la plateforme. Le choix a été fait d'avoir des communications protégés entre les différents services afin de s'assurer une sécurité maximale. Ainsi, si un des services est compromis, il ne peut pas compromettre les autres.\\
+
+Comme montré sur la \textbf{figure \ref{fig:strt}}, les services sont derrières un nginx \cite{nginx} qui est le seul serveur à communiquer avec Internet. Ce dernier va transmettre les requêtes qu'il reçoit aux services appropriés, ces requêtes pouvant provenir d'Internet (l'utilisateur) ou d'autres micro-services. Nginx offre plusieurs options permettant de réguler l'ensemble du trafic sur la plateforme. Finalement, on utilise deux service de cloud pour stocker les données, PostGreSQL pour l'ensemble des données stockés en RDBMS, et les buckets google pour les données lourdes comme les modèles de réseau de neurones etc. 
 
 J'ai travaillé de manière assez transverse sur ce sujet. J'ai réalisé la partie front en entière avec tout les enjeux de connexions et d'interface utilisateurs. J'ai aussi développer en partie le launcher de tâche (scripts). Gabriel Creti a développé le reste des micro-services.
+
 
 \subsection{Vision critique et apport personnel}
 Dans cette partie je vais revenir sur l'ensemble des changements majeurs qu'ont connu les plateformes sialab. En effet l'infrastructure derrière ces plateformes a bien changé en trois mois, pour arriver à une infrastructure composé de 5 micro-services.
 
 \subsubsection{Images des plateformes sialab}
-Dans l'idée de faciliter le développement des consultant sur les plateformes sialab, l'image docker des plateforme est divisé en deux parties:
+Dans l'idée de faciliter le développement des consultant sur les plateformes sialab, l'image docker des plateformes est divisée en deux parties:
 \begin{itemize}
 	\item le sialab-core : c'est une version générique d'une plateforme sialab.
 	\item le sialab utilisateur : la version du sialab sur laquelle développe les consultants
@@ -878,22 +892,30 @@ La \textbf{figure \ref{fig:siasia}} décrit la création de l'image d'une platef
 	\label{fig:siasia}
 \end{figure}
 
-Les principales fonctionnalité des plateformes sialab sont développées dans le core, car commune à toute. Ainsi le scheduler, et l'authentification sont uniquement présent dans le core. Les customs endpoints quant à eux sont uniquement dans la partie utilisateurs car seul les consultants vont développer dedans. Le problème réside dans le Launcher et le frontend. En effet la partie permettant dans lancer des scripts est codé dans le sialab core, cependant les consultants doivent pouvoir coder les scripts qui vont être lancés. De même, plusieurs fonctionnalités du frontend sont codés dans le core comme par exemple la gestion de l'authentification des utilisateurs, les interfaces graphiques permettant de lancer un script etc.\\
+Les principales fonctionnalités des plateformes sialab sont développées dans le core, car partie commune à toute. Ainsi le scheduler, et l'authentification sont uniquement présent dans le core. Les customs endpoints quant à eux sont uniquement dans la partie utilisateurs car seul les consultants vont développer dedans. Le problème réside dans le Launcher et le frontend. En effet la partie permettant dans lancer des scripts est codée dans le sialab core, cependant les consultants doivent pouvoir coder les scripts qui vont être lancés dans cette même partie. De même, plusieurs fonctionnalités du frontend sont codés dans le core comme par exemple la gestion de l'authentification des utilisateurs, les interfaces graphiques permettant de lancer un script etc.\\
 
-La solution pour pallier à ce problème a été de créer nous même des dockerfile assez restrictifs afin de permettre cette division. Cependant le désavantage est que cela force des configurations que les consultants peuvent ne pas comprendre sans aller dans le core. Par exemple, les pages internet sont rendu en python Flask via des templates HTML-Jinja2. La fonction de copier en Docker est prioritaire sur ce qui existe déjà dans le container, ainsi un dossier est supprimé si un dossier du même nom existe. Les templates HTML-Jinja2 dans les sialab utilisateur sont à cause de cela stocké dans un dossier /custom\_templates alors qu'ils sont stockés dans le dossier /templates dans le sialab-core.\\
-Un autre exemple est l'importation des script Javascript dans les templates HTML. Comme on utilise un système de templating, on a un template master qui englobe tout les autres. Ainsi ces derniers ne font qu'étendre le premier. Le problème est que le template master et les templates du sialab-core sont les seules à charger ses scripts Javascript dans les balises <header> ou <footer>, car ils sont dans l'image du core. Ainsi les templates du silab utilisateur n'y ont pas accès, ce qui rend le chargement des pages Internet moins optimisés. 
+La solution pour pallier à ce problème a été de créer nous même des dockerfile assez restrictifs afin de permettre cette division. Cependant le désavantage est que cela force des configurations que les consultants peuvent ne pas comprendre sans connaître l'architecture du core. Par exemple, les pages internets sont rendu en python Flask via des templates HTML-Jinja2. La fonction de copier en Docker est prioritaire sur ce qui existe déjà dans le container, ainsi un dossier est supprimé si un dossier du même nom existe. Les templates HTML-Jinja2 dans les sialab utilisateur sont à cause de cela stockés dans un dossier /custom\_templates alors qu'ils sont stockés dans le dossier /templates dans le sialab-core.\\
+Un autre exemple est l'importation des script Javascript dans les templates HTML. Comme on utilise un système de templating, on a un template master qui englobe tout les autres. Ainsi ces derniers ne font qu'étendre le premier. Le problème est que le template master et les templates du sialab-core sont les seules à charger ses scripts Javascript dans les balises <header> ou <footer>, car ils sont dans l'image du core. Ainsi les templates du silab utilisateur n'y ont pas accès, ce qui rend le chargement des pages Internet moins optimisés.\\
 
+A ce jour ces problèmes existent toujours rendant les consultant développant sur ces plateformes un peu plus dépendant de la documentation fournie et de nous même, cependant la divison en deux parties reste tout de même un gain de temps et la possibilité de s'inscrire dans un projet sans avoir à connaître la globalité de son fonctionnement.
  
 \subsubsection{Changement d'infrastructure}
+Au départ, les plateformes sialab n'étaient pas divisés en 5 micro-services différents (\textbf{figure \ref{fig:strt}}), mais en 2 comme le montre la \textbf{figure \ref{fig:strtold}}, un backend composé des éléments actuels suivant : launcher, scheduler, Authentication et External endpoints, et un frontend. 
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[keepaspectratio = true,scale=0.6]{structancienne.png}
+	\caption{Ancienne structure du sialab}
+	\label{fig:strtold}
+\end{figure}
 
+Cette ancienne structure ne respectait pas le paradigme micro-service ce qui a posé au cours du développement plusieurs problèmes notamment avec le scheduler. Le scheduler est donc le micro-service qui lance des tâches de manière répétée. Ce scheduler comme tout les services produit des logs qui sont enregistrés dans la base de donnée PostGreSQL, mais il va aussi récupérer la programmation des tâches dans cette même base. Par ailleurs, au niveau du déploiement, dans les configuration du fichier deployment-kubernetes-template.yml, le pods concernant le backend est configuré pour pouvoir disposé de deux répliques au même moment. Ainsi lors d'un redéploiement, il n'y a pas d'arrêt de service. Les services peuvent être dédoublés, en particulier le scheduler. Plusieurs de problèmes de concurrences survenaient lors du redéploiement à cause de cela, et les tâches étaient lancées en double.\\
 
-Parler des différentes étapes de structure par laquelle on est passé. Parler de la diff sialabcore et le reste.
+Une solution à ce problème aurait pu être de ne pas lancer le scheduler tant qu'il y a deux répliques au niveau GCP. Cependant cela restait très sommaire comme résolution et revenait à contourner le problème au lieu de trouver une solution réelle. C'est pourquoi courant Août nous avons changé d'infrastructure pour celle que j'ai présenté dans la section précédente. La structure en micro-service permet de configurer le pod contenant le scheduler, et lui imposer qu'une seule réplique possible\\
 
-Parler du problème de scheduler en x2 qui peut niker totalement l'interete du truc
+Cette structure, en plus de résoudre ce type de bug, offre plusieurs avantages, notamment un contrôle plus clair sur la provenance des bugs, vu que l'on sait à quel pod les bugs sont reliés. De plus, si un des micro-services est interrompu et rentre dans une boucle de crash (i.e. le service ne peut pas se relancer), les autres services n'en seront pas affecté et donc continueront à marcher. Ainsi, si le frontend par exemple "tombe en panne", les API resteront toujours disponibles car indépendantes du frontend.\\ \\
 
-Création des templates Flask 
-
+Cette mission m'a permis de découvrir toute la partie data engineer (avec Kubernetes) qui m'était inconnue. J'ai pu aussi participer à la conception et l'implémentation d'un processus, ce qui m'a permis de mieux appréhender le travail en groupe sur un tel projet.
 
 
 \newpage
@@ -1027,6 +1049,9 @@ La \textbf{figure \ref{fig:ex5}} décrit le processus de selection des meilleurs
 	\bibitem{comp}
 	Comparaison machine virtuelle/ container docker:\\
 	\textit{https://www.sdxcentral.com/containers/definitions/what-is-docker-container/}
+	\bibitem{nginx}
+	Site Internet de nginx:\\
+	\textit{https://www.nginx.com/}
 	
 \end{thebibliography}
 \newpage
