@@ -10,12 +10,12 @@
 \BOOKMARK [2][-]{subsection.4.3}{Travail effectu\351}{section.4}% 10
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Contexte}{subsection.4.3}% 11
 \BOOKMARK [4][-]{paragraph.4.3.1.1}{M\351thode automatique:}{subsubsection.4.3.1}% 12
-\BOOKMARK [5][-]{paragraph.4.3.1.2}{M\351thode spc\351ifique:}{paragraph.4.3.1.1}% 13
+\BOOKMARK [5][-]{paragraph.4.3.1.2}{M\351thode sp\351cifique:}{paragraph.4.3.1.1}% 13
 \BOOKMARK [5][-]{paragraph.4.3.1.3}{D\351marche}{paragraph.4.3.1.1}% 14
 \BOOKMARK [5][-]{paragraph.4.3.1.4}{R\351sultats}{paragraph.4.3.1.1}% 15
 \BOOKMARK [2][-]{subsection.4.4}{Vision critique et apport personnel}{section.4}% 16
 \BOOKMARK [3][-]{subsubsection.4.4.1}{Scrapper g\351n\351rique}{subsection.4.4}% 17
-\BOOKMARK [4][-]{paragraph.4.4.1.1}{R\351cup\351rations des liens "dynamique" de la page HTML:}{subsubsection.4.4.1}% 18
+\BOOKMARK [4][-]{paragraph.4.4.1.1}{R\351cup\351rations des liens "dynamiques" de la page HTML:}{subsubsection.4.4.1}% 18
 \BOOKMARK [5][-]{paragraph.4.4.1.2}{Clustering des liens}{paragraph.4.4.1.1}% 19
 \BOOKMARK [5][-]{paragraph.4.4.1.3}{Tests et r\351sultats}{paragraph.4.4.1.1}% 20
 \BOOKMARK [3][-]{subsubsection.4.4.2}{Technologie utilis\351e}{subsection.4.4}% 21
@@ -25,9 +25,9 @@
 \BOOKMARK [4][-]{paragraph.5.1.0.2}{\311tat initial}{paragraph.5.1.0.1}% 25
 \BOOKMARK [5][-]{paragraph.5.1.0.3}{\311cosyst\350me de Cleep}{paragraph.5.1.0.2}% 26
 \BOOKMARK [2][-]{subsection.5.2}{Travail effectu\351}{section.5}% 27
-\BOOKMARK [3][-]{subsubsection.5.2.1}{\311tude des moteur de recommandations similaires}{subsection.5.2}% 28
+\BOOKMARK [3][-]{subsubsection.5.2.1}{\311tude des moteurs de recommandations similaires}{subsection.5.2}% 28
 \BOOKMARK [3][-]{subsubsection.5.2.2}{Article de recherche : moteur de recommandation de Pinterest}{subsection.5.2}% 29
-\BOOKMARK [4][-]{paragraph.5.2.2.1}{Inter\352t des bases de donn\351es en graphe}{subsubsection.5.2.2}% 30
+\BOOKMARK [4][-]{paragraph.5.2.2.1}{Int\351r\352t des bases de donn\351es en graphe}{subsubsection.5.2.2}% 30
 \BOOKMARK [5][-]{paragraph.5.2.2.2}{Les d\351savantages}{paragraph.5.2.2.1}% 31
 \BOOKMARK [5][-]{paragraph.5.2.2.3}{Comparatif ArangoDB / Neo4j}{paragraph.5.2.2.1}% 32
 \BOOKMARK [3][-]{subsubsection.5.2.3}{Impl\351mentation}{subsection.5.2}% 33
@@ -42,32 +42,32 @@
 \BOOKMARK [4][-]{paragraph.5.3.0.2}{Am\351lioration de la marche al\351atoire de Neo4j}{paragraph.5.3.0.1}% 42
 \BOOKMARK [5][-]{paragraph.5.3.0.3}{Optimisation du calcul de score}{paragraph.5.3.0.2}% 43
 \BOOKMARK [1][-]{section.6}{Mission : Aide \340 l'am\351lioration d'une plateforme de d\351ploiement pour Sia Partners \(2 mois\)}{}% 44
-\BOOKMARK [2][-]{subsection.6.1}{Pr\351sentation du sialab}{section.6}% 45
+\BOOKMARK [2][-]{subsection.6.1}{Pr\351sentation du Sialab}{section.6}% 45
 \BOOKMARK [2][-]{subsection.6.2}{Objectifs et probl\351matique}{section.6}% 46
 \BOOKMARK [3][-]{subsubsection.6.2.1}{Bots}{subsection.6.2}% 47
 \BOOKMARK [4][-]{paragraph.6.2.1.1}{Backups}{subsubsection.6.2.1}% 48
-\BOOKMARK [5][-]{paragraph.6.2.1.2}{Contr\364le de Version}{paragraph.6.2.1.1}% 49
+\BOOKMARK [5][-]{paragraph.6.2.1.2}{Contr\364le de version}{paragraph.6.2.1.1}% 49
 \BOOKMARK [5][-]{paragraph.6.2.1.3}{La stabilit\351}{paragraph.6.2.1.1}% 50
 \BOOKMARK [5][-]{paragraph.6.2.1.4}{L'administration}{paragraph.6.2.1.1}% 51
 \BOOKMARK [3][-]{subsubsection.6.2.2}{Plateforme}{subsection.6.2}% 52
-\BOOKMARK [4][-]{paragraph.6.2.2.1}{Contr\364le de Version et Backups}{subsubsection.6.2.2}% 53
+\BOOKMARK [4][-]{paragraph.6.2.2.1}{Contr\364le de version et backups}{subsubsection.6.2.2}% 53
 \BOOKMARK [5][-]{paragraph.6.2.2.2}{Stabilit\351 et administration}{paragraph.6.2.2.1}% 54
 \BOOKMARK [3][-]{subsubsection.6.2.3}{Objectifs}{subsection.6.2}% 55
 \BOOKMARK [2][-]{subsection.6.3}{Travail effectu\351}{section.6}% 56
 \BOOKMARK [3][-]{subsubsection.6.3.1}{Processus de d\351ploiement}{subsection.6.3}% 57
 \BOOKMARK [4][-]{paragraph.6.3.1.1}{D\351veloppement local}{subsubsection.6.3.1}% 58
-\BOOKMARK [5][-]{paragraph.6.3.1.2}{D\351ploiement \(gitlab\)}{paragraph.6.3.1.1}% 59
+\BOOKMARK [5][-]{paragraph.6.3.1.2}{D\351ploiement \(Gitlab\)}{paragraph.6.3.1.1}% 59
 \BOOKMARK [5][-]{paragraph.6.3.1.3}{D\351ploiement \(Google Cloud Plateform\)}{paragraph.6.3.1.1}% 60
 \BOOKMARK [3][-]{subsubsection.6.3.2}{Plateforme Sialab}{subsection.6.3}% 61
 \BOOKMARK [2][-]{subsection.6.4}{Vision critique et apport personnel}{section.6}% 62
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Images des plateformes sialab}{subsection.6.4}% 63
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Images des plateformes Sialab}{subsection.6.4}% 63
 \BOOKMARK [3][-]{subsubsection.6.4.2}{Changement d'infrastructure}{subsection.6.4}% 64
-\BOOKMARK [1][-]{section.7}{Politique de Responsabilit\351 Soci\351tale de l\220Entreprise Sia Partners}{}% 65
+\BOOKMARK [1][-]{section.7}{Politique de Responsabilit\351 soci\351tale de l\220Entreprise Sia Partners}{}% 65
 \BOOKMARK [1][-]{section.8}{Conclusion}{}% 66
 \BOOKMARK [2][-]{subsection.8.1}{Bilan des missions et bilan personnel}{section.8}% 67
 \BOOKMARK [2][-]{subsection.8.2}{Perspectives professionnelles}{section.8}% 68
 \BOOKMARK [1][-]{section.9}{Annexes}{}% 69
-\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la fnac}{section.9}% 70
+\BOOKMARK [2][-]{subsection.9.1}{Code source all\351g\351 du site de la Fnac}{section.9}% 70
 \BOOKMARK [2][-]{subsection.9.2}{Graphe tests ArangoDB / Neo4j}{section.9}% 71
 \BOOKMARK [2][-]{subsection.9.3}{Exemple : Heuristique de Pinterest appliqu\351 au cas de Cleep}{section.9}% 72
 \BOOKMARK [2][-]{subsection.9.4}{Exemple de variable d'environnent}{section.9}% 73

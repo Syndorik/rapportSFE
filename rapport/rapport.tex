@@ -656,7 +656,7 @@ $n_{t}$ est le cardinal de $tags$ (ie le nombre de tags en commun)}}
 \newpage
 Une fois ces scores intermédiaires calculés, une moyenne pondérée par les coefficients est calculée que l'on nomme $s_{mean}$, ce qui nous donne un résultat entre 0 et 1. Le score final pour cette étape du chemin aléatoire est alors donné par la formule suivante :
 \begin{equation}
-\label{eq:4}
+\label{eq:5}
 score = \frac{s_{mean} + score}{2}
 \hspace{1cm} \mbox{\vbox{\noindent $score$ est le score calculé à l'étape précédente}}
 \end{equation}
@@ -696,7 +696,7 @@ Les figures suivantes montrent la comparaison entre les deux solutions. Des grap
 \end{figure}
 
 Les figures suivantes montrent la comparaison entre les deux solutions. Des graphes supplémentaires sont disponibles en \textbf{Annexes 9.2}. Ces graphes représentent les mêmes résultats, mais de manière séparée (et un peu plus lisible) pour chaque base de données.
-De ces deux graphes (\textbf{figure \ref{fig:depthtime} \& \ref{fig:walker}), deux conclusions peuvent être tirées:
+De ces deux graphes (\textbf{figure \ref{fig:depthtime} \& \ref{fig:walker}}), deux conclusions peuvent être tirées:
 \begin{itemize}
  \item Le temps d’exécution pour ArangoDB de la marche aléatoire est plus lent dès qu’on augmente le nombre de walkers ou la profondeur.
  \item Le temps d’exécution pour Neo4j de la marche aléatoire semble être constant. La moyenne de 500 ms qu’on peut voir sur tous les graphes (ceux en Annexes inclus) est peut-être biaisée par la puissance de la machine sur laquelle j'ai effectué le test. Il est possible que sur un serveur le temps de traitement soit moins long. Cela indiquerait donc que Neo4j est plus gourmand en ressources.

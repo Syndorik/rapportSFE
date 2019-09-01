@@ -12,12 +12,12 @@
 \contentsline {subsection}{\numberline {4.3}Travail effectu\IeC {\'e}}{11}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Contexte\\}{11}{subsubsection.4.3.1}
 \contentsline {paragraph}{\numberline {4.3.1.1}M\IeC {\'e}thode automatique:\\}{11}{paragraph.4.3.1.1}
-\contentsline {paragraph}{\numberline {4.3.1.2}M\IeC {\'e}thode spc\IeC {\'e}ifique:\\}{12}{paragraph.4.3.1.2}
+\contentsline {paragraph}{\numberline {4.3.1.2}M\IeC {\'e}thode sp\IeC {\'e}cifique:\\}{12}{paragraph.4.3.1.2}
 \contentsline {paragraph}{\numberline {4.3.1.3}D\IeC {\'e}marche\\}{13}{paragraph.4.3.1.3}
 \contentsline {paragraph}{\numberline {4.3.1.4}R\IeC {\'e}sultats\\}{14}{paragraph.4.3.1.4}
 \contentsline {subsection}{\numberline {4.4}Vision critique et apport personnel}{14}{subsection.4.4}
 \contentsline {subsubsection}{\numberline {4.4.1}Scrapper g\IeC {\'e}n\IeC {\'e}rique\\}{14}{subsubsection.4.4.1}
-\contentsline {paragraph}{\numberline {4.4.1.1}R\IeC {\'e}cup\IeC {\'e}rations des liens "dynamique" de la page HTML:\\}{14}{paragraph.4.4.1.1}
+\contentsline {paragraph}{\numberline {4.4.1.1}R\IeC {\'e}cup\IeC {\'e}rations des liens "dynamiques" de la page HTML:\\}{14}{paragraph.4.4.1.1}
 \contentsline {paragraph}{\numberline {4.4.1.2}Clustering des liens\\}{14}{paragraph.4.4.1.2}
 \contentsline {paragraph}{\numberline {4.4.1.3}Tests et r\IeC {\'e}sultats\\}{15}{paragraph.4.4.1.3}
 \contentsline {subsubsection}{\numberline {4.4.2}Technologie utilis\IeC {\'e}e\\}{15}{subsubsection.4.4.2}
@@ -27,50 +27,50 @@
 \contentsline {paragraph}{\numberline {5.1.0.2}\IeC {\'E}tat initial}{18}{paragraph.5.1.0.2}
 \contentsline {paragraph}{\numberline {5.1.0.3}\IeC {\'E}cosyst\IeC {\`e}me de Cleep\\}{18}{paragraph.5.1.0.3}
 \contentsline {subsection}{\numberline {5.2}Travail effectu\IeC {\'e}}{19}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}\IeC {\'E}tude des moteur de recommandations similaires}{19}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1}\IeC {\'E}tude des moteurs de recommandations similaires}{19}{subsubsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.2}Article de recherche : moteur de recommandation de Pinterest\\}{20}{subsubsection.5.2.2}
-\contentsline {paragraph}{\numberline {5.2.2.1}Inter\IeC {\^e}t des bases de donn\IeC {\'e}es en graphe\\}{22}{paragraph.5.2.2.1}
+\contentsline {paragraph}{\numberline {5.2.2.1}Int\IeC {\'e}r\IeC {\^e}t des bases de donn\IeC {\'e}es en graphe\\}{22}{paragraph.5.2.2.1}
 \contentsline {paragraph}{\numberline {5.2.2.2}Les d\IeC {\'e}savantages\\}{22}{paragraph.5.2.2.2}
 \contentsline {paragraph}{\numberline {5.2.2.3}Comparatif ArangoDB / Neo4j\\}{23}{paragraph.5.2.2.3}
 \contentsline {subsubsection}{\numberline {5.2.3}Impl\IeC {\'e}mentation}{23}{subsubsection.5.2.3}
-\contentsline {paragraph}{\numberline {5.2.3.1}Premi\IeC {\`e}re version du moteur de recommandation\\}{23}{paragraph.5.2.3.1}
-\contentsline {paragraph}{\numberline {5.2.3.2}Description du processus\\}{25}{paragraph.5.2.3.2}
-\contentsline {paragraph}{\numberline {5.2.3.3}Fonction de scoring\\}{25}{paragraph.5.2.3.3}
-\contentsline {subparagraph}{\numberline {5.2.3.3.1}1\IeC {\`e}re version\\}{25}{subparagraph.5.2.3.3.1}
-\contentsline {subparagraph}{\numberline {5.2.3.3.2}2\IeC {\`e}me version\\}{27}{subparagraph.5.2.3.3.2}
-\contentsline {paragraph}{\numberline {5.2.3.4}Tests du moteur\\}{27}{paragraph.5.2.3.4}
-\contentsline {subsection}{\numberline {5.3}Vision critique et apport personnel}{27}{subsection.5.3}
-\contentsline {paragraph}{\numberline {5.3.0.1}Tests sur ArangoDB et Neo4j\\}{27}{paragraph.5.3.0.1}
-\contentsline {paragraph}{\numberline {5.3.0.2}Am\IeC {\'e}lioration de la marche al\IeC {\'e}atoire de Neo4j\\}{30}{paragraph.5.3.0.2}
-\contentsline {paragraph}{\numberline {5.3.0.3}Optimisation du calcul de score\\}{30}{paragraph.5.3.0.3}
-\contentsline {section}{\numberline {6}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners (2 mois)}{32}{section.6}
-\contentsline {subsection}{\numberline {6.1}Pr\IeC {\'e}sentation du sialab}{32}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{33}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Bots\\}{33}{subsubsection.6.2.1}
-\contentsline {paragraph}{\numberline {6.2.1.1}Backups}{33}{paragraph.6.2.1.1}
-\contentsline {paragraph}{\numberline {6.2.1.2}Contr\IeC {\^o}le de Version}{33}{paragraph.6.2.1.2}
-\contentsline {paragraph}{\numberline {6.2.1.3}La stabilit\IeC {\'e}}{33}{paragraph.6.2.1.3}
-\contentsline {paragraph}{\numberline {6.2.1.4}L'administration}{33}{paragraph.6.2.1.4}
-\contentsline {subsubsection}{\numberline {6.2.2}Plateforme}{33}{subsubsection.6.2.2}
-\contentsline {paragraph}{\numberline {6.2.2.1}Contr\IeC {\^o}le de Version et Backups}{33}{paragraph.6.2.2.1}
-\contentsline {paragraph}{\numberline {6.2.2.2}Stabilit\IeC {\'e} et administration}{34}{paragraph.6.2.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Objectifs}{34}{subsubsection.6.2.3}
-\contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{34}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Processus de d\IeC {\'e}ploiement}{34}{subsubsection.6.3.1}
-\contentsline {paragraph}{\numberline {6.3.1.1}D\IeC {\'e}veloppement local\\}{35}{paragraph.6.3.1.1}
-\contentsline {paragraph}{\numberline {6.3.1.2}D\IeC {\'e}ploiement (gitlab)\\}{36}{paragraph.6.3.1.2}
+\contentsline {paragraph}{\numberline {5.2.3.1}Premi\IeC {\`e}re version du moteur de recommandation\\}{24}{paragraph.5.2.3.1}
+\contentsline {paragraph}{\numberline {5.2.3.2}Description du processus\\}{26}{paragraph.5.2.3.2}
+\contentsline {paragraph}{\numberline {5.2.3.3}Fonction de scoring\\}{26}{paragraph.5.2.3.3}
+\contentsline {subparagraph}{\numberline {5.2.3.3.1}1\IeC {\`e}re version\\}{26}{subparagraph.5.2.3.3.1}
+\contentsline {subparagraph}{\numberline {5.2.3.3.2}2\IeC {\`e}me version\\}{28}{subparagraph.5.2.3.3.2}
+\contentsline {paragraph}{\numberline {5.2.3.4}Tests du moteur\\}{28}{paragraph.5.2.3.4}
+\contentsline {subsection}{\numberline {5.3}Vision critique et apport personnel}{28}{subsection.5.3}
+\contentsline {paragraph}{\numberline {5.3.0.1}Tests sur ArangoDB et Neo4j\\}{28}{paragraph.5.3.0.1}
+\contentsline {paragraph}{\numberline {5.3.0.2}Am\IeC {\'e}lioration de la marche al\IeC {\'e}atoire de Neo4j\\}{31}{paragraph.5.3.0.2}
+\contentsline {paragraph}{\numberline {5.3.0.3}Optimisation du calcul de score\\}{31}{paragraph.5.3.0.3}
+\contentsline {section}{\numberline {6}Mission : Aide \IeC {\`a} l'am\IeC {\'e}lioration d'une plateforme de d\IeC {\'e}ploiement pour Sia Partners (2 mois)}{33}{section.6}
+\contentsline {subsection}{\numberline {6.1}Pr\IeC {\'e}sentation du Sialab}{33}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Objectifs et probl\IeC {\'e}matique}{34}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Bots\\}{34}{subsubsection.6.2.1}
+\contentsline {paragraph}{\numberline {6.2.1.1}Backups}{34}{paragraph.6.2.1.1}
+\contentsline {paragraph}{\numberline {6.2.1.2}Contr\IeC {\^o}le de version}{34}{paragraph.6.2.1.2}
+\contentsline {paragraph}{\numberline {6.2.1.3}La stabilit\IeC {\'e}}{34}{paragraph.6.2.1.3}
+\contentsline {paragraph}{\numberline {6.2.1.4}L'administration}{34}{paragraph.6.2.1.4}
+\contentsline {subsubsection}{\numberline {6.2.2}Plateforme}{34}{subsubsection.6.2.2}
+\contentsline {paragraph}{\numberline {6.2.2.1}Contr\IeC {\^o}le de version et backups}{34}{paragraph.6.2.2.1}
+\contentsline {paragraph}{\numberline {6.2.2.2}Stabilit\IeC {\'e} et administration}{35}{paragraph.6.2.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Objectifs}{35}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Travail effectu\IeC {\'e}}{35}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Processus de d\IeC {\'e}ploiement}{35}{subsubsection.6.3.1}
+\contentsline {paragraph}{\numberline {6.3.1.1}D\IeC {\'e}veloppement local\\}{36}{paragraph.6.3.1.1}
+\contentsline {paragraph}{\numberline {6.3.1.2}D\IeC {\'e}ploiement (Gitlab)\\}{37}{paragraph.6.3.1.2}
 \contentsline {paragraph}{\numberline {6.3.1.3}D\IeC {\'e}ploiement (Google Cloud Plateform)\\}{38}{paragraph.6.3.1.3}
-\contentsline {subsubsection}{\numberline {6.3.2}Plateforme Sialab}{39}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{40}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Images des plateformes sialab}{40}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Changement d'infrastructure}{41}{subsubsection.6.4.2}
-\contentsline {section}{\numberline {7}Politique de Responsabilit\IeC {\'e} Soci\IeC {\'e}tale de l\IeC {\textquoteright }Entreprise Sia Partners}{43}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{44}{section.8}
-\contentsline {subsection}{\numberline {8.1}Bilan des missions et bilan personnel}{44}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Perspectives professionnelles}{44}{subsection.8.2}
-\contentsline {section}{\numberline {9}Annexes}{45}{section.9}
-\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la fnac}{45}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{46}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{48}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Exemple de variable d'environnent}{50}{subsection.9.4}
-\contentsline {section}{\numberline {10}Glossaire}{51}{section.10}
+\contentsline {subsubsection}{\numberline {6.3.2}Plateforme Sialab}{40}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}Vision critique et apport personnel}{41}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Images des plateformes Sialab}{41}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Changement d'infrastructure}{42}{subsubsection.6.4.2}
+\contentsline {section}{\numberline {7}Politique de Responsabilit\IeC {\'e} soci\IeC {\'e}tale de l\IeC {\textquoteright }Entreprise Sia Partners}{44}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{45}{section.8}
+\contentsline {subsection}{\numberline {8.1}Bilan des missions et bilan personnel}{45}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Perspectives professionnelles}{45}{subsection.8.2}
+\contentsline {section}{\numberline {9}Annexes}{46}{section.9}
+\contentsline {subsection}{\numberline {9.1}Code source all\IeC {\'e}g\IeC {\'e} du site de la Fnac}{46}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Graphe tests ArangoDB / Neo4j}{47}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Exemple : Heuristique de Pinterest appliqu\IeC {\'e} au cas de Cleep}{49}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Exemple de variable d'environnent}{51}{subsection.9.4}
+\contentsline {section}{\numberline {10}Glossaire}{52}{section.10}
